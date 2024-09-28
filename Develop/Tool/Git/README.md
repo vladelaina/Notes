@@ -33,6 +33,8 @@ git config --global init.defaultBranch main
 >
 > // If there are spaces, use `“”`
 
+- If you want to chang it, just use it again.
+
 
 
 View information 
@@ -984,7 +986,7 @@ echo <folder.name>/
 
 
 
-# Local Repo<img src="./images/harddisk.png" alt="harddisk" style="zoom: 20%;" /> $\Lrarr$ Github<img src="./images/Github.png" alt="Github" style="zoom: 10%;" />
+# TO Github<img src="./images/Github.png" alt="Github" style="zoom: 10%;" />
 
 
 

@@ -1,11 +1,16 @@
-- Change AMD shortcut keys
+- [x] English daily learning
+  - [x] Classes
+    - [x] Zhu Wei
+    - [x] Tian Jing
+    - [x] Rachels
+  - [x] Merriam-webster
+  - [x] root affix
+
+- [ ] Yoga
+
+- [ ] Diary
+
+- [ ] Question
 
   
 
-- Apply medicine - heel and face
-
-- Clear desktop
-
-  Treasure
-
-  bilibli - <<univers>>
