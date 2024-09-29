@@ -1419,6 +1419,8 @@ git merge --abort
 
 # Dotfiles:Best way to store in a bare git repository
 
+> Is like an archive; it doesn’t store actual content but only ==records version information==
+
 
 
 ## Set
@@ -1490,6 +1492,32 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 ## Installing or Migrating 
 
 
+
+### Prerequisite work
+
+
+
+#### alias
+
+```bash
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+```
+
+> Make sure to add to `.bashrc` or `.zsh`
+
+
+
+#### ignore `.cfg`
+
+```bash
+echo ".cfg" >> .gitignore
+```
+
+- `.cfg`	$\Rarr$	`configuration`
+
+  Folder that need to be ignored
+
+> Ensure that the sontent and structure between the **original repository** and the **cloned instance** remain ==independent==
 
 
 
