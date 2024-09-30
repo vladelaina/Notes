@@ -1521,9 +1521,13 @@ echo ".cfg" >> .gitignore
 
 
 
+### Clone
 
+```bash
+git clone --bare <git-repo-url> $HOME/.cfg
+```
 
-
+> Clone to `.cfg`(bare repository)
 
 
 

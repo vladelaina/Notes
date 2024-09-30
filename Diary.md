@@ -313,7 +313,7 @@ It’s like the saying:”You can lead horse to water, but you can’t make it d
 
 
 
-###### Septermber 9/11
+###### Septermber /11
 
 ​		There is no such thing ad a shortcut, everything is done slowly. Take every step in a down-to-earth manner. Every step you take counts.
 
@@ -323,7 +323,7 @@ It’s like the saying:”You can lead horse to water, but you can’t make it d
 
 
 
-###### September 9/12
+###### September 12
 
 ​	The Pomodora Technique is really necessary; it doesn’t limit us but rather enables us to learn more persistently while reducing harmful factors, such ad prolonged sitting, eye strain, and hearing loss. I only need to focus on tasks that can be completed within 25 minutes.
 
@@ -337,7 +337,7 @@ It’s like the saying:”You can lead horse to water, but you can’t make it d
 
 
 
-###### September 9/18
+###### September /18
 
 ​	The first thing you need to do is try to figure out what are you capable of.
 
@@ -347,7 +347,7 @@ It’s like the saying:”You can lead horse to water, but you can’t make it d
 
 
 
-###### September 9/19
+###### September 19
 
 ​	The sudden realization of how low my productivity actually is hits me. It fells like I’ve been immersed in a sense of being productive, but in reality, it’s not the case. Now reflecting on the day: I started as usual with my English studies, followed by learing a bit of Git syntax. Then I listend to an audiobook, watched some videos, taought my girlfriend some Python, and spent some time on various small, miscellaneous tasks. It feels like I’ve been immersed in this state for quite a long time. After finishing my English study, the time I actully spend on computer science has been very little, and even that time is quite unproductive. I actually became aware of this state a long time ago, but I subconsciously ignored it. Now, I want to address ang resolve it. I know that if I leave it unchecked, it’ll end up like when I tried to self-study high shool math-learning very little in the end. I still believe in that saying: when you know exactly where the problem lies, you’ve already solved half of it. The rest is simply about continuously improving and iterating on the foundation you’ve built. This also means that the beginning doesn’t have to be spectaculat---What matters most is taking action.
 
@@ -361,7 +361,7 @@ It’s like the saying:”You can lead horse to water, but you can’t make it d
 
 
 
-###### September 9/22
+###### September 22
 
 ​	“Patience is bitter, but its fruit is sweet.” - Aristotle
 
@@ -375,7 +375,7 @@ were wrong, and those worries have simply faded away. I truly feel a deep sense 
 
 
 
-###### Septrmber 9/23
+###### Septrmber 23
 
 ​	It’s okay to start slow; as you keep going, you’ll gradually pick up speed. I’ve truly realized the benefits of taking notes. Not only does it help organize my thoughts, but when I suddenly recall something from the past, the memories flood back like a torrent, saving me a lot of time and effort. Be the way, I’ve really come to relize that separating topics is very important. It can greatly reduce the burden on my mind. I truly want to express my gratitude for Adler’s thoughts. It seems that  
 
@@ -387,8 +387,20 @@ when it comes to cultivating my relationship with my girlfriend, I should listen
 
 
 
-###### September 9/24
+###### September 24
 
 ​	Practicing it makes it easeier.
 
 ​	The improvement brought by directly incorporating English into my learning is truly significant. Nowadays, there’s really no need to repeatedly shout with a poor accent in an attempt to learn English well; that really is just wishful thinking. Integrating oneself into a larger community, rather than limiting oneself to being a specialist or focusing on age, doesn’t allow us to face a broader world. We need to relize that we are simply human-it’s as simple as that-whthout being defined by anything. We don’t need others’ evaluations; that only leads us to live according to their expectations. We are not in competition with eacho other; we are in a collaborative relationship. Everyone exists on the same plane-there is no competition, and all individuals are equal.
+
+
+
+
+
+****
+
+
+
+###### September 30
+
+​	Do something first before doing anything else.
