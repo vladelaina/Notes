@@ -1517,7 +1517,13 @@ echo ".cfg" >> .gitignore
 
   Folder that need to be ignored
 
-> Ensure that the sontent and structure between the **original repository** and the **cloned instance** remain ==independent==
+> Ensure that the content and structure between the **original repository** and the **cloned instance** remain ==independent==
+
+
+
+
+
+
 
 
 
