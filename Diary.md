@@ -404,3 +404,5 @@ when it comes to cultivating my relationship with my girlfriend, I should listen
 ###### September 30
 
 ​	Do something first before doing anything else.
+
+​	The discovery is that if my day is not planned out, it becomes diffcult to identify the problems in between. I had long relized this issue but struggled to describe it properly. After finishing my English studies, I didn’t strictly follow the Pomodoro technique’s break times. As a result, I often ended up working on a task for an extended period without breaks, and I noticed that my enery gradually declined over time, leading to inefficiency. The reason is probably the lack of proper self-monitoring. A calendar is a great tool for self-supervision. Recently, I discoved that Notion’s calendar now supports Chinese, which makes it an even better tool. Having a well-structured schedule schedule acts as a constraint, and by tracking what I’ve done, everything becomes much simpler.
