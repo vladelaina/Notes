@@ -3002,7 +3002,7 @@ rm -rf ~/.config/nvim/.git
 
 
 
-###### Srart up
+###### Start up
 
 >   `nvim l`  ||  `<span> l`  ||  `:Lazy`
 

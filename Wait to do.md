@@ -1,6 +1,6 @@
 - [x] English
   
-- [ ] TED
+- [x] TED
   
 - [ ] Yoga
   

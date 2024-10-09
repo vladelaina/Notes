@@ -1417,9 +1417,9 @@ git merge --abort
 
 
 
-# Dotfiles:Best way to store in a bare git repository
+# [Store Dotfiles in a bare repository](https://www.atlassian.com/git/tutorials/dotfiles)
 
-> Is like an archive; it doesn’t store actual content but only ==records version information==
+> Is like an ==archive==; it doesn’t store actual content but only ==records version information==
 
 
 
@@ -1455,17 +1455,17 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 - `/usr/bin/git` 
 
-  > This sprcifies the path to the Git executable
+  > Spcify the  **Git executable** path
 
 - `--git-dir=$HOME/.cfg`
 
-   > Use this directory as the metadata location 
+  > Specify **metadata location**(The ‘heart🩷 of the repository<img src="./images/harddisk.png" alt="harddisk" style="zoom: 20%;" />’) 
 
   - `dir`	$\Rarr$	`directory`
 
 - `--work tree=$HOME`
 
-  > Specify working directory
+  > Specify **working directory**<img src="./images/mac-pro.png" align="left" alt="mac-pro" style="zoom: 20%;" />
 
 
 
@@ -1493,11 +1493,13 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 
 
 
-### Prerequisite work
+### already store in a Git repository
+
+#### Prerequisite work
 
 
 
-#### alias
+##### alias
 
 ```bash
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -1507,7 +1509,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
 
-#### ignore `.cfg`
+##### ignore `.cfg`
 
 ```bash
 echo ".cfg" >> .gitignore
@@ -1521,13 +1523,47 @@ echo ".cfg" >> .gitignore
 
 
 
-### Clone
+#### Clone
 
 ```bash
 git clone --bare <git-repo-url> $HOME/.cfg
 ```
 
 > Clone to `.cfg`(bare repository)
+>
+> 
+>
+> Only the ==directory  structure==  is cloned, without the actual files.
+
+
+
+
+
+### Checkout
+
+> ==bare repository==(**content**)	$\Rarr$  ==$HOME==
+
+
+
+> ```bash
+> config checkout
+> ```
+>
+> Actual execution⬇
+>
+> ```bash
+> git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
+> ```
+>
+> - ==Extracting== from the **<u>bare repository</u>** and ==copying== to  `$HOME` directory
+
+
+
+`clone`
+
+
+
+
 
 
 
