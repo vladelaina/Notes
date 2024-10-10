@@ -1003,6 +1003,7 @@ ssh-keygen
 ```
 
 - `keygen`	-	key **generator**(生成密钥的工具)
+- Location:  `/root/.ssh`
 
 
 
@@ -1419,7 +1420,7 @@ git merge --abort
 
 # [Store Dotfiles in a bare repository](https://www.atlassian.com/git/tutorials/dotfiles)
 
-> Is like an ==archive==; it doesn’t store actual content but only ==records version information==
+> Bare repository: Acts as an ==archive== that doesn’t store actual content but only records ==version information==
 
 
 
@@ -1570,10 +1571,6 @@ git clone --bare <git-repo-url> $HOME/.cfg
 > ```
 >
 > - ==Extracting== from the **<u>bare repository</u>** and ==copying== to  `$HOME` directory
-
-
-
-`clone`
 
 
 
