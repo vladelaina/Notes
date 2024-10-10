@@ -1614,6 +1614,4 @@ git clone --bare <git-repo-url> $HOME/.cfg
 
 
 
-
-
-lalal 
+头回发现这么简单
