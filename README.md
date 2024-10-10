@@ -1,1 +1,0 @@
-![exhibit](./images/exhibit.png)
