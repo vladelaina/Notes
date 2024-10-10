@@ -1,1 +1,1 @@
-# These are some study notes
+![exhibit](./images/exhibit.png)
