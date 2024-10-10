@@ -1445,13 +1445,23 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 >
 > - e.g.
 >
->   `config status`
+>   - 
 >
->   `config add .vimrc`
+>     `config remote add origin <git-repo-url>`
 >
->   `config commit -m "Add vimrc"`
+>     `config push -u origin main`
 >
->   `config push`
+>   
+>   
+>   - 
+>   
+>     `config add .vimrc`				$\Rarr$	 	**Just add it directly**
+>   
+>     `config commit -m "Add vimrc"`
+>   
+>     `config push`
+>   
+>     `config status`
 
 - `/usr/bin/git` 
 
@@ -1466,6 +1476,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 - `--work tree=$HOME`
 
   > Specify **working directory**<img src="./images/mac-pro.png" align="left" alt="mac-pro" style="zoom: 20%;" />
+  >
+  > 
+  >
+  > - Dotfiles basically here
 
 
 
