@@ -2883,11 +2883,11 @@ Ex 模式下通过输入 `:`  **开始**的命令来执行各种 **编辑** 和 
 
 # 💤[Lazy.vim](https://www.lazyvim.org/)
 
-> 管理插件&更新
+> Manage plugins & updates
 >
 > 
 >
-> `Lazy.nivm`是它的一个插件
+> `Lazy.nivm` is a plugin for nvim
 
 
 
@@ -2895,7 +2895,7 @@ Ex 模式下通过输入 `:`  **开始**的命令来执行各种 **编辑** 和 
 
 
 
-### 清除||备份
+### Clean || Backup
 
 ```bash
 rm -rf ~/.config/nivm			#自定义配置&插件配置
@@ -2906,7 +2906,7 @@ rm -rf ~/.cache/nvim			#临时存储文件&加快启动速度
 
 
 
-### 安装推荐的==依赖项==
+### Dependencies
 
 
 
@@ -2938,7 +2938,7 @@ lazygit --version
 
 ##### Ripgrep
 
-> 超快速**文本**搜索工具，且默认遵守`.gitignore`
+> Super fast ==text search== tool the respects `.gitignore` by default
 
 
 
@@ -2959,7 +2959,7 @@ rg --version
 
 ##### fd
 
-> **文件**查找工具，有比find更易用的语法
+> ==File search== tool with a more user-friendly syntax than `find`
 
 
 
@@ -3004,10 +3004,20 @@ rm -rf ~/.config/nvim/.git
 
 ###### Start up
 
->   `nvim l`  ||  `<span> l`  ||  `:Lazy`
+>   `nvim l`  ||  `<Space> l`  ||  `:Lazy`
 
 <img src="./images/Clip_2024-09-23_23-19-56.png" alt="Clip_2024-09-23_23-19-56" style="zoom:80%;" />
 
-- `Sync(S)` - Synchronization同步
+- `Sync(S)` - Synchronization
 
-  相当于同时运行**安装** 、**清理**、**更新**
+  Equivalent to running **install**, **cleanup**, and **update** simultaneously
+
+
+
+****
+
+
+
+##  Modal Editing
+
+> Keybord-centric
