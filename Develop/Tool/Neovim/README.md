@@ -3004,7 +3004,19 @@ rm -rf ~/.config/nvim/.git
 
 ###### Start up
 
->   `nvim l`  ||  `<Space> l`  ||  `:Lazy`
+>   -  `<Space> l`
+>
+>   
+>
+>   - `nvim l` 
+>
+>     <img src="./images/Clip_2024-10-11_21-28-54.png" align="left" alt="Clip_2024-10-11_21-28-54" style="zoom: 60%;" />
+>
+>   
+>
+>   -  `:Lazy`
+>
+>     ![Clip_2024-10-11_21-34-18](./images/Clip_2024-10-11_21-34-18.png)
 
 <img src="./images/Clip_2024-09-23_23-19-56.png" alt="Clip_2024-09-23_23-19-56" style="zoom:80%;" />
 
@@ -3020,4 +3032,20 @@ rm -rf ~/.config/nvim/.git
 
 ##  Modal Editing
 
-> Keybord-centric
+> Each ==mode== allows for ==specific operations==
+
+
+
+### Introduction
+
+
+
+
+
+Find Files
+
+<img src="./images/Clip_2024-10-11_22-12-17.png" align="left" alt="Clip_2024-10-11_22-12-17" style="zoom:25%;" />
+
+- Double click on the space
+- <space> ff
+
