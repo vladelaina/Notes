@@ -1508,9 +1508,7 @@ echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $H
 
 
 
-### already store in a Git repository
-
-#### Prerequisite work
+### Prepare
 
 
 
@@ -1538,7 +1536,9 @@ echo ".cfg" >> .gitignore
 
 
 
-#### Clone
+
+
+### Pull
 
 ```bash
 git clone --bare <git-repo-url> $HOME/.cfg
@@ -1576,6 +1576,53 @@ git clone --bare <git-repo-url> $HOME/.cfg
 
 
 
+#### Backup 
+
+```bash
+mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
+```
+
+> Backup confilicting Dotfiles to `.config-backup`
+
+- Execute `config checkout` agin
+
+
+
+### Suppress
+
+```bash
+config config --local status.showUntrackedFiles no
+```
+
+> Not show untracked files when run `git status`
+
+
+
+
+
+### ==Bootstrap==
+
+```bash
+git clone --bare https://github.com/vladelaina/Dotfiles.git $HOME/.cfg
+function config {
+   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+}
+mkdir -p .config-backup
+config checkout
+if [ $? = 0 ]; then
+  echo "Checked out config.";
+  else
+    echo "Backing up pre-existing dot files.";
+    config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | xargs -I{} mv {} .config-backup/{}
+fi;
+config checkout
+config config status.showUntrackedFiles no
+```
+
+> One step in place
+
 
 
 ****
@@ -1611,7 +1658,6 @@ git clone --bare <git-repo-url> $HOME/.cfg
 
 
 *****
-
 
 
 
