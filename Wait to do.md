@@ -1,2 +1,3 @@
-- [ ] 音标学习
+- [ ] Cut fingernails
+- [ ] sex
 
