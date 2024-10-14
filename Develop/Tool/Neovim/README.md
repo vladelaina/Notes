@@ -3048,15 +3048,19 @@ rm -rf ~/.config/nvim/.git
 <img src="./images/Clip_2024-10-14_11-14-47.png" align="left" alt="Clip_2024-10-14_11-14-47" style="zoom:40%;" />
 
 - Paste: `Ctrl-r` followed by the `+`
-- In <img src="./images/NORMAL.png" alt="NORMAL" style="zoom:28%;" />mode, `Ctrl-r` is used to “**redo**”(i.e. undo an undo)
+- In <img src="./images/NORMAL.png" alt="NORMAL" style="zoom: 25%;" />mode, `Ctrl-r` is used to “**redo**”(i.e. undo an undo)
+
+
+
+> p	put	paste
+>
+> i	Insert Before
+>
+> a	append
 
 
 
 
-
-
-
-p	put	paste
 
 
 
