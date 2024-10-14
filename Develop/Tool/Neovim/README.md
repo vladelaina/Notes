@@ -1593,7 +1593,7 @@ h		l
 >
 > 替换	c	change	删除 后 直接进入**插入**模式
 >
-> 粘贴	p	paste
+> 粘贴	p	put		paste
 
 
 
@@ -2398,7 +2398,7 @@ Ex 模式下通过输入 `:`  **开始**的命令来执行各种 **编辑** 和 
 
 ***
 
-***
+
 
 
 
@@ -3040,13 +3040,21 @@ rm -rf ~/.config/nvim/.git
 
 
 
+**clipboard**(“Registers” mini-mode) 	`Ctrl+r`(in INSERT)
+
+<img src="./images/Clip_2024-10-14_11-14-47.png" align="left" alt="Clip_2024-10-14_11-14-47" style="zoom:40%;" />
+
+- Paste: `Ctrl+r` followed by the `+`
+
+
+
+p	put	paste
+
 
 
 Find Files
 
-<img src="./images/Clip_2024-10-11_22-12-17.png" align="left" alt="Clip_2024-10-11_22-12-17" style="zoom:25%;" />
+<img src="./images/Clip_2024-10-11_22-12-17.png" align="left" alt="Clip_2024-10-11_22-12-17" style="zoom:35%;" />
 
 - Double click on the space
 - <space> ff
-
-  

@@ -1,3 +1,5 @@
-- [ ] Cut fingernails
-- [ ] sex
+
+
+- [ ] Return to cs50
+- [ ] c
 
