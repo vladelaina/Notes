@@ -3082,17 +3082,32 @@ Find Files
 
 
 
-#### Command mode 
+#### Command mode
 
-> :
+> Work in Insert mode also work in Command mode(include `Ctrl-r` to paste)
 
-```bash
+
+
 q!
-:wq = 
-```
+
+
+
+:wq = :x
 
 
 
 :w file.name
 
 > will save the file with the given name
+
+
+
+`TAB`	-	competion
+
+![Clip_2024-10-15_11-31-34](./images/Clip_2024-10-15_11-31-34.png)
+
+- Use ⬅ and ➡ to move the cursor Up and Down
+
+
+
+
