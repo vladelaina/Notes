@@ -3106,7 +3106,7 @@ q!
 
 ![Clip_2024-10-15_11-31-34](./images/Clip_2024-10-15_11-31-34.png)
 
-- Use ⬅ and ➡ to move the cursor Up and Down
+- Use ⬅/➡ to move the cursor Up/Down
 
 
 
