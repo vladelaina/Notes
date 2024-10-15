@@ -3063,7 +3063,7 @@ o
 
 
 
-
+Visual Mode
 
 
 
@@ -3073,3 +3073,26 @@ Find Files
 
 - Double click on the space
 - <space> ff
+
+
+
+
+
+
+
+
+
+#### Command mode 
+
+> :
+
+```bash
+q!
+:wq = 
+```
+
+
+
+:w file.name
+
+> will save the file with the given name
