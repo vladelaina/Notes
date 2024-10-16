@@ -3102,12 +3102,37 @@ q!
 
 
 
+`:e` or `:edit`
+
+> Open on filesystem
+>
+> 
+>
+> `:e foo/baz/fizz.txt`		-	Open the `fizz.txt` file
+>
+> - Can use ==Tab== completion
+>
+>   > :e ==/==<Tab>f<Tab>b<Tab>f<Tab>
+
+```bash
+/
+└── foo
+    ├── bar
+    └── baz
+    │   └── fizz.txt
+```
+
+
+
+
+
 `TAB`	-	competion
 
 ![Clip_2024-10-15_11-31-34](./images/Clip_2024-10-15_11-31-34.png)
 
 - Use ⬅/➡ to move the cursor Up/Down
 
+- **Suggest** using ==Tab== and ==Shift-Tab== to select different entries from the menu
 
 
 
