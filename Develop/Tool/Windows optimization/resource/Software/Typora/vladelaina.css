@@ -1,0 +1,82 @@
+/* 引入主题样式 */
+@import url(./vladelaina/vladelaina.css);
+
+:root {
+  /* 页面背景色 */
+  --bg-color: #090C10;
+
+  /* 主要文本颜色 */
+  --text-color: #F1F3F6;
+
+  /* 深色背景 */
+  --dark-background-color: #090C10;
+
+  /* 更深的背景色 */
+  --dark-background-color-deep: #272B33;
+
+  /* 深色背景下的文本颜色 */
+  --dark-text-color: #F1F3F6;
+
+  /* 图片阴影颜色 */
+  --img-shadow-color: #090C10;
+
+  /* Markdown 中字符的颜色 */
+  --md-char-color: #F1F3F6;
+
+  /* 标题字符的颜色 */
+  --heading-char-color: #F1F3F6;
+
+  /* 代码块选中文本的背景色 */
+  --select-text-bg-color: #4A89DC;
+
+  /* 搜索结果高亮的背景色 */
+  --search-select-bg-color: #090C10;
+
+  /* 悬停项目的背景色 */
+  --item-hover-bg-color: #090C10;
+
+  /* 窗口边框颜色 */
+  --window-border: 1px solid #272B33;
+
+  /* 控件文字悬停时的颜色 */
+  --control-text-hover-color: #F1F3F6;
+
+  /* 编辑面板的背景色 */
+  --rawblock-edit-panel-bd: #090C10;
+
+  /* 标题的主色 */
+  --head-title-color: #F5DAE3;
+
+  /* 二级标题背景色 */
+  --head-title-h2-background: #6785b4;
+
+  /* 元素的主色 */
+  --element-color: #546f99;
+
+  /* 元素的深色 */
+  --element-color-deep: #374966;
+
+  /* 元素的浅色 */
+  --element-color-shallow: #7893bf;
+
+  /* 元素的非常浅色 */
+  --element-color-so-shallow: #b9c3d376;
+
+  /* 元素的极浅色 */
+  --element-color-soo-shallow: #25272E;
+
+  /* 行内代码的文字颜色 */
+  --element-color-linecode: #F1F3F6;
+
+  /* 行内代码的背景色 */
+  --element-color-linecode-background: #454A52;
+
+  /* 程序UI的主色 */
+  --appui-color: #546f99;
+
+  /* 程序UI图标的颜色 */
+  --appui-color-icon: #374966;
+
+  /* 程序UI文字的颜色 */
+  --appui-color-text: #F1F3F6;
+}

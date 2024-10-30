@@ -1,0 +1,1761 @@
+/*下拉菜单 和 最近文件面板 */
+
+.dropdown-menu {
+  background: #272B33; /* 设置下拉菜单背景色 */
+}
+
+#recent-file-panel {
+  color: var(--dark-text-color); /* 设置最近文件面板文本颜色 */
+}
+
+#recent-file-panel-action-btn {
+  background-color: var(--dark-background-color); /* 设置最近文件面板操作按钮背景色 */
+}
+
+#recent-file-panel-action-btn-container {
+  color: rgba(146, 146, 146, 0.56); /* 设置操作按钮容器文本颜色 */
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+  background-color: var(--dark-background-color--deep); /* 设置表格奇数行背景色 */
+}
+
+.megamenu-menu-panel .btn {
+  border: 1px solid #9292928f; /* 设置大菜单面板按钮边框 */
+}
+
+
+/* ======================================================== */
+
+
+/* 选中文本样式 */
+
+
+/* 只对 Firefox 浏览器有效 */
+
+::-moz-selection {
+    background: #4a89dc; /* 选中背景颜色 */
+    color: white; /* 选中文本颜色 */
+    text-shadow: none; /* 取消文本阴影 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 设置大多数现代浏览器 */
+
+::selection {
+    background: #4a89dc; /* 选中背景颜色（其他浏览器） */
+    color: white; /* 选中文本颜色 */
+    text-shadow: none; /* 取消文本阴影 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+*.in-text-selection,
+::selection {
+    background: #4a89dc;
+    color: white;
+    text-shadow: none;
+}
+
+
+/* 样式定义选中的文本在 CodeMirror 编辑器中的外观 */
+.CodeMirror-selectedtext {
+    /* 设置选中文本的背景颜色 */
+    background: #e37d00;
+    /* 设置选中文本的字体颜色，确保在背景上可读 */
+    color: #ffff !important;
+    /* 去除选中文本的文字阴影 */
+    text-shadow: none;
+}
+
+/* ======================================================== */
+
+
+/* 字体引入：鸿蒙字体 */
+
+@font-face {
+  font-family: "HarmonyOS_Sans_SC"; /* 字体名称：HarmonyOS_Sans_SC */
+  font-weight: normal; /* 字体粗细：正常 */
+  font-style: normal; /* 字体样式：正常 */
+  src: url("vladelaina/HarmonyOS_Sans_SC_Regular.woff"); /* 字体文件来源 */
+}
+
+@font-face {
+  font-family: "HarmonyOS_Sans_SC"; /* 字体名称：HarmonyOS_Sans_SC */
+  font-weight: bold; /* 字体粗细：加粗 */
+  font-style: normal; /* 字体样式：正常 */
+  src: url("vladelaina/HarmonyOS_Sans_SC_Bold.woff"); /* 字体文件来源 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* 设置整个网页的默认字体及其大小 */
+
+html {
+  font-size: 16px;
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+
+
+
+/* ======================================================== */
+
+
+
+/* 打印页面设置 */
+
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact; /* 确保打印颜色一致，与屏幕颜色匹配 */
+    print-color-adjust: exact; /* 确保打印颜色一致，与屏幕颜色匹配 */
+  }
+  body {
+    width: 21cm; /* 设置页面宽度为A4纸张标准宽度 */
+    height: 29.7cm; /* 设置页面高度为A4纸张标准高度 */
+    margin: 1cm; /* 设置页面边距为1厘米 */
+  }
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 设置了段落的行高 */
+
+  p {
+    line-height: 1.5rem; /* 设置段落的行高为1.5倍字体大小，提升可读性 */
+  }
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 这部分样式应用于内容区域 */
+
+content {
+  background: var(--dark-background-color); /* 设置内容区域的背景颜色 */
+  color: var(--dark-text-color); /* 设置内容区域的文本颜色 */
+}
+
+
+/* ======================================================== */
+
+/* 软件内部Markdown编辑器的样式设置 */
+
+#write {
+  max-width: 950px; /* 设置最大宽度为950像素，确保容器不会超出此宽度 */
+  margin: 0 auto; /* 设置上下外边距为0，左右外边距为自动，使容器水平居中 */
+  padding: 15px; /* 设置内边距为15像素，为内容添加内边距 */
+  line-height: 2.25; /* 设置行高为2.25倍字体大小，增加行间距，提高可读性 */
+  color: var(--dark-text-color); /* 设置文本颜色为自定义的深色文本颜色变量 */
+  letter-spacing: 1.1px; /* 设置字母间距为1.1像素，增加字符之间的间距 */
+  word-break: break-word; /* 强制长单词换行，以防超出容器边界 */
+  word-wrap: break-word; /* 强制长单词换行，以防超出容器边界（与word-break相同） */
+  text-align: left; /* 设置文本对齐方式为左对齐 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 段落 */
+
+#write p {
+  color: var(--dark-text-color); /* 设置段落文本颜色为自定义的深色文本颜色变量 */
+  margin: 10px 10px; /* 设置上下和左右外边距为10像素，确保段落之间有适当的间距 */
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 
+    "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* 设置字体系列，优先使用Optima字体，如果不可用则使用后备字体 */
+  font-size: 1rem; /* 设置字体大小为1rem，相当于根元素字体大小 */
+  word-spacing: 2px; /* 设置单词间距为2像素，增大词与词之间的间距 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 在h3、h4、h5和h6标题元素末尾添加一个空的伪元素，用于创建视觉效果 */
+
+#write h3:after,
+h4:after,
+h5:after,
+h6:after {
+  content: ""; /* 创建一个空的伪元素，用于在标题后添加额外的装饰或效果 */
+  display: inline-block; /* 设置伪元素为内联块，以允许设置宽度和高度 */
+  margin-left: 0.2em; /* 在伪元素的左侧添加0.2em的外边距，为标题和伪元素之间提供间距 */
+  height: 2em; /* 设置伪元素的高度为2em，适配字体大小 */
+  width: 1.2em; /* 设置伪元素的宽度为1.2em，适配字体大小 */
+  vertical-align: top; /* 将伪元素的垂直对齐方式设置为顶部对齐，以确保与标题对齐 */
+}
+
+
+/* ======================================================== */
+
+/*                       标题                      */
+
+
+
+/* 一级标题 */
+
+/* 设置伪元素的样式 */
+
+#write h1:after {
+  font-size: 1.8rem; /* 设置伪元素的字体大小为1.8rem */
+  text-align: center; /* 将伪元素内容居中对齐 */
+  font-weight: bold; /* 设置伪元素的字体粗细为粗体 */
+  color: var(--dark-text-color); /* 设置伪元素的文本颜色为自定义的深色文本颜色变量 */
+  border-bottom: none; /* 移除伪元素的底部边框 */
+}
+
+
+/* 文本居中 */
+
+#write h1 {
+  text-align: center;
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 二级标题 */
+
+
+/* 为标题元素设置样式 */
+
+#write h2 {
+  color: #ffffff;
+  font-size: 1.5rem; /* 设置字体大小为1.5rem */
+  line-height: 1.6; /* 设置行高为1.6，以提高可读性 */
+  width: fit-content; /* 设置宽度自适应内容 */
+  font-weight: bold; /* 设置字体粗细为粗体 */
+  margin: 20px 0; /* 设置上下外边距为20像素，左右外边距为0 */
+  padding: 1px 12.5px; /* 设置内边距，上下1像素，左右12.5像素 */
+  border-radius: 4px; /* 设置边框圆角为4像素 */
+  background: #589ED7; /* 设置背景颜色为自定义的H2标题背景颜色变量 */
+  background-size: 200% 100%; /* 设置背景图像大小为200%宽度和100%高度 */
+  background-position: 0% 0%; /* 设置背景图像位置为左上角 */
+  transition: all ease-in-out 0.1s; /* 设置背景位置的过渡效果，持续时间为0.1秒 */
+}
+
+
+
+/*如果是链接怎加下划线 */
+
+#write h2.md-heading a {
+  text-decoration: underline; /* 为链接添加下划线 */
+  border-bottom: 0; /* 移除链接的底部边框 */
+  text-decoration-thickness: 1.2px; /* 设置下划线的厚度为1.2像素 */
+  text-underline-offset: 2px; /* 设置下划线的偏移量为2像素 */
+}
+
+
+/* 设置鼠标悬停时的样式 */
+
+#write h2:hover {
+  background-position: -100% -100%; /* 在鼠标悬停时调整背景位置 */
+  transition: all ease-in-out 0.1s; /* 设置背景位置的过渡效果，持续时间为0.1秒 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 三级标题 */
+
+#write h3 {
+  width: fit-content; /* 设置宽度自适应内容 */
+  margin: 20px 0; /* 设置上下外边距为20像素，左右外边距为0 */
+  font-size: 1.3rem; /* 设置字体大小为1.3rem */
+  text-align: left; /* 将文本左对齐 */
+  padding-left: 10px; /* 设置左内边距为10像素 */
+  border-left: 5px solid #93C3FF; /* 为标题添加5像素宽的左边框，颜色为自定义的标题颜色变量 */
+}
+
+
+
+/* 三级标题内容 */
+
+
+/* 为中间的span 元素添加一个隐藏的2像素底部边框 */
+
+#write h3 span {
+  border-bottom: 2px hidden var(--head-title-color); 
+}
+
+
+
+/* 设置鼠标悬停时的效果 */
+
+#write h3 span:hover {
+  border-bottom: 2px solid var(--head-title-color); /* 在鼠标悬停时显示2像素的底部边框，颜色为自定义的标题颜色变量 */
+  transition: all linear 0.1s; /* 设置底部边框的过渡效果，持续时间为0.1秒 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 四级标题内容 */
+
+#write h4 {
+  margin: 20px 0;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+#write h4::before {
+  content: ""; /* 创建一个空的伪元素 */
+  margin-right: 10px; /* 在伪元素的右侧添加7像素的外边距 */
+  display: inline-block;
+  width: 66px; /* 设置伪元素的宽度 */
+  height: 67px; /* 设置伪元素的高度 */
+  background-image: url('./icon/Cat1.png'); /* 使用背景图片来加载SVG */
+  background-size: contain; /* 确保图片适应伪元素的大小 */
+  background-repeat: no-repeat;
+  vertical-align: middle; /* 垂直对齐到文本中间 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 五级标题内容 */
+
+#write h5 {
+  margin: 20px 0;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+#write h5::before {
+  content: ""; /* 创建一个空的伪元素 */
+  margin-right: 3px; /* 在伪元素的右侧添加7像素的外边距 */
+  display: inline-block;
+  width: 65px; /* 设置伪元素的宽度 */
+  height: 65px; /* 设置伪元素的高度 */
+  background-image: url('./icon/Cat2.png'); /* 使用背景图片来加载SVG */
+  background-size: contain; /* 确保图片适应伪元素的大小 */
+  background-repeat: no-repeat;
+  vertical-align: middle; /* 垂直对齐到文本中间 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 六级标题内容 */
+
+
+#write h6 {
+  margin: 20px 0;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+#write h6::before {
+  content: ""; /* 创建一个空的伪元素 */
+  margin-right: -4px; /* 在伪元素的右侧添加7像素的外边距 */
+  display: inline-block;
+  width: 76px; /* 设置伪元素的宽度 */
+  height: 73px; /* 设置伪元素的高度 */
+  background-image: url('./icon/Cat3.png'); /* 使用背景图片来加载SVG */
+  background-size: contain; /* 确保图片适应伪元素的大小 */
+  background-repeat: no-repeat;
+  vertical-align: middle; /* 垂直对齐到文本中间 */
+}
+
+
+
+/*
+#write h6 {
+  margin: 23px 0; /* 设置上下外边距为23像素，左右外边距为0 */
+  font-size: 1.1rem; /* 设置字体大小为1.1rem */
+  text-align: left; /* 将文本左对齐 */
+}
+
+
+
+/* 在标题前添加一个破折号 */
+
+#write h6::before {
+  content: "-"; /* 在标题前插入一个破折号 */
+  color: var(--head-title-color); /* 设置破折号颜色为自定义的标题颜色变量 */
+  margin-right: 7px; /* 在破折号的右侧添加7像素的外边距，为标题和破折号之间留出空间 */
+  display: inline-block; /* 设置破折号为内联块，以允许设置宽度和高度 */
+  vertical-align: inherit; /* 继承父元素的垂直对齐方式 */
+}
+
+*/
+
+/* ======================================================== */
+
+
+
+/* 列表 */
+
+
+/* 定义列表标记的样式*/
+
+::marker {
+  color: #F5DAE3; /* 设置标记颜色 */
+  font-weight: bold; /* 设置标记字体加粗 */
+}
+
+
+/* 定义特定类的列表项添加垂直间距 */
+
+li.md-list-item {
+  margin: 0.4rem 0; /* 上下间距 0.4rem */
+}
+
+
+
+/* 共同样式  */
+
+#write ul,
+#write ol {
+  margin-top: 0px; /* 上边距 0px */
+  margin-left: 16px; /* 左边距 16px */
+  margin-bottom: 8px; /* 下边距 8px */
+  padding-left: 13px; /* 内边距左侧 13px */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 无序 */
+
+
+#write ul {
+  list-style-type: disc; /* 列表标记类型为圆点 */
+}
+
+
+
+/* #write中的嵌套无序列表样式 */
+
+#write ul ul {
+  list-style-type: circle; /* 嵌套列表标记类型为圆圈 */
+}
+
+
+
+/* #write中的多级嵌套无序列表样式 */
+
+#write ul ul ul {
+  list-style-type: square; /* 多级嵌套列表标记类型为方块 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* 有序 */
+
+
+#write ol {
+  list-style-type: decimal; /* 有序列表标记类型为数字 */
+}
+
+
+/* #write中的嵌套有序列表样式 */
+
+#write ol ol {
+  list-style-type: lower-alpha; /* 嵌套有序列表标记类型为小写字母 */
+}
+
+
+/* #write中的多级嵌套有序列表样式 */
+
+#write ol ol ol {
+  list-style-type: lower-roman; /* 多级嵌套有序列表标记类型为小写罗马数字 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 为#write中的列表项中的section设置间距、行高、对齐方式、颜色和字体粗细 */
+#write li section {
+  margin-top: 5px; /* 上边距 5px */
+  margin-bottom: 5px; /* 下边距 5px */
+  line-height: 1.7rem; /* 行高 1.7rem */
+  text-align: justify; /* 文本对齐方式为两端对齐 */
+  color: var(--dark-text-color); /* 文字颜色 */
+  font-weight: 500; /* 字体粗细 */
+}
+
+
+/* 添加左侧边框 */
+
+#write li:before {
+  content: ""; /* 生成一个空内容 */
+  height: calc(100% - 50px); /* 高度为父元素高度减去 50px */
+  top: 35px; /* 上边距 35px */
+  position: absolute; /* 绝对定位 */
+  border-left: 0.5px solid #d6d6d6; /* 左边框为 0.5px 实线，颜色 #d6d6d6 */
+  left: -17.5px; /* 左边距 -16.5px */
+}
+
+
+
+
+/* ======================================================== */
+
+
+/* 任务列 */
+
+
+/* 移除默认内容 */
+
+#write .md-task-list-item:before {
+  content: none; /* 移除任务列表项前的默认内容 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置复选框样式 */
+
+#write .md-task-list-item > input {
+  margin: 0px; /* 移除复选框的外边距 */
+  padding: 0px; /* 移除复选框的内边距 */
+  width: 0px; /* 将复选框的宽度设置为0 */
+  height: 0px; /* 将复选框的高度设置为0 */
+  line-height: 1.2rem; /* 设置复选框的行高 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 自定义复选框外观 */
+
+#write .md-task-list-item > input:before {
+  display: inline-block; /* 显示为行内块元素 */
+  content: ""; /* 设置自定义内容为空 */
+  width: 1.1rem; /* 复选框宽度 */
+  height: 1.1rem; /* 复选框高度 */
+  text-align: center; /* 文字居中对齐 */
+  vertical-align: middle; /* 垂直居中 */
+  background-color: #fff; /* 复选框背景色为白色 */
+  border: 1px solid var(--element-color); /* 复选框边框颜色 */
+  border-radius: 30%; /* 复选框圆角半径 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 选中复选框时的样式 */
+
+#write .md-task-list-item > input[checked]:before {
+  content: "✔"; /* 选中时显示的对勾符号 */
+  color: var(--element-color-deep); /* 对勾符号的颜色 */
+  -webkit-text-stroke: 1px var(--element-color-deep); /* 对勾符号的描边 */
+  width: 1.1rem; /* 选中复选框的宽度 */
+  height: 1.1rem; /* 选中复选框的高度 */
+  background-color: #ffffff; /* 选中复选框的背景色 */
+  border: 2px solid var(--element-color); /* 选中复选框的边框颜色和宽度 */
+  border-radius: 30%; /* 选中复选框的圆角半径 */
+  font-size: 0.75rem; /* 对勾符号的字体大小 */
+  line-height: 0.8rem; /* 对勾符号的行高 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 复选框位置调整 */
+
+#write input[type="checkbox"] {
+  position: absolute; /* 绝对定位复选框 */
+  top: 7px; /* 从上边缘向下偏移7px */
+  left: -3px; /* 从左边缘向左偏移3px */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 任务项文本的样式和位置 */
+
+#write .md-task-list-item p {
+  margin: 0px 1.8rem; /* 设置任务项文本的左右外边距 */
+}
+
+
+
+/* ======================================================== */
+
+
+
+/* 引用 */
+
+
+/* 设置引用块的样式 */
+
+#write blockquote {
+  margin-left: 12px; /* 设置引用块的左边距 */
+  padding: 12px; /* 设置引用块的内边距 */
+  border: 1px solid var(--element-color); /* 设置引用块的边框颜色 */
+  border-left-color: var(--element-color); /* 设置左边框的颜色 */
+  border-left-width: 3px; /* 设置左边框的宽度 */
+  border-radius: 6px; /* 设置引用块的圆角半径 */
+  line-height: 26px; /* 设置引用块内文本的行高 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置引用块内段落的文本颜色 */
+
+#write blockquote p {
+  color: var(--dark-text-color); /* 设置引用块内段落的文本颜色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 超链接 */
+
+
+/* 未访问超链接的文本颜色 */
+
+#write a {
+  color: #58A6FF; /* 使用深色文本颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 已访问超链接的文本颜色 */
+
+#write a:visited {    
+  color: var(--element-color-deep); /* 使用深色元素颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置除目录项外的所有超链接样式 */
+
+#write a:not(.md-toc-inner) {
+  font-weight: bolder; /* 设置字体加粗 */
+  text-decoration: none; /* 移除下划线 */
+  transform: all linear 0.1s; /* 设置所有变换效果为线性过渡0.1秒 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置鼠标悬停时除目录项外的超链接样式 */
+
+#write a:hover:not(.md-toc-inner) {
+  font-weight: bold; /* 设置字体加粗 */
+  color: var(--element-color-deep); /* 使用深色元素颜色 */
+  border-bottom: 1px solid var(--element-color-deep); /* 添加下边框 */
+  transform: all linear 0.1s; /* 设置所有变换效果为线性过渡0.1秒 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置目录项超链接的悬停样式 */
+
+#write a.md-toc-inner:hover {
+  color: var(--element-color-deep); /* 使用深色元素颜色 */
+  font-weight: 700; /* 设置字体为700加粗 */
+  text-decoration: none; /* 移除下划线 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 移除上标超链接前的默认内容 */
+
+#write sup a::before {
+  content: none; /* 移除上标超链接前的默认内容 */
+}
+
+/* ======================================================== */
+
+
+/* 加粗 */
+
+#write strong {
+  color: var(--dark-text-color); /* 设置加粗文本的颜色为深色文本颜色 */
+  font-weight: bold; /* 设置加粗文本的字体加粗 */
+  font-size: 1.1em;
+}
+
+
+/* ======================================================== */
+
+
+/* 斜体 */
+
+#write em {
+  font-style: italic; /* 设置斜体文本的字体样式为斜体 */
+  color: var(--dark-text-color); /* 设置斜体文本的颜色为深色文本颜色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 高亮 */
+
+#write mark {
+  font-weight: bolder; /* 设置高亮文本的字体加粗 */
+  color: #FFAAB0; /* 设置高亮文本的颜色为深色文本颜色 */
+  background: #090C10; /* 设置高亮文本的背景色为浅色元素颜色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 删除线 */
+
+
+/* 设置删除线文本的样式 */
+#write del {
+  text-decoration-color: var(--element-color-deep); /* 设置删除线的颜色为深色元素颜色 */
+}
+
+
+
+/* ======================================================== */
+
+
+/* 分隔线*/
+
+#write hr {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9Ijc1IiB2aWV3Qm94PSIwIDAgNjAwIDc1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3R5bGU9InN0cm9rZS1saW5lY2FwOiByb3VuZDsgc3Ryb2tlLWxpbmVqb2luOiByb3VuZDsgc3Ryb2tlLW1pdGVybGltaXQ6IDEuNTsiPgogICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSw5Mi4zNTc5LDQuMTE3NzIpIiBkPSJNMTA1LjgwOSw0OC4zOTdDMTA1LjgwOSw0NC41MDYgMTAyLjQ3Myw0My45MzEgMTAyLjQ3MywzMy41MDMiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6IHJnYigxMTAsIDEwOCwgMTI2KTsgc3Ryb2tlLXdpZHRoOiAxLjVweDsiLz4KICAgIDxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsOTIuMzU3OSw0LjExNzcyKSIgZD0iTTEwOS4zOTcsMzguMzI0TDEwOS4zOTcsNDguMzIxIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiByZ2IoMTEwLCAxMDgsIDEyNik7IHN0cm9rZS13aWR0aDogMS41cHg7Ii8+CiAgICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDkyLjM1NzksNC4xMTc3MikiIGQ9Ik0xMTIuODgzLDQ4LjE1MkMxMTIuODgzLDQ0LjcxNyAxMTUuMDUzLDQwLjU1NCAxMTUuMDUzLDM1LjA4NEMxMTUuMDUzLDI5LjYxMyAxMTQuMzkzLDI0Ljc5NSAxMTQuMjE2LDIxLjgxIiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiByZ2IoMTEwLCAxMDgsIDEyNik7IHN0cm9rZS13aWR0aDogMS41cHg7Ii8+CiAgICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDkyLjM1NzksNC4xMTc3MikiIGQ9Ik0xMTIuOTUxLDIyLjI0MUMxMTIuOTUxLDIyLjI0MSAxMTYuMzM1LDIxLjk3NiAxMTcuNTA0LDE2LjY5NSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDExMCwgMTA4LCAxMjYpOyBzdHJva2Utd2lkdGg6IDEuNXB4OyIvPgogICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSw5Mi4zNTc5LDQuMTE3NzIpIiBkPSJNMTA3Ljc4OCwxMS44NDNDMTA3Ljc4OCwxMS44NDMgMTA2LjM2OSw3LjQzNCAxMDUuMTY5LDcuNDM0QzEwMy45NjksNy40MzQgMTAxLjg3LDEzLjE4NyAxMDEuODcsMjEuODYyQzEwMS44NywyNC4xMDMgOTAuMTgxLDI5Ljk4NSA5Mi42NTksNDMuNTcxQzkzLjA1Nyw0NS43NTEgOTQuMDUzLDQ5LjkwOCA5NC4wNTMsNDkuOTI0Qzk0LjA1Myw0OS45NCA5Ni41NzEsNTkuNDUzIDkxLjE4NCw1OS40NTNDOTAuMDYzLDU5LjQ1MyA4OS41MjYsNTguODMzIDg4LjQwNSw1OC44MzNDODcuMjg1LDU4LjgzMyA4Ni4zODEsNTkuNTk4IDg2LjM4MSw2MC41OTFDODYuMzgxLDYxLjU4NCA4Ny40OTEsNjQuMDI1IDkxLjQ0Niw2NC4wMjVDOTguNTkzLDY0LjAyNSA5OC44NjUsNTguMDM4IDk4Ljg2NSw1NC4xNThDOTguODY1LDUwLjI3OCA5OC44MjksNTEuNDc5IDk4LjgyOSw1MC44NDRDOTguODI5LDQ4LjcxNyAxMDAuNjAxLDQ4LjI4NCAxMDEuMjU5LDQ4LjA0MyIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDExMCwgMTA4LCAxMjYpOyBzdHJva2Utd2lkdGg6IDEuNXB4OyIvPgogICAgPGVsbGlwc2UgdHJhbnNmb3JtPSJtYXRyaXgoMS4wMDQ3NCwtMC40MDQ0ODMsMC4zNzA3NjYsMC45MjA5ODIsODUuNDEwOCw0OS44MjY3KSIgY3g9IjExMS44OTIiIGN5PSIxNS43NjYiIHJ4PSIxLjAzMiIgcnk9IjEuNDQ5IiBzdHlsZT0iZmlsbDogcmdiKDQ3LCA0NCwgNjIpOyIvPgogICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSw5Mi4zNTc5LDQuMTE3NzIpIiBkPSJNMTEwLjA3NCwxMC4zNDdDMTEzLjYxNywxMC4zNDcgMTE0LjQ0OCwxNC42MzUgMTE3LjE0LDE0LjYzNSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDExMCwgMTA4LCAxMjYpOyBzdHJva2Utd2lkdGg6IDEuNXB4OyIvPgogICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsMSw5Mi4zNTc5LDQuMTE3NzIpIiBkPSJNMTEyLjU2OCw5LjA3NEMxMTIuNTY4LDkuMDc0IDExMS41NTMsNi43NCAxMTAuNjc3LDYuNzRDMTA5LjgwMSw2Ljc0IDEwOC41MzcsOS4xNjkgMTA4LjUzNyw5LjE2OSIgc3R5bGU9ImZpbGw6IG5vbmU7IHN0cm9rZTogcmdiKDExMCwgMTA4LCAxMjYpOyBzdHJva2Utd2lkdGg6IDEuNXB4OyIvPgogICAgPHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMy45NjYxMywwLDAsNS44OTQ1MiwtMTc3LjAxMiwtMzM2LjgzNSkiIGQ9Ik05My43MTcsNjYuNDI4TDE5NS42NDcsNjYuNDI4IiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiByZ2IoMTEwLCAxMDgsIDEyNik7IHN0cm9rZS13aWR0aDogMC4zcHg7Ii8+CiAgICA8cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxLjc4OTA2LDAsMCwyLjc4MjA0LC0xNjYuNywtMTMwLjA3OCkiIGQ9Ik05My43MTcsNjYuNDI4TDE5NS42NDcsNjYuNDI4IiBzdHlsZT0iZmlsbDogbm9uZTsgc3Ryb2tlOiByZ2IoMTEwLCAxMDgsIDEyNik7IHN0cm9rZS13aWR0aDogMC42NHB4OyIvPgo8L3N2Zz4K');
+    border: none; /* 隐藏默认的分割线 */
+    background-size: contain; /* 背景图片大小自适应 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+   background-position:center;
+    height: 116px; /* 设置元素的高度，等于SVG的高度 */
+    margin: 0; /* 根据需要调整或移除默认的margin */
+}
+/*
+默认的渐变粉色
+
+#write hr {
+  width: 100%; /* 设置分隔线的宽度为100% */
+  margin: 0 auto; /* 设置分隔线的上下外边距为0，左右自动居中 */
+  border: 0; /* 移除分隔线的默认边框 */
+  height: 3px; /* 设置分隔线的高度为2px */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #F5DAE3, rgba(0, 0, 0, 0)); /* 设置分隔线的背景为渐变色 */
+}
+*/
+
+
+/* ======================================================== */
+
+
+/* 图片*/
+
+#write img {
+  border-radius: 6px; /* 设置图片的圆角半径为6px */
+  display: block; /* 将图片设置为块级元素，以便它在新行中显示 */
+  margin: 20px auto; /* 设置图片的上下外边距为20px，左右自动居中 */
+  object-fit: contain; /* 保持图片的宽高比，确保图片在容器中完全可见 */
+}
+
+
+/* ======================================================== */
+
+
+/* 图片描述文字 */
+
+#write figcaption {
+  display: block; /* 将描述文字设置为块级元素，使其在新行中显示 */
+  font-size: 13px; /* 设置描述文字的字体大小为13px */
+  color: #595959; /* 设置描述文字的颜色为灰色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 行内代码 */
+
+#write p code {
+  padding: 0px 3px 0px 7px; /* 设置代码的内边距，上右下左分别为0px 3px 0px 7px */
+  color: var(--element-color-linecode); /* 设置代码文字的颜色 */
+  background: var(--element-color-linecode-background); /* 设置代码块的背景颜色 */
+  border-radius: 3px; /* 设置代码块的圆角半径为3px */
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; /* 设置代码的字体为等宽字体 */
+  letter-spacing: 0.5px; /* 设置代码文字的字间距为0.5px */
+}
+
+
+/* ======================================================== */
+
+
+/* 设置列表项中的行内代码样式 */
+
+#write li code {
+  color: var(--element-color-linecode); /* 设置代码文字的颜色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 代码块*/
+
+
+/* CodeMirror 编辑器样式 */
+
+.cm-s-inner {
+	border: 1px solid #324560; /* 边框颜色和厚度 */
+	border-radius: 6px; /* 圆角 */
+	padding: 1.2rem 1rem; /* 代码块内边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 源码模式下的行号字体大小 */
+
+#typora-source .CodeMirror-gutter-wrapper {
+	font-size: 1rem; /* 字体大小 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 设置 <code> 元素的背景颜色 */
+
+ code {
+	background-color:  #454a52 ; 
+} 
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/*                          颜色           */
+
+
+/* 链接 */
+.cm-s-inner .cm-link,
+.cm-s-inner.cm-link {
+	color: #d2a8ff; 
+}
+
+
+.md-content {
+    display: none;
+    color: #F9826C;
+   
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 标题 */
+.cm-s-inner .cm-header {
+	color: #d2a8ff; 
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* CodeMirror 背景 和 边框 */
+
+.cm-s-inner.CodeMirror,
+.cm-s-inner .CodeMirror-gutters {
+	background-color: #272b33 !important; /* 背景 */
+	border: 1px solid #272b33; /* 边框 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 行号区域的背景和文字颜色 */
+.cm-s-inner .CodeMirror-gutters {
+	border: 0; /* 移除边框 */
+	color: #6d8a88; /* 行号文字颜色 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 光标 */
+
+.cm-s-inner .CodeMirror-cursor {
+	border-left: solid thin #f8f8f2 !important; /* 光标颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 行号颜色 */
+
+.cm-s-inner .CodeMirror-linenumber {
+	color: #6d8a88; /* 行号颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 注释颜色 */
+
+.cm-s-inner span.cm-comment {
+	color: #bdc4cc; /* 注释颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 字符串和引号 */
+.cm-s-inner span.cm-string,
+.cm-s-inner span.cm-string-2,
+.cm-s-inner span.cm-quote {
+	color: #a5d6ff; /* 字符串和引号颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 数字 */
+
+.cm-s-inner span.cm-number {
+	color: #79c0ff; /* 数字颜色 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+/* 变量 */
+
+.cm-s-inner span.cm-variable {
+	color: #f1f3f6; /* 变量颜色 */
+}
+
+
+.cm-s-inner span.cm-variable-2 {
+	color: #f1f3f6; /* 变量颜色 */
+}
+
+.cm-s-inner span.cm-variable-3 {
+	color: #f9826c; /* 变量颜色 */
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 定义 */
+
+.cm-s-inner span.cm-def {
+	color: #f1f3f6; /* 定义的颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 运算符 */
+
+.cm-s-inner span.cm-operator {
+	color: #f9826c; /* 运算符颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 关键字 */
+
+.cm-s-inner span.cm-keyword {
+	color: #f9826c; /* 关键字颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* 原子 */
+
+.cm-s-inner span.cm-atom {
+	color: #8b949e; /* 原子颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 元数据*/
+
+.cm-s-inner span.cm-meta {
+	color: #8b949e; /* 元数据颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 标签 */
+
+.cm-s-inner span.cm-tag {
+	color: #7ee787; /* 标签颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 属性 */
+
+.cm-s-inner span.cm-attribute {
+	color: #79c0ff; /* 属性颜色 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 定义 */
+
+.cm-s-inner span.cm-defined {
+	color: #d2a8ff; /* 定义的颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 量词 */
+
+.cm-s-inner span.cm-qualifier {
+	color: #50fa7b; /* 量词颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 属性 */
+
+.cm-s-inner span.cm-property {
+	color: #d2a8ff; /* 属性颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 内置函数 */
+
+.cm-s-inner span.cm-builtin {
+	color: #79c0ff; /* 内置函数颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* 块开始*/
+
+.cm-s-inner span.cm-block-start {
+	color: #ffa657; /* 块开始颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 类型 */
+
+.cm-s-inner span.cm-type {
+	color: #ffb86c; /* 类型颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+
+/* 正面 */
+.cm-positive {
+	color: #aff5b4; /* 正面颜色文字 */
+	background-color: #033a16; /* 正面背景颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 负面*/
+
+.cm-negative {
+	color: #aff5b4; /* 负面颜色文字 */
+	background-color: #67060c; /* 负面背景颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* 匹配括号 */
+
+.cm-s-inner .CodeMirror-matchingbracket {
+	color: #f1f3f6 !important; /* 匹配括号颜色 */
+	text-decoration: underline; /* 下划线 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* Typora 默认样式中的注释颜色 */
+
+.cm-s-typora-default .cm-comment {
+	color: #bdc4cc; /* 注释颜色 */
+}
+
+/* ======================================================== */
+
+
+/* 表格内的单元格 */
+
+#write table tr th,
+#write table tr td {
+  font-size: 14px; /* 设置单元格内文字的字体大小 */
+  color: var(--dark-text-color); /* 设置单元格内文字的颜色 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 表格整体样式 */
+
+#write table.md-table {
+  overflow: hidden; /* 隐藏超出表格边界的内容 */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 表头样式 */
+
+#write table thead {
+  border-top: 1px solid #dedddd; /* 设置表头顶部边框 */
+  border-bottom: 1px solid #dedddd; /* 设置表头底部边框 */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 表体样式 */
+
+#write table tbody {
+  border-bottom: 1px solid #dedddd; /* 设置表体底部边框 */
+}
+
+/* ======================================================== */
+
+
+/* 注释脚 */
+
+
+/* 注释脚注样式 */
+
+#write .footnotes {
+  padding: 10px; /* 设置脚注的内边距 */
+  font-size: 14px; /* 设置脚注的字体大小 */
+  border-radius: 6px; /* 设置脚注的圆角半径 */
+  border: 0.8px solid var(--element-color-deep); /* 设置脚注的边框样式 */
+}
+
+
+/* ======================================================== */
+
+
+/* 脚注 */
+
+
+/* 脚注文字 */
+
+#write .footnote-word {
+  font-weight: normal;
+  color: #595959;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 脚注上标 */
+
+#write .footnote-ref {
+  font-weight: normal;
+  color: #595959;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/*脚注链接样式*/
+
+#write .footnote-item em {
+  font-size: 14px;
+  color: #595959;
+  display: block;
+  background: none;
+}
+
+
+/* ======================================================== */
+
+
+/* 目录 */
+
+
+/* 设置目录中的所有元素字体*/
+
+.md-toc * {
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 隐藏目录中的提示信息 */
+
+.md-tooltip-hide > span {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 在目录之前添加 "目录" 的标题 */
+
+.md-toc:before {
+  position: relative; /* 相对定位 */
+  display: inline-block; /* 内联块级元素 */
+  width: 100%; /* 宽度占满父元素 */
+  text-align: center; /* 文本居中对齐 */
+  content: "目录"; /* 显示 "目录" */
+  font-size: 20px; /* 字体大小 20px */
+  font-weight: 700; /* 字体加粗 */
+  color: var(--dark-text-color); /* 字体颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录的整体样式 */
+
+.md-toc {
+  padding: 20px 0; /* 上下内边距为 20px */
+  margin: 0 20px; /* 左右外边距为 20px */
+  background-color: var(--element-color-soo-shallow); /* 背景颜色 */
+  border: 2px solid var(--element-color); /* 边框颜色和宽度 */
+  border-radius: 5px; /* 圆角半径 */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录项的样式 */
+
+.md-toc-item {
+  line-height: 1.8em; /* 行高 */
+  display: block; /* 以块级元素显示 */
+  color: #333; /* 文字颜色 */
+}
+
+
+
+/* ======================================================== */
+
+
+/* 程序UI */
+
+
+/* 侧边栏 */
+
+#typora-sidebar {
+  height: 100%; /* 设置侧边栏的高度为 100% */
+  color: var(--appui-color-text); /* 侧边栏文本颜色 */
+  font-size: 0.92rem; /* 侧边栏字体大小 */
+  background-color: var(--dark-background-color); /* 侧边栏背景颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 滑块 */
+
+::-webkit-scrollbar {
+  width: 5px; /* 滑块宽度 */
+}
+
+
+/* outline-content 滚动条样式 */
+
+#outline-content::-webkit-scrollbar {
+  width: 5px; /* 滑块宽度 */
+}
+
+
+/* file-library 滚动条样式 */
+
+#file-library::-webkit-scrollbar {
+  width: 5px; /* 滑块宽度 */
+}
+
+
+
+
+/* 滑块轨道样式 */
+
+::-webkit-scrollbar-track {
+  border-radius: 10px; /* 滑块轨道圆角 */
+}
+
+
+/* 滑块样式 */
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* 滑块圆角 */
+  background: rgba(179, 179, 179, 0.425); /* 滑块背景颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边文件 */
+
+
+/* 边框样式 */
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  border-radius: 10px; /* 边框圆角 */
+  height: 4px; /* 高度 */
+  background-color: var(--appui-color); /* 背景颜色 */
+}
+
+/* 文件内容 - 行高 */
+.file-node-content {
+  line-height: 1.2rem; /* 行高 */
+}
+
+/* 活跃节点 - 文件内容颜色 */
+.file-tree-node.active > .file-node-content {
+  color: var(--appui-color); /* 活跃节点颜色 */
+}
+
+
+/* 文件标题颜色 */
+
+.file-list-item.active {
+    background: #272B33;
+}
+
+
+
+/* 文件标题 - 颜色 */
+span.file-node-title {
+  color: var(--appui-color-text); /* 文件标题颜色 */
+}
+
+/* 文件图标 - 颜色和内边距 */
+.file-node-icon {
+  color: var(--appui-color-icon); /* 文件图标颜色 */
+  padding-right: 0.2rem; /* 右侧内边距 */
+}
+
+/* 活跃节点 - 背景样式 */
+.file-tree-node.active > .file-node-background {
+  font-weight: bolder; /* 加粗字体 */
+  border-left: 4px solid var(--appui-color); /* 左边框样式 */
+  border-color: var(--appui-color); /* 边框颜色 */
+}
+
+/* 信息面板选项卡标题 - 字体和颜色 */
+.info-panel-tab-title {
+  font-weight: bolder; /* 加粗字体 */
+  color: var(--appui-color-text); /* 选项卡标题颜色 */
+}
+
+
+/* ======================================================== */
+
+
+/* 侧边栏搜索 */
+
+
+/* 背景颜色 */
+
+
+#file-library-search-panel {
+  background-color: var(--dark-background-color); /* 背景颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 边框样式 */
+
+#file-library-search-input {
+  border-radius: 3px; /* 边框圆角 */
+  border-color: var(--appui-color); /* 边框颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 焦点状态 */
+
+#file-library-search-input:focus {
+  border-width: 2px; /* 焦点状态边框宽度 */
+}
+
+
+/* ======================================================== */
+
+
+/* 侧边栏 大纲 */
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 文字强调样式 */
+mark {
+   font-weight: bolder;
+   color: #FFAAB0;
+   background: #090C10;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H1 样式 */
+
+#outline-content .outline-h1 > .outline-item {
+  font-size: larger; /* 字体大小 */
+  font-weight: bold; /* 字体加粗 */
+  color: var(--dark-text-color); /* 字体颜色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H1 元素间距 */
+
+#outline-content .outline-h1:not(:first-of-type) > .outline-item {
+  margin-top: 10px; /* 上边距 */
+}
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H2 竖线样式 */
+
+#outline-content .outline-h2::after {
+  content: ""; /* 伪元素内容 */
+  height: calc(100% - 20px); /* 高度计算 */
+  width: 2px; /* 线宽 */
+  background: var(--element-color); /* 线颜色 */
+  position: absolute; /* 绝对定位 */
+  left: 3px; /* 左侧位置 */
+  top: 14px; /* 顶部位置 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H2 最后一个项后隐藏竖线 */
+#outline-content .outline-h2 > .outline-item:last-child:after {
+  display: none; /* 隐藏竖线 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H2 标签行高和间距 */
+#outline-content .outline-h2 > .outline-item > .outline-label {
+  line-height: 1.65rem; /* 行高 */
+  margin: 0; /* 边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H2 项目下边距 */
+#outline-content .outline-h2 > .outline-item {
+  margin-bottom: -3px; /* 下边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 侧边栏大纲 - H3 标签样式 */
+
+#outline-content .outline-h3 > .outline-item > .outline-label {
+  border-left: 2px solid var(--element-color); /* 左边框样式 */
+  padding-left: 8px; /* 左侧内边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 活跃项 - 后景样式 */
+
+.outline-item-active:not(.outline-item-wrapper)::after {
+  content: ""; /* 伪元素内容 */
+  position: relative; /* 相对定位 */
+  width: 11px; /* 宽度 */
+  height: 8px; /* 高度 */
+  background: var(--element-color-deep); /* 背景颜色 */
+  float: right; /* 浮动方向 */
+  top: -12px; /* 顶部偏移 */
+  z-index: 100; /* 层级 */
+  border-radius: 40% 20% 20% 40%; /* 圆角 */
+}
+
+
+/* ======================================================== */
+
+
+/* 偏好设置 */
+
+
+/* 背景颜色 */
+
+.pane,.sidebar,.window {
+    background: #090C10;
+    text-align: left
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* 选择时的颜色 */
+
+.dropdown-menu li:hover {
+  background: #272B33;
+}
+
+
+/* ======================================================== */
+
+
+/* 导出HTML的样式 */
+
+
+.typora-export-content {
+  /* 设置背景颜色为深色 */
+  background: var(--dark-background-color);
+  /* 设置文本颜色为深色 */
+  color: var(--dark-text-color);
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 针对 Typora 导出的页面，设置左边距为0 */
+
+body.typora-export {
+  padding-left: 0px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 在导出的内容前添加目录标题 */
+
+.typora-export-content .outline-content::before {
+  content: "目录"; /* 设置目录标题文本 */
+  font-size: 20px; /* 设置标题字体大小 */
+  font-weight: bold; /* 设置标题字体加粗 */
+  position: absolute; /* 使用绝对定位以便控制位置 */
+  top: 22px; /* 从容器顶部开始的距离 */
+  left: 15px; /* 从容器左边开始的距离 */
+  border-radius: 5px; /* 设置圆角边框 */
+  box-sizing: border-box; /* 包括边框和内边距在内的总宽度和高度 */
+  z-index: -1; /* 设置层叠顺序，使其位于其他内容下方 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 设置侧边栏目录内容的样式 */
+
+.typora-export-sidebar .outline-content {
+  height: 100%; /* 使侧边栏内容高度填满父元素 */
+  padding-left: 15px; /* 添加左内边距 */
+  border-right: 1px solid #d2d2d2; /* 添加右边框，颜色为浅灰色 */
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 移除导出内容的左边距，以适应整体布局 */
+
+.typora-export-content .typora-export-content {
+  padding-left: 0px;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 隐藏目录中的展开器 */
+
+.typora-export-content .outline-expander {
+  width: 0; /* 设置宽度为0，隐藏展开器 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中活跃项的标记样式 */
+
+.typora-export-content .outline-item-active > .outline-item::after {
+  content: ""; /* 空内容用于显示标记 */
+  position: relative; /* 相对定位以控制位置 */
+  width: 11px; /* 标记宽度 */
+  height: 8px; /* 标记高度 */
+  background: var(--element-color-deep); /* 设置标记背景颜色 */
+  float: right; /* 使标记浮动到右侧 */
+  right: 5px; /* 从右边缘开始的距离 */
+  top: -14px; /* 从顶部开始的距离 */
+  z-index: 100; /* 设置层叠顺序，使标记在其他元素上方 */
+  border-radius: 40% 20% 20% 40%; /* 设置标记圆角 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录项标签的样式，确保文本溢出时显示省略号 */
+
+.typora-export-content .outline-label {
+  max-width: 250px; /* 设置最大宽度 */
+  white-space: nowrap; /* 防止文本换行 */
+  overflow: hidden; /* 隐藏超出容器的文本 */
+  text-overflow: ellipsis; /* 用省略号表示被截断的文本 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中一级标题的样式 */
+
+.outline-content .outline-h1 > .outline-item {
+  font-size: larger; /* 设置字体大小为较大 */
+  font-weight: bold; /* 设置字体加粗 */
+  color: var(--dark-text-color); /* 设置字体颜色为深色 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中一级标题的顶部边距，防止与前一项重叠 */
+
+.outline-content .outline-h1:not(:first-of-type) > .outline-item {
+  margin-top: 10px; /* 设置顶部外边距 */
+}
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中二级标题的最后一个项不显示分隔线 */
+
+.outline-content .outline-h2 > .outline-item:last-child:after {
+  display: none; /* 隐藏最后一项的分隔线 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中二级标题项的标签样式 */
+
+.outline-content .outline-h2 > .outline-item > .outline-label {
+  line-height: 1.65rem; /* 设置行高 */
+  margin: 0; /* 移除外边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中二级标题项的底边距，调整排版 */
+
+
+.outline-content .outline-h2 > .outline-item {
+  margin-bottom: -3px; /* 设置底部外边距 */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* 目录中三级标题项的左边框样式 */
+
+.outline-content .outline-h3 > .outline-item > .outline-label {
+  border-left: 2px solid var(--element-color); /* 添加左边框 */
+  padding-left: 8px; /* 添加左内边距 */
+}
