@@ -89,7 +89,7 @@ sudo apt install neovim
 
 
 
-###### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
+###### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[	(https://starship.rs/)
 
 ```shell
 curl -sS https://starship.rs/install.sh | sh
@@ -132,11 +132,25 @@ source ~/.bashrc
 
 
 
-<img src="./images/JetBrains Mono.png" align="left" alt="JetBrains Mono" style="zoom: 25%;" />[JetBrains Mono](https://www.jetbrains.com/lp/mono/)
-
-> Install everything in **ttf**
+### Fonts
 
 
+
+<img src="./images/JetBrains Mono.png" alt="JetBrains Mono" align="left" style="zoom:35%;" />[JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+
+
+
+
+
+<img src="./images/Nerdfonts.png" alt="Nerdfonts" align="left" style="zoom: 15%;" />[Nerd-fonts](https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.2.1)
+
+> Recommend	-	[GO-Mono](https://www.programmingfonts.org/#go-mono)
+
+
+
+
+
+### Configuration
 
 
 ```lua
@@ -160,10 +174,13 @@ local config = {
     
       
     use_fancy_tab_bar = false,
+    automatically_reload_config = true,
     hide_tab_bar_if_only_one_tab = true,
     show_new_tab_button_in_tab_bar = false,
     adjust_window_size_when_changing_font_size = false,
-    window_close_confirmation = "NeverPrompt"
+    
+    default_cursor_style = "BlinkingBar",
+    window_close_confirmation = "NeverPrompt",
     
     window_padding = {	-- The distance between the content and the windows edges
         left = 20,
@@ -172,6 +189,28 @@ local config = {
         bottom = 5,
     },
     
+    background = {
+    {
+      source = {
+        File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\dark-desert.jpg",
+      },
+      hsb = {
+        hue = 1.0,
+        saturation = 1.00,
+        brightness = 1,
+      },
+    },
+    {
+      source = {
+        Color = "#282c35",
+      },
+      width = "100%",
+      height = "100%",
+      opacity = 0.55,
+    },
+  },
+    initial_rows = 150,  
+    initial_cols = 90, 
 }
 
 return config
@@ -181,27 +220,6 @@ return config
 
 
 
-
-To_do 
-
-```lua
-local wezterm = require("wezterm")  -- 引入 wezterm 模块
-config = wezterm.config_builder()     -- 创建配置构建器
-
-config = {
-    automatically_reload_config = true,  -- 自动重新加载配置
-    enable_tab_bar = false,               -- 禁用标签栏
-    window_close_confirmation = "NeverPrompt", -- 窗口关闭时不提示确认
-    window_decorations = "REsIzE",        -- 禁用标题栏但启用可调整大小的边框
-    default_cursor_style = "BlinkingBar", -- 默认光标样式为闪烁条形
-    color_scheme = "Nord (Gogh)",        -- 设置颜色主题为 Nord (Gogh)
-    font = wezterm.font("JetBrains Mono", { weight = "Bold" }), -- 设置字体为 JetBrains Mono，加粗
-    font_size = 12.5,                     -- 设置字体大小
-}
-
-return config  -- 返回配置
-
-```
 
 
 
