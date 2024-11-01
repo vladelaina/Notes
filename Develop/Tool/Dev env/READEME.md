@@ -89,13 +89,19 @@ sudo apt install neovim
 
 
 
-###### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[	(https://starship.rs/)
+##### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
+
+
+
+###### Install
 
 ```shell
 curl -sS https://starship.rs/install.sh | sh
 ```
 
 
+
+###### Set up shell to use it
 
 Add the following to the end of ~/.bashrc
 
@@ -106,6 +112,18 @@ eval "$(starship init bash)"
 ```shell
 source ~/.bashrc 
 ```
+
+
+
+###### Configure
+
+```toml
+nvim .config/starship.toml
+```
+
+
+
+
 
 
 
@@ -144,7 +162,7 @@ source ~/.bashrc
 
 <img src="./images/Nerdfonts.png" alt="Nerdfonts" align="left" style="zoom: 15%;" />[Nerd-fonts](https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.2.1)
 
-> Recommend	-	[GO-Mono](https://www.programmingfonts.org/#go-mono)
+> Recommend	-	[Fira Code](https://www.programmingfonts.org/#firacode)
 
 
 
@@ -201,6 +219,7 @@ local config = {
       },
     },
     {
+	-- Add a blur effect
       source = {
         Color = "#282c35",
       },
@@ -209,8 +228,9 @@ local config = {
       opacity = 0.55,
     },
   },
+  -- Set initial size
     initial_rows = 150,  
-    initial_cols = 90, 
+    initial_cols = 100, 
 }
 
 return config
