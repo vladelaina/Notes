@@ -60,25 +60,29 @@ wsl -d VersionName	/	wsl
 
 
 
-###### Network
-
-To `.bashrc`
-
-```shell
-host_ip=$(cat /etc/resolv.conf | grep "nameserver" | cut -f 2 -d " ")
-export ALL_PROXY="http://$host_ip:10809"
-```
 
 
 
-
-
-<img src="./images/image-20241030195706956.png" align=
-left alt="image-20241030195706956" style="zoom: 80%;" />
 
 
 
 ### <img src="./images/linux.png" alt="linux" style="zoom:5%;" />Linux
+
+###### Elevate  privileges
+
+```shell
+sudo usermod -aG sudo $USER
+```
+
+- Promote current user
+
+- `a`   -   append
+
+  `G`   -   groups
+
+
+
+###### Common applications
 
 ```shell
 sudo apt update
@@ -89,11 +93,39 @@ sudo apt install neovim
 
 
 
-##### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
+
+
+#### <img src="./images/Zsh.png" align="left" alt="Zsh" />[Zsh](https://github.com/zsh-users/zsh)
 
 
 
-###### Install
+##### Install
+
+```shell
+sudo apt update
+sudo apt install zsh
+```
+
+
+
+##### Change default
+
+```shell
+chsh -s $(which zsh)
+```
+
+- Restart shell
+- Recommend `0`
+
+
+
+
+
+#### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
+
+
+
+##### Install
 
 ```shell
 curl -sS https://starship.rs/install.sh | sh
@@ -101,29 +133,54 @@ curl -sS https://starship.rs/install.sh | sh
 
 
 
-###### Set up shell to use it
+##### Set up shell to use it
 
-Add the following to the end of ~/.bashrc
+Add the following to the end of ~/.zshrc
 
 ```shell
-eval "$(starship init bash)" 
+eval "$(starship init zsh)"
 ```
 
 ```shell
-source ~/.bashrc 
+source ~/.zshrc 
 ```
 
 
 
-###### Configure
+##### [Configure](https://starship.rs/presets/)
 
 ```toml
-nvim .config/starship.toml
+nvim ~/.config/starship.toml
 ```
 
 
 
+###### Recommended
 
+```toml
+starship preset no-runtime-versions -o ~/.config/starship.toml
+```
+
+
+
+### syntax-highlighting & autosuggestions
+
+```shell
+sudo apt install zsh-syntax-highlighting zsh-autosuggestions
+```
+
+
+
+End of ~/.zshrc
+
+```shell
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
+```shell
+source ~/.zshrc 
+```
 
 
 
@@ -210,7 +267,7 @@ local config = {
     background = {
     {
       source = {
-        File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\dark-desert.jpg",
+        File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\1.jpg",
       },
       hsb = {
         hue = 1.0,
@@ -231,6 +288,9 @@ local config = {
   -- Set initial size
     initial_rows = 150,  
     initial_cols = 100, 
+   
+  -- Default program and change to a specific directory
+    default_prog = { "wsl.exe", "--cd", "/home/vladelaina" },
 }
 
 return config
