@@ -208,3 +208,6 @@ slmgr -ato
 
 
 
+
+
+计算机\HKEYCURRENTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3

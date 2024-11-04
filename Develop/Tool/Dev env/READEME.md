@@ -39,8 +39,8 @@ wsl -l -o
 ###### Install
 
 ```shell
-wsl --install VersionName --web-download
-			  Ubuntu-24.04
+wsl --install Ubuntu-24.04 --web-download
+			  VersionName	  
 ```
 
 
@@ -97,7 +97,6 @@ curl google.com
 sudo apt update
 sudo apt install gcc
 sudo apt install git 
-sudo apt install neovim
 ```
 
 ```shell
@@ -132,6 +131,16 @@ chsh -s $(which zsh)
 
 
 
+######  Using a <img src="./images/proxy .png" alt="proxy " style="zoom:5%;" />proxy server
+
+```bash
+echo -e 'export http_proxy="http://127.0.0.1:10808"\nexport https_proxy="http://127.0.0.1:10808"\nexport all_proxy="socks5://127.0.0.1:1080"' >> ~/.zshrc && source ~/.zshrc
+```
+
+所以，`-e` 是“enable”的缩写，表示启用转义字符的功能。
+
+
+
 
 
 #### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
@@ -151,7 +160,7 @@ curl -sS https://starship.rs/install.sh | sh
 Add the following to the end of ~/.zshrc
 
 ```shell
-eval "$(starship init zsh)"
+sudo echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 ```
 
 ```shell
@@ -290,8 +299,6 @@ touch ~/.config/nvim/lua/plugins/treesitter.lua
 { import = "plugins.treesitter" },
 ```
 
-
-
 1. 
 
 2. **在主插件配置中引入新的配置文件**：
@@ -319,7 +326,15 @@ touch ~/.config/nvim/lua/plugins/treesitter.lua
      :TSInstall c
      ```
 
-通过这种方式，你就实现了插件的模块化配置，方便管理和扩展。如果有其他问题，欢迎随时问我！
+
+
+Add to init.lua
+
+```lua
+require('plugins.treesitter')
+```
+
+
 
 
 *****
@@ -465,30 +480,25 @@ return config
 
 ## 🛠️Installation
 
+
+
+
+
 ```shell
+rm -rf ~/.config/nivm
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nivm
+rm -rf ~/.cache/nvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
-```
-
-```shell
 rm -rf ~/.config/nvim/.git
+/opt/nvim/nvim.appimage
 ```
-
-
 
 
 
 ## Configuration
 
 
-
-### Clean || Backup
-
-```bash
-rm -rf ~/.config/nivm			#自定义配置&插件配置
-rm -rf ~/.local/share/nvim		#下载的插件&扩展
-rm -rf ~/.local/state/nivm		#会话&历史记录		
-rm -rf ~/.cache/nvim			#临时存储文件&加快启动速度
-```
 
 
 
@@ -740,6 +750,8 @@ q!
 
 It should be a problem with git
 
+It's also possible that there's no problem at all
+
 ```shell
 git config --global http.proxy http://127.0.0.1:10808
 git config --global https.proxy http://127.0.0.1:10808
@@ -752,3 +764,164 @@ git config --global --get http.proxy
 git config --global --get https.proxy
 ```
 
+
+
+
+
+
+
+
+
+```bash
+sudo apt install luarocks
+```
+
+```
+sudo snap install nvim --classic
+```
+
+
+
+
+
+
+
+
+
+## 安装**nvim**
+
+
+
+
+
+```bash
+sudo apt install libfuse2
+sudo mkdir -p /opt/nvim/
+cd /opt/nvim
+sudo curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+sudo chmod +x nvim.appimage
+echo "alias vi='/opt/nvim/nvim.appimage'" >> ~/.zshrc && source ~/.zshrc
+```
+- `libfuse2` 库，使用 `.AppImage` 文件的前提
+
+   > AppImage - 应用镜像
+   >
+   > 
+   >
+   > 便携式应用程序格式，下载后直接运行，无需安装。
+
+
+
+ria2c多线程下载
+
+
+
+
+
+
+
+```bash
+curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+```
+> curl	-	Client URL
+>
+> 用于与 URL交互的客户端工具
+>
+> 
+>
+> `-L`	--location	到重定向要==自动跟随重定向==
+>
+> `-O`     --remote-name(远程名称)	使用远程服务器的文件名
+
+​	
+
+
+
+###### 添加权限
+
+```bash
+chmod +x nvim.appimage
+```
+- 添加执行权限，使文件可以作为程序运行
+
+  >  `chmod`	-	change mode(更改模式)
+  >
+  >  更改文件 或 目录==权限==
+  >
+  >  
+  >
+  >  `u+x`	指定要更改的权限
+  >
+  >  `+`	 表示添加权限
+  >
+  >  `x` 	-	execute（执行权限）
+
+
+
+
+
+
+
+###### 移动，同时重命名
+
+```bash
+sudo mv nvim.appimage /opt/nvim/nvim
+```
+
+> /opt	optional(可选的)
+>
+> 存放独立==第三方应用程序包==的目录
+
+
+
+
+
+
+
+
+
+###### 添加到环境变量
+
+
+
+```bash
+export PATH=“$PATH:/opt/nvim”
+```
+
+> $PATH	之前的已有的路径
+
+> 查看配置文件nano ~/.bashrc
+
+
+
+
+
+###### 刷新	
+
+```bash
+source ~/.bashrc
+```
+
+> source	载入
+
+
+
+
+
+
+
+###### 添加别名
+
+```bash
+nano ~/.bashrc
+```
+
+
+
+<img src="./images/Clip_2024-08-20_00-10-12.png" align="left">
+
+
+
+```bash
+source ~/.bashrc
+```

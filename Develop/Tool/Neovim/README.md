@@ -949,7 +949,7 @@ curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 ###### 添加权限
 
 ```bash
-chmod +x nvim.appimage
+sudo chmod +x /opt/nvim/nvim.appimage
 ```
 - 添加执行权限，使文件可以作为程序运行
 
@@ -974,7 +974,7 @@ chmod +x nvim.appimage
 ###### 移动，同时重命名
 
 ```bash
-sudo mv nvim.appimage /opt/nvim/nvim
+sudo mv nvim.appimage /opt/nvim/
 ```
 
 > /opt	optional(可选的)
@@ -994,7 +994,7 @@ sudo mv nvim.appimage /opt/nvim/nvim
 
 
 ```bash
-export PATH=“$PATH:/opt/nvim”
+echo 'export PATH="$PATH:/opt/nvim"' >> ~/.zshrc
 ```
 
 > $PATH	之前的已有的路径
@@ -1008,7 +1008,7 @@ export PATH=“$PATH:/opt/nvim”
 ###### 刷新	
 
 ```bash
-source ~/.bashrc
+source ~/.zshrc
 ```
 
 > source	载入
