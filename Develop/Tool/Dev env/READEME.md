@@ -199,24 +199,127 @@ source ~/.zshrc
 
 
 
-### <img src="./images/Tree-sitter.png" alt="Tree-sitter" style="zoom: 25%;" />[Tree-sitter](https://tree-sitter.github.io/tree-sitter/)
+### <img src="./images/Tree-sitter.png" alt="Tree-sitter" style="zoom: 25%;" />🌳[Tree-sitter](https://tree-sitter.github.io/tree-sitter/)
 
 
 
-##### 🛠️Install
+#### 🛠️Install
 
-```shell
-sudo apt install tree-sitter-cli
+
+
+
+##### Nodejs & npm
+
+```bash
+sudo apt-get update
 ```
 
 
 
-```shell
-git clone https://github.com/tree-sitter/tree-sitter-c.git
-cd tree-sitter-c
-gcc -shared -o parser.so parser.c -fPIC
+
+```bash
+sudo apt install nodejs npm
 ```
 
+- <img src="./images/npm.png" alt="npm" style="zoom:5%;" /> (Node Package Manager) is the package management tool for **<u>Node.js</u>**
+
+- <img src="./images/nodejs.png" alt="nodejs" style="zoom:9%;" /> 
+  - Is a common dependency that uses **<u>Tree-sitter CLI</u>**
+  - A tool for developing web applications and services using <img src="./images/javascrip.png" alt="javascrip" style="zoom:10%;" />**<u>JavaScript</u>** on the server
+
+   
+
+   ```bash
+   node -v
+   npm -v
+   ```
+
+
+
+
+######  Using a <img src="./images/proxy .png" alt="proxy " style="zoom:5%;" />proxy server
+
+```bash
+    npm config set proxy http://127.0.0.1:10809
+    npm config set https-proxy http://127.0.0.1:10809
+```
+
+
+
+##### tree-sitter-cli
+
+```bash
+sudo npm install -g tree-sitter-cli
+```
+
+
+
+```bash
+tree-sitter --version
+```
+
+
+
+
+
+```bash
+touch ~/.config/nvim/lua/plugins/treesitter.lua
+```
+
+1. **在新文件中添加插件配置**：
+   - 打开 `treesitter.lua` 文件，并添加以下内容：
+
+     ```lua
+     return {
+       "nvim-treesitter/nvim-treesitter",
+       run = ':TSUpdate',  -- 自动更新语言解析器
+       config = function()
+         require'nvim-treesitter.configs'.setup {
+           ensure_installed = {"c", "lua", "python"}, -- 在这里指定你需要的语言
+           highlight = {
+             enable = true,              -- 开启高亮功能
+           },
+         }
+       end,
+     }
+     ```
+
+
+
+```
+{ import = "plugins.treesitter" },
+```
+
+
+
+1. 
+
+2. **在主插件配置中引入新的配置文件**：
+
+   - 在 `~/.config/nvim/lua/config/lazy.lua` 中，修改 `spec` 部分以引入你刚刚创建的 `treesitter.lua` 文件：
+
+     ```lua
+     require("lazy").setup({
+       spec = {
+         { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+         { import = "plugins.treesitter" },  -- 引入 Tree-sitter 配置
+         { import = "plugins" },  -- 引入其他插件配置
+       },
+       -- 其他配置...
+     })
+     ```
+
+3. **保存并重启 Neovim**：
+   - 保存所有修改并重启 Neovim。
+
+4. **安装语言解析器**：
+   - 在 Neovim 中运行命令来安装你需要的语言解析器：
+
+     ```bash
+     :TSInstall c
+     ```
+
+通过这种方式，你就实现了插件的模块化配置，方便管理和扩展。如果有其他问题，欢迎随时问我！
 
 
 *****
@@ -635,81 +738,17 @@ q!
 
 # Pending
 
-推荐你安装 Node.js 的原因主要是因为它是使用 Tree-sitter CLI 的一个常见依赖。Tree-sitter CLI 是一个用于构建和管理语言解析器的工具，它需要 Node.js 环境来运行。因此，如果你希望使用 Tree-sitter 进行代码高亮、语法分析等功能，安装 Node.js 是必要的步骤。
+It should be a problem with git
 
-此外，Node.js 在开发中有很多其他用途，例如构建后端服务、命令行工具等，安装它后，你将能够使用 npm 安装和管理其他 JavaScript 库和工具。
-
-总之，安装 Node.js 可以让你更好地利用 Tree-sitter 的功能，同时也为你提供了一个强大的开发环境。
-
-你可以通过以下步骤在 Ubuntu 上安装 npm（Node.js 的包管理器）：
-
-1. **更新包列表**：
-
-   ```bash
-   sudo apt update
-   ```
-
-2. **安装 Node.js 和 npm**：
-
-   你可以直接使用 `apt` 安装 Node.js，它通常会附带 npm：
-
-   ```bash
-   sudo apt install nodejs npm
-   ```
-
-   如果你想要安装最新版本的 Node.js，可以使用 NodeSource 提供的脚本：
-
-   ```bash
-   curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-   sudo apt install -y nodejs
-   ```
-
-   这里的 `16.x` 是 Node.js 的版本号，你可以根据需要选择不同的版本（例如 `18.x` 或 `20.x`）。
-
-3. **验证安装**：
-
-   安装完成后，可以通过以下命令检查 Node.js 和 npm 是否成功安装：
-
-   ```bash
-   node -v
-   npm -v
-   ```
-
-   这将显示安装的版本号。
-
-完成这些步骤后，你就可以使用 npm 来安装 Tree-sitter CLI 或其他 Node.js 包了。如果有其他问题，随时告诉我！
+```shell
+git config --global http.proxy http://127.0.0.1:10808
+git config --global https.proxy http://127.0.0.1:10808
+```
 
 
 
+```bash
+git config --global --get http.proxy
+git config --global --get https.proxy
+```
 
-
-是的，如果你在使用 Tree-sitter 的功能，但没有安装它，可能会导致错误。要安装 Tree-sitter，你可以按照以下步骤进行：
-
-1. **安装 Tree-sitter CLI**：首先，确保你已经安装了 Tree-sitter 的命令行工具。在终端中运行以下命令：
-
-   ```bash
-   npm install -g tree-sitter-cli
-   ```
-
-   这需要你先安装 Node.js 和 npm。
-
-2. **安装 Neovim 的 Tree-sitter 插件**：在你的 Neovim 配置中，确保已经包含了适用于 Tree-sitter 的插件，比如 `nvim-treesitter`。如果你使用 LazyVim，可以在配置文件中添加类似以下内容：
-
-   ```lua
-   require'nvim-treesitter.configs'.setup {
-       ensure_installed = {"c", "lua", "python"}, -- 在这里指定你需要的语言
-       highlight = {
-           enable = true,              -- 开启高亮功能
-       },
-   }
-   ```
-
-3. **安装需要的语言解析器**：使用以下命令安装你需要的语言解析器（以 C 语言为例）：
-
-   ```bash
-   :TSInstall c
-   ```
-
-4. **重新启动 Neovim**：完成安装后，重新启动 Neovim，检查是否还存在错误。
-
-这样，你就可以在 Neovim 中使用 Tree-sitter 的高亮和其他功能了。如果还有其他问题，随时问我！
