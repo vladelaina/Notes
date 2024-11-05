@@ -816,7 +816,7 @@ echo "alias vi='/opt/nvim/nvim.appimage'" >> ~/.zshrc && source ~/.zshrc
 
 
 
-l 
+l  
 
 
 
