@@ -109,25 +109,14 @@ sudo apt full-upgrade -y
 
 #### <img src="./images/Zsh.png" align="left" alt="Zsh" />[Zsh](https://github.com/zsh-users/zsh)
 
-
-
-##### Install
-
-```shell
+```bash
 sudo apt update
 sudo apt install zsh
-```
-
-
-
-##### Change default
-
-```shell
 chsh -s $(which zsh)
 ```
 
-- Restart shell
-- Recommend `0`
+- It is recommended to choose `0` after restarting
+
 
 
 
@@ -145,43 +134,23 @@ echo -e 'export http_proxy="http://127.0.0.1:10808"\nexport https_proxy="http://
 
 #### <img src="./images/Starship.png" alt="Starship" align="left" style="zoom:8%;" />[Starship](https://starship.rs/)
 
-
-
-##### Install
-
 ```shell
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh && echo 'eval "$(starship init zsh)"' >> ~/.zshrc && source ~/.zshrc
 ```
 
 
 
-##### Set up shell to use it
-
-Add the following to the end of ~/.zshrc
-
-```shell
-sudo echo 'eval "$(starship init zsh)"' >> ~/.zshrc
-```
-
-```shell
-source ~/.zshrc 
-```
-
-
-
-##### [Configure](https://starship.rs/presets/)
-
-```toml
-nvim ~/.config/starship.toml
-```
-
-
-
-###### Recommended
+###### Recommended [Configure](https://starship.rs/presets)
 
 ```toml
 starship preset no-runtime-versions -o ~/.config/starship.toml
 ```
+
+- Configuration file location 
+
+  `~/.config/starship.toml`
+
+
 
 
 
@@ -482,7 +451,44 @@ return config
 
 
 
+###### nvim
 
+```bash
+sudo apt install libfuse2
+sudo mkdir -p /opt/nvim/
+cd /opt/nvim
+sudo curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+sudo chmod +x nvim.appimage
+echo "alias vi='/opt/nvim/nvim.appimage'" >> ~/.zshrc && source ~/.zshrc
+```
+- The `libfuse2` library is a prerequisite for using `.AppImage` files
+
+- `.AppImage`
+
+    Is a portable application format that runs directly after downloading, without the need for installation
+
+- `/opt` (Optional)
+
+   Used to store standalone third-party application packges
+
+- `curl` (Client URL)
+
+   A client tool for interacting with URLs.
+
+   - `L` (location)
+
+     Follow redirects automatically
+
+   - `O` (remote-name)
+
+     Save the file with the remote server's filename.
+
+- `chmod` (change mode)
+  - `x` (execute)
+
+
+
+###### lazy.vim
 
 ```shell
 rm -rf ~/.config/nivm
@@ -794,59 +800,9 @@ sudo snap install nvim --classic
 
 
 
-```bash
-sudo apt install libfuse2
-sudo mkdir -p /opt/nvim/
-cd /opt/nvim
-sudo curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-sudo chmod +x nvim.appimage
-echo "alias vi='/opt/nvim/nvim.appimage'" >> ~/.zshrc && source ~/.zshrc
-```
-- The `libfuse2` library is a prerequisite for using `.AppImage` files
-
-- `.AppImage`
-
-    Is a portable application format that runs directly after downloading, without the need for installation
-
-- `/opt` (optional)
-
-   Used to store standalone third-party application packges
-
-- `curl`
 
 
 
-l  
-
-
-
-
-
-> curl	-	Client URL
->
-> 用于与 URL交互的客户端工具
->
-> 
->
-> `-L`	--location	到重定向要==自动跟随重定向==
->
-> `-O`     --remote-name(远程名称)	使用远程服务器的文件名
-
-​	
-
-- 添加执行权限，使文件可以作为程序运行
-
-  >  `chmod`	-	change mode(更改模式)
-  >
-  >  更改文件 或 目录==权限==
-  >
-  >  
-  >
-  >  `u+x`	指定要更改的权限
-  >
-  >  `+`	 表示添加权限
-  >
-  >  `x` 	-	execute（执行权限）
 
 
 
