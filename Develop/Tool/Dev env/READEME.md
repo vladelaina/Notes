@@ -802,27 +802,26 @@ sudo curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.app
 sudo chmod +x nvim.appimage
 echo "alias vi='/opt/nvim/nvim.appimage'" >> ~/.zshrc && source ~/.zshrc
 ```
-- `libfuse2` 库，使用 `.AppImage` 文件的前提
+- The `libfuse2` library is a prerequisite for using `.AppImage` files
 
-   > AppImage - 应用镜像
-   >
-   > 
-   >
-   > 便携式应用程序格式，下载后直接运行，无需安装。
+- `.AppImage`
 
+    Is a portable application format that runs directly after downloading, without the need for installation
 
+- `/opt` (optional)
 
-ria2c多线程下载
+   Used to store standalone third-party application packges
 
-
+- `curl`
 
 
 
 
 
-```bash
-curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
-```
+
+
+
+
 > curl	-	Client URL
 >
 > 用于与 URL交互的客户端工具
@@ -835,13 +834,6 @@ curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 
 ​	
 
-
-
-###### 添加权限
-
-```bash
-chmod +x nvim.appimage
-```
 - 添加执行权限，使文件可以作为程序运行
 
   >  `chmod`	-	change mode(更改模式)
@@ -862,15 +854,6 @@ chmod +x nvim.appimage
 
 
 
-###### 移动，同时重命名
-
-```bash
-sudo mv nvim.appimage /opt/nvim/nvim
-```
-
-> /opt	optional(可选的)
->
-> 存放独立==第三方应用程序包==的目录
 
 
 
@@ -880,48 +863,8 @@ sudo mv nvim.appimage /opt/nvim/nvim
 
 
 
-###### 添加到环境变量
-
-
-
-```bash
-export PATH=“$PATH:/opt/nvim”
-```
-
-> $PATH	之前的已有的路径
-
-> 查看配置文件nano ~/.bashrc
 
 
 
 
 
-###### 刷新	
-
-```bash
-source ~/.bashrc
-```
-
-> source	载入
-
-
-
-
-
-
-
-###### 添加别名
-
-```bash
-nano ~/.bashrc
-```
-
-
-
-<img src="./images/Clip_2024-08-20_00-10-12.png" align="left">
-
-
-
-```bash
-source ~/.bashrc
-```
