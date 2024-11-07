@@ -128,3 +128,13 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 - `\b`      ==b==ackspace
 
  
+
+
+
+****
+
+
+
+# Variables and Arithmetic Expressions
+
+ 
