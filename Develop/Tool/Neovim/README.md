@@ -1225,6 +1225,16 @@ w - b
 
 e - ge 
 
+
+
+Ctrl + w +h/j/k/l
+
+Ctrl +ww下一个
+
+Ctrl +wp上一个
+
+> 切换窗口
+
 ***
 
 

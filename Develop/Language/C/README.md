@@ -1,3 +1,5 @@
+### 12 ~ 17
+
 # Started
 
 > Every program must have a ==main== somewhere
@@ -124,3 +126,4 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 - `\'`      single quote
 - `\r`      carriage teturn<img src="./images/carriage return.png" alt="carriage return" style="zoom:5%;" />
 
+ 
