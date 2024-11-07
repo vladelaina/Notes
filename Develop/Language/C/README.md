@@ -137,4 +137,4 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 # Variables and Arithmetic Expressions
 
-  
+   
