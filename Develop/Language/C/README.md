@@ -122,8 +122,9 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 - `\n` 	==n==ewline
 - `\t`      ==t==ab<img src="./images/tab.png" alt="tab" style="zoom:5%;" />
-- `\\`      backslash(\)
+- `\\`      backslash itself
 - `\'`      single quote
 - `\r`      carriage teturn<img src="./images/carriage return.png" alt="carriage return" style="zoom:5%;" />
+- `\b`      ==b==ackspace
 
  
