@@ -167,3 +167,9 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
   >  |    0 |  A   | a    |
   >  | ---: | :--: | :--- |
   >  |   48 |  64  | 97   |
+
+ 
+
+%d - %(number)d
+
+> Place the result in a field (number) digits wide
