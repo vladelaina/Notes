@@ -138,3 +138,11 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 # Variables and Arithmetic Expressions
 
 ​     
+
+### Declaration
+
+> Name and a list of variables	`int a, b, c;`
+
+int	**int**egers
+
+float  **float**ing point, i.e., numbers that may have a fractional part
