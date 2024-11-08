@@ -143,6 +143,28 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 > Name and a list of variables	`int a, b, c;`
 
-int	**int**egers
 
-float  **float**ing point, i.e., numbers that may have a fractional part
+
+#### Data type
+
+
+
+###### int	
+
+> **int**egers (4Byte / 32bit)
+
+- signed int
+   `-2,147,483,648` ~ `2,147,483,647`
+   
+- unsigned int
+
+   `0` ~ `4,294,967,295`
+
+
+
+###### float 
+
+> **float**ing point, i.e., numbers that may have a fractional part (4Byte / 32bit)
+
+- `FLT_MAX` 3.402823 × 10^38
+- `FLT_MIN` 1.175494 × 10^-38
