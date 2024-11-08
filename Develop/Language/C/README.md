@@ -145,26 +145,25 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-#### Data type
+|        |                                                              | 1Byte = 8bit |
+| ------ | ------------------------------------------------------------ | ------------ |
+| int    | **int**egers                                                 | 4            |
+| short  | short integer                                                | 2            |
+| long   | long interger                                                | 4/8          |
+|        |                                                              |              |
+| float  | **float**ing point, i.e., numbers that may have a fractional part | 4            |
+| double | double-precision floating point                              | 8            |
+|        |                                                              |              |
+| char   | A single byte                                                | 1            |
 
+- `long`	
 
+  > 4 bytes on a 32-bit system, 8 bytes on a 64-bit system
 
-###### int	
+- `char`
 
-> **int**egers (4Byte / 32bit)
-
-- signed int
-   `-2,147,483,648` ~ `2,147,483,647`
-   
-- unsigned int
-
-   `0` ~ `4,294,967,295`
-
-
-
-###### float 
-
-> **float**ing point, i.e., numbers that may have a fractional part (4Byte / 32bit)
-
-- `FLT_MAX` 3.402823 × 10^38
-- `FLT_MIN` 1.175494 × 10^-38
+  > Store a character (typicall form the ASCLL )
+  >
+  >  |    0 |  A   | a    |
+  >  | ---: | :--: | :--- |
+  >  |   48 |  64  | 97   |
