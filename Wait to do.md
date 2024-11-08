@@ -1,3 +1,3 @@
+闹钟：
 
-
-- [ ] Complete notes on the development environment
+就屏幕的最上面一条直线不断减少，然后当时间到了之后就逐渐将画面变成那种电影样式，就是逐渐变黑，然后弹出一个选项选择需要的再次启动的时间
