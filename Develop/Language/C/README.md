@@ -1,4 +1,4 @@
-### 12 ~ 17 (16)
+### 16 ~ 21(==16==)
 
 # Started
 
@@ -170,6 +170,13 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
  
 
-%d - %(number)d
+%d - %(==number==)d
 
-> Place the result in a field (number) digits wide
+
+
+> If the number is **not specified**, the result will be displayed with the **<u>default</u> width.**
+>
+> Place the result in a field (==number==) digits wide.(Align **right**)
+
+
+
