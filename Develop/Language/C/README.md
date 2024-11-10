@@ -176,7 +176,9 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 > If the number is **not specified**, the result will be displayed with the **<u>default</u> width.**
 >
-> Place the result in a field (==number==) digits wide.(Align **right**)
+> Place the result in a field (==number==) digits wide.(**right**-justified)
 
+-  `printf("%d %d")` 
 
+  The **space**<img src="./images/space bar.png" alt="space bar" style="zoom:15%;" /> in the middle is also print
 
