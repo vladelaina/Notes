@@ -1,8 +1,6 @@
 ### 16 ~ 21(==17==)
 
-
-
-<progress value="17" max="239" style="width: 100%;">70%</progress>
+<progress value="17" max="239" style="width: 100%;">7.1%</progress>
 
 
 
@@ -216,8 +214,10 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 # Arithmetic Expressions
 
-> If an arithmetic operator has one floating-point and one integer operand, the integer is converted to  a floating-point before the operation.
+> If an arithmetic operator has one **<u>floating-point</u>** and one integer operand, the **<u>integer</u>** is converted to  a **<u>floating-point</u>** before the operation.
 
 
 
 **<u>Floating-point numbers</u>** are recommended to be written as `1.0` instead of `1`
+
+​	
