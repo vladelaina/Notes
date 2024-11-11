@@ -1,4 +1,12 @@
-### 16 ~ 21(==16==)
+### 16 ~ 21(==17==)
+
+
+
+<progress value="17" max="239" style="width: 100%;">70%</progress>
+
+
+
+
 
 # Started
 
