@@ -1,6 +1,6 @@
-### 16 ~ 21(==17==)
+### 16 ~ 21(==18==)
 
-<progress value="17" max="239" style="width: 100%;">7.1%</progress>
+<progress value="18" max="239" style="width: 100%;">7.1%</progress>
 
 ​	
 
@@ -272,7 +272,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 >
 > character
 >
-> itself(%)
+> itself(%) - `%d%%`
 
 # Arithmetic Expressions
 
