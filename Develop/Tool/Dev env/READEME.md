@@ -120,7 +120,8 @@ chsh -s $(which zsh)
 
 
 ```lua
-echo "alias test='vi /home/vladelaina/code/test/test.c'" >> ~/.zshrc && echo "alias te='vi /home/vladelaina/code/test/test.c'" >> ~/.zshrc && source ~/.zshrc
+echo "alias test='vi /home/vladelaina/code/test/test.c'" >> ~/.zshrc && echo "alias te='vi /home/vladelaina/code/test/test.c'" >> ~/.zshrc && source ~/.zshrc && chmod +x /home/vladelaina/code/test/a.out
+
 ```
 
 
