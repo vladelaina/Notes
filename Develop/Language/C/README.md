@@ -210,4 +210,6 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 > If an arithmetic operator has one floating-point and one integer operand, the integer is converted to  a floating-point before the operation.
 
-> 
+
+
+**<u>Floating-point numbers</u>** are recommended to be written as `1.0` instead of `1`

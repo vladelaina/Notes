@@ -1,1 +1,0 @@
-<img src="./images/C Promgramming Tutorial for Beginners.png" alt="C Promgramming Tutorial for Beginners" align ="left" style="zoom:15%;" />[Youtube](https://www.youtube.com/watch?v=KJgsSFOSQv0&list=PLWKjhJtqVAbmUE5IqyfGYEYjrZBYzaT4m&ab_channel=freeCodeCamp.org)

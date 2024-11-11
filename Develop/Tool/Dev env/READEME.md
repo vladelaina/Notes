@@ -416,7 +416,7 @@ local config = {
     initial_cols = 100, 
    
   -- Default program and change to a specific directory
-    default_prog = { "wsl.exe", "--cd", "/home/vladelaina" },
+    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code" },
 }
 
 return config
