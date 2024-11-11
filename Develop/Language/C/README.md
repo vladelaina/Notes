@@ -2,7 +2,7 @@
 
 <progress value="17" max="239" style="width: 100%;">7.1%</progress>
 
-
+​	
 
 
 
@@ -190,8 +190,10 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-### %d
+### d
 
+> **decimal**
+>
 > If the number is **not specified**, the result will be displayed with the **<u>default width</u>.**
 
 
@@ -212,6 +214,48 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
+### f
+
+> **floating-point**
+
+
+
+
+
+#### Control the width and precision of the output
+
+
+
+###### %3f
+
+> Default is ==6== digit after the decimal point
+
+
+
+###### %3.0f
+
+> Floating-point number is to be printed at least ==3== characters wide, with no decimal point and fraction  digits.
+
+
+
+###### %3.2f
+
+> Printed at least ==6== characters wide, with ==2== digit after the decimal point
+
+
+
+
+
+##### Omitted
+
+
+
+###### %.2f
+
+> 
+
+
+
 # Arithmetic Expressions
 
 > If an arithmetic operator has one **<u>floating-point</u>** and one integer operand, the **<u>integer</u>** is converted to  a **<u>floating-point</u>** before the operation.
@@ -221,3 +265,4 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 **<u>Floating-point numbers</u>** are recommended to be written as `1.0` instead of `1`
 
 ​	
+
