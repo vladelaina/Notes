@@ -763,7 +763,7 @@ git config --global http.proxy http://127.0.0.1:10808
 git config --global https.proxy http://127.0.0.1:10808
 ```
 
-
+a
 
 ```bash
 git config --global --get http.proxy
@@ -794,7 +794,7 @@ sudo snap install nvim --classic
 
 
 
-## 安装**nvim**
+
 
 
 
