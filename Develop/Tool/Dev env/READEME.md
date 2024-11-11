@@ -119,6 +119,12 @@ chsh -s $(which zsh)
 
 
 
+```lua
+echo "alias te='vi /home/vladelaina/code/test/test.c'" >> ~/.zshrc && source ~/.zshrc
+```
+
+
+
 
 ######  Using a <img src="./images/proxy .png" alt="proxy " style="zoom:5%;" />proxy server
 

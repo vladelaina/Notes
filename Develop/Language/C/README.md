@@ -226,11 +226,11 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-###### %3f
+###### %3f 
 
-> Default is ==6== digit after the decimal point
+> **Default** is ==6== digit after the decimal point
 
-
+​	
 
 ###### %3.0f
 
@@ -252,9 +252,27 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 ###### %.2f
 
-> 
+> Specifies ==2== characters after the decimal point, but the width is no constrained
 
 
+
+###### %f
+
+> Merely says to print the number as floating point(**Default** is ==6== digit after the decimal point)
+
+
+
+
+
+### o,x,c,%
+
+> octal
+>
+> hexadecimal
+>
+> character
+>
+> itself(%)
 
 # Arithmetic Expressions
 
@@ -265,4 +283,8 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 **<u>Floating-point numbers</u>** are recommended to be written as `1.0` instead of `1`
 
 ​	
+
+
+
+
 
