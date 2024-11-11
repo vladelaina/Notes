@@ -118,7 +118,11 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-###### escape characters
+
+
+
+
+###### \
 
 - `\n` 	==n==ewline
 - `\t`      ==t==ab<img src="./images/tab.png" alt="tab" style="zoom:5%;" />
@@ -135,11 +139,11 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-# Variables and Arithmetic Expressions     	
+# Variables     	
 
 ​     
 
-### Declaration
+## Declaration
 
 > Name and a list of variables	`int a, b, c;`
 
@@ -170,15 +174,40 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
  
 
-%d - %(==number==)d
 
 
 
-> If the number is **not specified**, the result will be displayed with the **<u>default</u> width.**
->
-> Place the result in a field (==number==) digits wide.(**right**-justified)
 
--  `printf("%d %d")` 
+​	
 
-  The **space**<img src="./images/space bar.png" alt="space bar" style="zoom:15%;" /> in the middle is also print
+## %
 
+
+
+### %d
+
+> If the number is **not specified**, the result will be displayed with the **<u>default width</u>.**
+
+
+
+##### %(==number==)d
+
+> Place the result in a field **<u>(==number==) digits wide</u>**.(**right**-justified)
+
+
+
+##### printf
+
+`printf("%d %d")` 
+
+- The **space**<img src="./images/space bar.png" alt="space bar" style="zoom:15%;" /> in the middle is also print
+
+
+
+
+
+# Arithmetic Expressions
+
+> If an arithmetic operator has one floating-point and one integer operand, the integer is converted to  a floating-point before the operation.
+
+> 
