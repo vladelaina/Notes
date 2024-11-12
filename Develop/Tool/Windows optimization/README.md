@@ -177,7 +177,9 @@ slmgr -ato
 
 
 
+Time display
 
+> 控制面板 > 区域 > 其他设置 > 日期
 
 
 

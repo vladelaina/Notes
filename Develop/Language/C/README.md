@@ -1,6 +1,6 @@
-### 16 ~ 21(==18==)
+### 18 ~ 20(==19==)
 
-<progress value="18" max="239" style="width: 100%;">7.1%</progress>
+<progress value="19" max="239" style="width: 100%;">7.1%</progress>
 
 ​	
 
@@ -240,7 +240,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 ###### %3.2f
 
-> Printed at least ==6== characters wide, with ==2== digit after the decimal point
+> Printed **at least** ==6== characters wide, with ==2== digit after the decimal point
 
 
 
@@ -288,3 +288,14 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
+# for
+
+```c
+for (initialization; condition; icrement){
+	// loop body
+}
+```
+
+
+
+Symbolic Constants
