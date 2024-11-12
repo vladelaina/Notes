@@ -511,7 +511,7 @@ rm -rf ~/.config/nvim/.git
 Compile c with one click
 
 ```lua
-echo -e "\nvim.api.nvim_set_keymap('n', '<F5>', ':!gcc % -o a.out && ./a.out <CR>', { noremap = true, silent = true })\nvim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o a.out && ./a.out <CR>', { noremap = true, silent = true })" >> ~/.config/nvim/init.lua
+echo -e "vim.api.nvim_set_keymap('n', '<F5>', ':!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })\nvim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })" >> ~/.config/nvim/init.lua
 ```
 
 
