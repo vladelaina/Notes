@@ -120,7 +120,7 @@ chsh -s $(which zsh)
 
 
 ```lua
-echo -e '\n# 设置代理\nexport http_proxy="http://127.0.0.1:10808"\nexport https_proxy="http://127.0.0.1:10808"\nexport all_proxy="socks5://127.0.0.1:1080"\n\n# 设置别名\nalias vi="/opt/nvim/nvim.appimage"\nalias te="vi /home/vladelaina/code/test/test.c"\nalias tea="/home/vladelaina/code/test/a.out"' >> ~/.zshrc && source ~/.zshrc && chmod -x /home/vladelaina/code/test/a.out
+echo -e '\n# 设置代理\nexport http_proxy="http://127.0.0.1:10808"\nexport https_proxy="http://127.0.0.1:10808"\nexport all_proxy="socks5://127.0.0.1:1080"\n\n# 设置别名\nalias vi="/opt/nvim/nvim.appimage"\nalias te="vi /home/vladelaina/code/test/test.c"\nalias tea="/home/vladelaina/code/test/test"' >> ~/.zshrc && source ~/.zshrc && chmod -x /home/vladelaina/code/test/test
 ```
 
 
@@ -512,6 +512,7 @@ Compile c with one click
 
 ```lua
 echo -e "vim.api.nvim_set_keymap('n', '<F5>', ':!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })\nvim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })" >> ~/.config/nvim/init.lua
+
 ```
 
 
