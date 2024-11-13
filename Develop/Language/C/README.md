@@ -1,12 +1,16 @@
-### 19~ 21(==19==)
-
-<progress value="19" max="239" style="width: 100%;">7.1%</progress>
-
-​	
+# ==5==
 
 
 
-# Started
+<progress value="4" max="93" style="width: 100%;">7.1%</progress>
+
+
+
+# A Totorial Intrduction
+
+
+
+## Getting Started
 
 > Every program must have a ==main== somewhere
 >
@@ -69,7 +73,7 @@ int main() {
 >
 > > `:x` == `:wq`
 
-###### Automation
+##### Automation
 
 Add to `init.lua`
 
@@ -118,17 +122,9 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-##### characters
-
-> Between the quotes, is called a character string or string constant
 
 
-
-
-
-
-
-###### \
+##### \
 
 - `\n` 	==n==ewline
 - `\t`      ==t==ab<img src="./images/tab.png" alt="tab" style="zoom:5%;" />
@@ -145,11 +141,15 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-# Variables     	
+## Variables and Arithmetic Expressions
 
 ​     
 
-## Declaration
+### Variables
+
+
+
+#### Declaration
 
 > Name and a list of variables	`int a, b, c;`
 
@@ -186,11 +186,11 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 ​	
 
-## %
+#### %
 
 
 
-### d
+##### d
 
 > **decimal**
 >
@@ -198,13 +198,13 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-##### %(==number==)d
+###### %(==number==)d
 
 > Place the result in a field **<u>(==number==) digits wide</u>**.(**right**-justified)
 
 
 
-##### printf
+###### printf
 
 `printf("%d %d")` 
 
@@ -214,7 +214,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-### f
+##### f
 
 > **floating-point**
 
@@ -222,7 +222,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-#### Control the width and precision of the output
+###### Control the width and precision of the output
 
 
 
@@ -264,7 +264,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-### o,x,c,%
+##### o,x,c,%
 
 > octal
 >
@@ -274,7 +274,9 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 >
 > itself(%) - `%d%%`
 
-# Arithmetic Expressions
+
+
+## Arithmetic Expressions
 
 > If an arithmetic operator has one **<u>floating-point</u>** and one integer operand, the **<u>integer</u>** is converted to  a **<u>floating-point</u>** before the operation.
 
@@ -288,7 +290,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
-# for
+## for
 
 ```c
 for (initialization; condition; icrement){
@@ -298,16 +300,48 @@ for (initialization; condition; icrement){
 
 
 
-# Symbolic Constants
+## Symbolic Constants
 
- `#define name replacement-list`
+`#define NAME replacement-list`
+
+
 
 > Therafter, any occurrence of name (not in quotes and not part of another name) will be replaced by the corresponding replacement text.
 
-- `name` 
+- `NAME` 
 
   A sequence of letters and digits that begins with a letter
+
+  > Conventionally **==written in upper case==** so they can be readily **distinguished** from lower case variable names.
 
 - `replacement-list`
 
   It's can be any sequence of characters; it is not limited to numbers.
+
+
+
+- Notice 
+
+   There is no semicolon(==;==) at the end of a `#define` line
+
+
+
+## Character Input and Output
+
+
+
+### File Copying
+
+
+
+
+
+### Character Counting
+
+
+
+### Line Counting
+
+
+
+### Word Counting
