@@ -6,6 +6,10 @@
 
 
 
+> Interesting projects
+>
+> - [cmus](https://github.com/cmus/cmus?tab=readme-ov-file)
+
 # A Totorial Intrduction
 
 
@@ -328,11 +332,26 @@ for (initialization; condition; icrement){
 
 ## Character Input and Output
 
+> **Stream**<img src="./images/stream.png" alt="stream" style="zoom:15%;" /> refers to a **<u>channel</u>**<img src="./images/channel.png" alt="channel" style="zoom: 5%;" /> for **data transmission**
+>
+> - Text input or output, regardless of where it originates or where it goed to, is dealt with as **streams**<img src="./images/stream.png" alt="stream" style="zoom:5%;" /> of characters
+
+- A ==text stream==<img src="./images/stream.png" alt="stream" style="zoom:10%;" />is a sequence of characters divided into **<u>lines</u>**<img src="./images/lines.png" alt="lines" style="zoom:5%;" />; echo line consists of zero or more characters followed by a **newline character**.
+
 
 
 ### File Copying
 
+The standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest.
+标准库提供了几个一次读取或写入一个字符的函数，其中 getchar 和 putchar 是最简单的。
 
+###### getchar
+
+```c
+char c = getchat();
+```
+
+- Reads the next input character from a **<u>text stream</u>**<img src="./images/stream.png" alt="stream" style="zoom:5%;" />(normally come from the **<u>keyboard</u>**<img src="./images/keyboard.png" alt="keyboard" style="zoom:5%;" />) and returns that as its value.
 
 
 
