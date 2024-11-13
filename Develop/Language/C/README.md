@@ -1,4 +1,4 @@
-### 18 ~ 20(==19==)
+### 19~ 21(==19==)
 
 <progress value="19" max="239" style="width: 100%;">7.1%</progress>
 
@@ -298,4 +298,16 @@ for (initialization; condition; icrement){
 
 
 
-Symbolic Constants
+# Symbolic Constants
+
+ `#define name replacement-list`
+
+> Therafter, any occurrence of name (not in quotes and not part of another name) will be replaced by the corresponding replacement text.
+
+- `name` 
+
+  A sequence of letters and digits that begins with a letter
+
+- `replacement-list`
+
+  It's can be any sequence of characters; it is not limited to numbers.
