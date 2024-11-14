@@ -340,18 +340,54 @@ for (initialization; condition; icrement){
 
 
 
-### File Copying
 
-The standard library provides several functions for reading or writing one character at a time, of which getchar and putchar are the simplest.
-标准库提供了几个一次读取或写入一个字符的函数，其中 getchar 和 putchar 是最简单的。
 
-###### getchar
+##### getchar & putchar
+
+> ==Reading== or ==wirting== one character at a time.
+
+
+
+###### getchar()
 
 ```c
 char c = getchat();
 ```
 
 - Reads the next input character from a **<u>text stream</u>**<img src="./images/stream.png" alt="stream" style="zoom:5%;" />(normally come from the **<u>keyboard</u>**<img src="./images/keyboard.png" alt="keyboard" style="zoom:5%;" />) and returns that as its value.
+
+
+
+###### puterchar()
+
+> Prints a character each time it is called
+
+```c
+putchar(c);
+```
+
+- Prints the contents of the integer variable c as a character, usually on the **screen**<img src="./images/screen.png" alt="screen" style="zoom:8%;" />.
+
+- Compare<img src="./images/compare.png" alt="compare" style="zoom:10%;" /> with `printf`
+
+  - `putchar`
+
+    No❎ buffer
+
+    - Echo call **immediately** displays the character.
+
+  - `printf`
+
+    Has a buffer
+
+    - It first stores the content, and only when the conditions are met (shuch as encountering a newline character or the buffer being full)
+
+
+
+### File Copying
+
+
+
 
 
 
