@@ -310,7 +310,7 @@ for (initialization; condition; icrement){
 
 
 
-> Therafter, any occurrence of name (not in quotes and not part of another name) will be replaced by the corresponding replacement text.
+> Thereafter, any occurrence of name (not in quotes and not part of another name) will be replaced by the corresponding replacement text.
 
 - `NAME` 
 
@@ -414,9 +414,13 @@ int main() {
 
     Such as when the porgram is **<u>stuck</u>** of you want to **<u>forcefully terminate</u>**<img src="./images/stop.png" alt="stop" style="zoom:5%;" /> it.
 
+- **<u>int</u>** c;
+
+  > `char` can be **signed**(-128 ~ 127) or **unsigned**(0 ~ 255) on different platforms, using `int` avoids conflicts with `EOF`
+
 - `EOF`(==E==nd ==O==f ==F==ile)
 
-  > 
+  > Usually ==-1==
 
 - Declaration & assign
 
