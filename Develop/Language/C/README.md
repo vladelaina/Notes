@@ -338,6 +338,10 @@ for (initialization; condition; icrement){
 
 - A ==text stream==<img src="./images/stream.png" alt="stream" style="zoom:10%;" />is a sequence of characters divided into **<u>lines</u>**<img src="./images/lines.png" alt="lines" style="zoom:5%;" />; echo line consists of zero or more characters followed by a **newline character**.
 
+- All data is a bit pattern
+
+  > What appears to be a character on the keyboard or screen is of course, like everything else, stored internally just as a bit pattern.
+
 
 
 
@@ -385,6 +389,41 @@ putchar(c);
 
 
 ### File Copying
+
+```c
+#include <stdio.h>
+
+/* Copy input to output; 1st version */
+int main() {
+    int c;
+    
+    c = getchar(); 
+    
+    while (c != EOF) {
+        putchar(c);
+        c = getchar();
+    }
+
+    return 0;
+}
+```
+
+- USE <img src="./images/ctrl+d.png" alt="ctrl+d" style="zoom:25%;" /> to indicate the end of iput.
+
+  - Only use `Ctrl+c` when **necessary**
+
+    Such as when the porgram is **<u>stuck</u>** of you want to **<u>forcefully terminate</u>**<img src="./images/stop.png" alt="stop" style="zoom:5%;" /> it.
+
+- `EOF`(==E==nd ==O==f ==F==ile)
+
+  > 
+
+- Declaration & assign
+
+  - **Simple code**, assign at declaration
+  - **Complex logic**, declare first, then assign
+
+
 
 
 
