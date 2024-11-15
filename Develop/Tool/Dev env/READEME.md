@@ -12,7 +12,7 @@
 
 
 
-## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" />
+## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" /><img src="./images/1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview.png" alt="1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview" style="zoom:25%;" />
 
 
 
@@ -25,13 +25,112 @@
 > Choose
 >
 > - <img src="./images/download options.png" align = "left" alt="download options" style="zoom:25%;" /> ArchWsl-AppX_(version)\_x64.appx
+>
 > - <img src="./images/download options.png" align = "left" alt="download options" style="zoom:25%;" /> ArchWsl-AppX_(version)\_x64.cer
+>
+>   安装证书 > 本地计算机 > 将所有的证书都放在下列存储 > 浏览 > 受信任的根证书颁发机构 > 安装
+
+​	
+
+### Set password🔐
+
+```shell
+passwd
+```
+
+
+
+### Create default user<img src="./images/user.png" alt="user" style="zoom:20%;" />
+
+
+
+##### Set permissions<img src="./images/user-permissions.png" alt="user-permissions" style="zoom:15%;" />
+
+```shell
+echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
+```
+
+- %<user /group> \<host> = (<runas_user>) \<commands>
+- `/etc` (configuration directory)
+- sudoers.==d== (==d==irectory)
 
 
 
 
 
+初始化密钥环
 
+```shell
+sudo pacman-key --init
+
+```
+
+```
+sudo pacman-key --populate archlinux
+```
+
+权限
+
+```
+sudo chown -R root:root /etc/pacman.d/gnupg
+```
+
+
+
+****
+
+
+
+```shell
+sudo nano /etc/pacman.d/mirrorlist
+```
+
+- Ctrl + 6 
+
+  选择
+
+- Ctrl + k
+
+  删除
+
+  
+
+
+
+```shell
+#清华源
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+#阿里源
+Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch
+#中科大源
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+```
+
+Ctrl + s Ctrl + x
+
+保存退出
+
+
+
+
+
+更新
+
+```
+sudo pacman -Syyu
+```
+
+
+
+##### zsh
+
+
+
+##### Add user<img src="./images/add user.png" alt="add user" style="zoom:10%;" />
+
+```shell
+useradd -m -G wheel -s /bin/bash {username}
+```
 
 
 
