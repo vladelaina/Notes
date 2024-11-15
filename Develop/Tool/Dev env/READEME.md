@@ -12,6 +12,36 @@
 
 
 
+## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" />
+
+
+
+### Install
+
+<img src="./images/archwsl.png" alt="archwsl" align ="left" style="zoom: 33%;" />
+
+[Archwsl](https://github.com/yuk7/ArchWSL/releases)
+
+> Choose
+>
+> - <img src="./images/download options.png" align = "left" alt="download options" style="zoom:25%;" /> ArchWsl-AppX_(version)\_x64.appx
+> - <img src="./images/download options.png" align = "left" alt="download options" style="zoom:25%;" /> ArchWsl-AppX_(version)\_x64.cer
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+## Ubuntu<img src="./images/ubuntu.png" alt="ubuntu" style="zoom:25%;" />
+
 
 
 ### Install
