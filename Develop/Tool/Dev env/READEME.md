@@ -70,7 +70,7 @@ sudo chown -R root:root /etc/pacman.d/gnupg
 
 
 
-##### Modify Mirror Sources
+##### Modify Mirror Sources<img src="./images/mirror.png" alt="mirror" style="zoom:25%;" />
 
 ```shell
 echo -e "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch\nServer = http://mirrors.aliyun.com/archlinux/\$repo/os/\$arch\nServer = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist > /dev/null && sudo pacman -Syyu
@@ -79,7 +79,13 @@ echo -e "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arc
 - `-e` (enable)
   - Enable escape characters
 
+- `tee`
 
+  i.e. Split flow
+
+- `/dev/null`
+
+  - Black hole
 
 
 
