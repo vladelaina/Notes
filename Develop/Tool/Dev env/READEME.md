@@ -87,7 +87,7 @@ echo -e "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arc
 
   - Black hole
 
-
+ 
 
 ##### zsh
 
