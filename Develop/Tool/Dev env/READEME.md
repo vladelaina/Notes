@@ -672,7 +672,7 @@ rg --version
 
 
 
-##### fd
+##### fd   
 
 > ==File search== tool with a more user-friendly syntax than `find`
 
