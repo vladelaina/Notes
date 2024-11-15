@@ -56,66 +56,30 @@ echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
 
 
-
-
-初始化密钥环<img src="./images/key.png" alt="key" style="zoom:15%;" />
+##### Pacman GPG key configuration<img src="./images/key.png" alt="key" style="zoom:15%;" />
 
 ```shell
 sudo pacman-key --init
-```
-
-```
 sudo pacman-key --populate archlinux
-```
-
-```
 sudo chown -R root:root /etc/pacman.d/gnupg
 ```
 
+- `pacman` - Package manager
+- `-R` (recursive)
+- `/gnupg` - GNU Privacy Guard
 
 
-****
 
-
-
-```shell
-sudo nano /etc/pacman.d/mirrorlist
-```
-
-- Ctrl + 6 
-
-  选择
-
-- Ctrl + k
-
-  删除
-
-  
-
-
+##### Modify Mirror Sources
 
 ```shell
-#清华源
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
-#阿里源
-Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch
-#中科大源
-Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+echo -e "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch\nServer = http://mirrors.aliyun.com/archlinux/\$repo/os/\$arch\nServer = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch" | sudo tee /etc/pacman.d/mirrorlist > /dev/null && sudo pacman -Syyu
 ```
 
-Ctrl + s Ctrl + x
-
-保存退出
-
+- `-e` (enable)
+  - Enable escape characters
 
 
-
-
-更新
-
-```
-sudo pacman -Syyu
-```
 
 
 
