@@ -58,18 +58,15 @@ echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
 
 
-初始化密钥环
+初始化密钥环<img src="./images/key.png" alt="key" style="zoom:15%;" />
 
 ```shell
 sudo pacman-key --init
-
 ```
 
 ```
 sudo pacman-key --populate archlinux
 ```
-
-权限
 
 ```
 sudo chown -R root:root /etc/pacman.d/gnupg
