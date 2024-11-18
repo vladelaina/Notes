@@ -516,64 +516,49 @@ local wezterm = require("wezterm")
 
 local config = {
     font_size = 20,
-    
-    -- Using a regular weight font
     font = wezterm.font("JetBrains Mono NL", { weight = "Regular" }),
-    
-    -- Allow dragging the edges to resize
     window_decorations = "RESIZE",
-    
-    
     color_scheme = "Catppuccin Mocha",
-    
-    -- opacity
     text_background_opacity = 0.8,
     window_background_opacity = 0.8,
-    
-      
     use_fancy_tab_bar = false,
     automatically_reload_config = true,
     hide_tab_bar_if_only_one_tab = true,
     show_new_tab_button_in_tab_bar = false,
     adjust_window_size_when_changing_font_size = false,
-    
     default_cursor_style = "BlinkingBar",
     window_close_confirmation = "NeverPrompt",
-    
-    window_padding = {	-- The distance between the content and the windows edges
+    window_padding = {
         left = 35,
         right = 30,
         top = 30,
         bottom = 20,
     },
-    
     background = {
-    {
-      source = {
-        File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\1.jpg",
-      },
-      hsb = {
-        hue = 1.0,
-        saturation = 1.00,
-        brightness = 1,
-      },
+        {
+            source = {
+                File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\1.jpg",
+            },
+            hsb = {
+                hue = 1.0,
+                saturation = 1.00,
+                brightness = 1,
+            },
+        },
+        {
+            source = {
+                Color = "#282c35",
+            },
+            width = "100%",
+            height = "100%",
+            opacity = 0.55,
+        },
     },
-    {
-	-- Add a blur effect
-      source = {
-        Color = "#282c35",
-      },
-      width = "100%",
-      height = "100%",
-      opacity = 0.55,
-    },
-  },
-  -- Set initial size
-    initial_rows = 150,  
-    initial_cols = 100, 
-   
-  -- Default program and change to a specific directory
-    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code" },
+    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code/ch_1" },
+    initial_rows = 30,  -- 设置初始行数
+    initial_cols = 80,  -- 设置初始列数
+
+
 }
 
 return config
