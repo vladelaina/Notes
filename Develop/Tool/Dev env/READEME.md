@@ -12,6 +12,18 @@
 
 
 
+### Network
+
+Add the following to the `C:\Users\<Username>\.wslconfig`
+
+```shell
+[wsl2]
+networkingMode=mirrored
+autoProxy=true
+```
+
+
+
 ## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" /><img src="./images/1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview.png" alt="1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview" style="zoom:25%;" />
 
 
@@ -85,22 +97,73 @@ echo -e "Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arc
 
 - `/dev/null`
 
-  - Black hole
+  - Like a **black hole**<img src="./images/black hole.png" alt="black hole" style="zoom:10%;" />
+  
+    It accept all input but returns nothing 
+  
+- `-Syyu`
+
+  - `S` (Sync)
+  - `yy` - Refresh
+  - `u` (Upgrade)
 
  
 
-##### zsh
+
 
 
 
 ##### Add user<img src="./images/add user.png" alt="add user" style="zoom:10%;" />
 
 ```shell
-useradd -m -G wheel -s /bin/bash {username}
+useradd -m -G wheel -s /bin/bash vladelaina && passwd vladelaina
 ```
 
 
 
+
+
+##### zsh<img src="./images/Zsh.png" align="left" alt="Zsh" />
+
+```zsh
+sudo pacman -S zsh && chsh -s /bin/zsh
+```
+
+- Recommend **0**
+
+- `echo $SHELL`
+
+- Delete redundant files
+
+  `rm -f ~/.bash_history ~/.bash_logout ~/.bash_profile ~/.bashrc`
+
+
+
+
+
+### Tool
+
+
+
+```zsh
+sudo pacman -Syu && sudo pacman -S neovim git base-devel && sudo pacman -S zsh-syntax-highlighting zsh-autosuggestions && git config --global user.name "vladelaina" && git config --global user.email "vladelaina@gmail.com" && echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc && echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc && curl -sS https://starship.rs/install.sh | sh && echo 'eval "$(starship init zsh)"' >> ~/.zshrc && echo 'alias vi="nvim"' >> ~/.zshrc && source ~/.zshrc
+```
+
+- `neovim` `git` `Zsh plug-in`(zsh-autosuggestions , zsh-syntax-highlighting ) `Starship`
+
+
+
+nvim
+
+```
+rm -rf ~/.config/nivm
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nivm
+rm -rf ~/.cache/nvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+/opt/nvim/nvim.appimage
+```
 
 
 
@@ -159,15 +222,7 @@ wsl -d VersionName	/	wsl
 
 
 
-##### Network
 
-Add the following to the `C:\Users\<Username>\.wslconfig`
-
-```shell
-[wsl2]
-networkingMode=mirrored
-autoProxy=true
-```
 
 
 
@@ -608,7 +663,6 @@ Compile c with one click
 
 ```lua
 echo -e "vim.api.nvim_set_keymap('n', '<F5>', ':!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })\nvim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { noremap = true, silent = true })" >> ~/.config/nvim/init.lua
-
 ```
 
 
@@ -856,62 +910,6 @@ q!
 - Use ⬅/➡ to move the cursor Up/Down
 
 - **Suggest** using ==Tab== and ==Shift-Tab== to select different entries from the menu
-
-
-
-
-
-
-
-# Pending
-
-It should be a problem with git
-
-It's also possible that there's no problem at all
-
-```shell
-git config --global http.proxy http://127.0.0.1:10808
-git config --global https.proxy http://127.0.0.1:10808
-```
-
-a
-
-```bash
-git config --global --get http.proxy
-git config --global --get https.proxy
-```
-
-
-
-
-
-
-
-
-
-```bash
-sudo apt install luarocks
-```
-
-```
-sudo snap install nvim --classic
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
