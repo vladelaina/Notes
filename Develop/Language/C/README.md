@@ -1,8 +1,8 @@
-# ==5==
+# ==6==
 
 
 
-<progress value="4" max="93" style="width: 100%;">7.1%</progress>
+<progress value="6" max="93" style="width: 100%;">7.1%</progress>
 
 
 
@@ -412,7 +412,9 @@ int main() {
 
   > `char` can be **signed**(-128 ~ 127) or **unsigned**(0 ~ 255) on different platforms, using `int` avoids conflicts with `EOF`, hold any value taht getchat returns.
 
-- `EOF`(==E==nd ==O==f ==F==ile)
+- `!=` > `=` (precendence)
+
+- `EOF`(==E==nd-==O==f-==F==ile)
 
   > Usually ==-1==
 
@@ -424,11 +426,25 @@ int main() {
 
 
 
-
-
-
-
 ### Character Counting
+
+```c
+#include <stdio.h>
+
+int main() {
+    long nc = 0;
+    int c; //temporary variable
+    while ((c = getchar()) != EOF) {
+        if (c != '\n') { //Ignore newlines
+            nc++;
+        }
+    }
+    printf("%ld\n", nc);
+    return 0;
+}
+```
+
+
 
 
 
