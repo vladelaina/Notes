@@ -393,17 +393,11 @@ putchar(c);
 ```c
 #include <stdio.h>
 
-/* Copy input to output; 1st version */
 int main() {
     int c;
-    
-    c = getchar(); 
-    
-    while (c != EOF) {
+    while ((c = getchar()) != EOF) {
         putchar(c);
-        c = getchar();
     }
-
     return 0;
 }
 ```
@@ -416,7 +410,7 @@ int main() {
 
 - **<u>int</u>** c;
 
-  > `char` can be **signed**(-128 ~ 127) or **unsigned**(0 ~ 255) on different platforms, using `int` avoids conflicts with `EOF`
+  > `char` can be **signed**(-128 ~ 127) or **unsigned**(0 ~ 255) on different platforms, using `int` avoids conflicts with `EOF`, hold any value taht getchat returns.
 
 - `EOF`(==E==nd ==O==f ==F==ile)
 
