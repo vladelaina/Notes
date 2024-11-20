@@ -479,13 +479,15 @@ int main() {
 int main() {
     double nc;  
     for (nc = 0; getchar() != EOF; nc++)  
-        ;
+        ; //
         printf("%.0f\n", nc);      
     return 0;  
 }
 ```
 
-
+- `%.0f`
+  - `f` for both float and double
+  - Suppresses the decimal point and the fractional part (if zero)
 
 
 
