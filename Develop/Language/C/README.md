@@ -1,8 +1,8 @@
-# ==6==
+# ==7==
 
 
 
-<progress value="6" max="93" style="width: 100%;">7.1%</progress>
+<progress value="7" max="93" style="width: 100%;">7.1%</progress>
 
 
 
@@ -427,7 +427,7 @@ int main() {
 
 ### Character Counting
 
-###### 1st
+###### use while
 
 ```c
 #include <stdio.h>
@@ -475,7 +475,7 @@ int main() {
 
 
 
-###### 2nd
+######  use for
 
 ```c
 #include <stdio.h>
