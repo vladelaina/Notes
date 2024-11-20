@@ -444,8 +444,17 @@ int main() {
 }
 ```
 
-- 
+- `%ld` (long decimal)
 
+  - `l`
+
+    - Just a type modifier that indicates the data is of type `long`
+
+    - The bit size of `long` is determined by the **system** and the **compiler**
+
+  - `d`
+
+    Indicates that this is a decimal integer
 
 
 
