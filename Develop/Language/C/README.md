@@ -380,7 +380,7 @@ putchar(c);
 
     - Echo call **immediately** displays the character.
 
-  - `printf`
+  - `printf` 
 
     Has a buffer
 
