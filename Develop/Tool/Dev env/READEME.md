@@ -554,7 +554,7 @@ local config = {
             opacity = 0.55,
         },
     },
-    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code/ch_1" },
+    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code/ch_1/5_characterInputAndOutput" },
     initial_rows = 30,  -- 设置初始行数
     initial_cols = 80,  -- 设置初始列数
 
