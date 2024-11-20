@@ -432,11 +432,11 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    long nc = 0;
+    long nc = 0; //long integers are at least 32 bits.
     int c; //temporary variable
     while ((c = getchar()) != EOF) {
         if (c != '\n') { //Ignore newlines
-            nc++;
+            ++nc;
         }
     }
     printf("%ld\n", nc);
@@ -444,6 +444,7 @@ int main() {
 }
 ```
 
+- 
 
 
 
