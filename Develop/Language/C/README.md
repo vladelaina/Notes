@@ -425,8 +425,9 @@ int main() {
 
 
 
-
 ### Character Counting
+
+###### 1st
 
 ```c
 #include <stdio.h>
@@ -455,6 +456,36 @@ int main() {
   - `d`
 
     Indicates that this is a decimal integer
+
+- `++nc` & `nc++`
+
+  - `++nc`
+
+    Increments the value first and then uses the incremented value
+
+  - `nc++`
+
+    User the value first and then increments it
+
+  - Generally, `++c` is recommended
+
+
+
+###### 2nd
+
+```c
+#include <stdio.h>
+
+int main() {
+    double nc;  
+    for (nc = 0; getchar() != EOF; nc++)  
+        ;
+        printf("%.0f\n", nc);      
+    return 0;  
+}
+```
+
+
 
 
 
