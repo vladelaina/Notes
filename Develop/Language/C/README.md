@@ -436,14 +436,18 @@ int main() {
     long nc = 0; //long integers are at least 32 bits.
     int c; //temporary variable
     while ((c = getchar()) != EOF) {
-        if (c != '\n') { //Ignore newlines
             ++nc;
-        }
     }
     printf("%ld\n", nc);
     return 0;
 }
 ```
+
+- `long nc = 0`
+
+  Setting `nc` to 0 ensures it returns 0 for empty input
+
+- Press <img src="./images/ctrl+d.png" alt="ctrl+d" style="zoom:25%;" /> ==twice== to end the input
 
 - `%ld` (long decimal)
 
@@ -479,15 +483,19 @@ int main() {
 int main() {
     double nc;  
     for (nc = 0; getchar() != EOF; nc++)  
-        ; //
+        ; //empty
         printf("%.0f\n", nc);      
     return 0;  
 }
 ```
 
 - `%.0f`
-  - `f` for both float and double
+  - `%f` for both float and double
   - Suppresses the decimal point and the fractional part (if zero)
+
+- The body of this `for` loop is **empty**
+  - Called a **<u>null statement</u>**
+  - Put it(**;**) on a separate line to make it **visible**
 
 
 
