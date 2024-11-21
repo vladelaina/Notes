@@ -1,8 +1,8 @@
-# ==7==
+# to1.6
 
 
 
-<progress value="7" max="93" style="width: 100%;">7.1%</progress>
+<progress value="22" max="239" style="width: 100%;">7.1%</progress>
 
 
 
@@ -134,7 +134,7 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 - `\t`      ==t==ab<img src="./images/tab.png" alt="tab" style="zoom:5%;" />
 - `\\`      backslash itself
 - `\'`      single quote
-- `\r`      carriage teturn<img src="./images/carriage return.png" alt="carriage return" style="zoom:5%;" />
+- `\r`      carriage return<img src="./images/carriage return.png" alt="carriage return" style="zoom:5%;" />
 - `\b`      ==b==ackspace
 
  
@@ -523,6 +523,20 @@ int main() {
   Is equal to 
 
   - single`=` uses for assignment
+
+
+
+- `'\n'`
+
+  Is a ==character constant==; in the ASCLL character set its value is **10**, the internal representation of the character \n
+
+  - Why use `'\n'`  instead of 10
+    - They all represent the same `'\n'` across different **<u>encodings</u>**
+  - sigle character & string constant
+    - In expressions is just an **integer**(10)
+    - The string constant containing **one character**(newline character)
+
+
 
 
 
