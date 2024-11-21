@@ -538,7 +538,9 @@ int main() {
 
 
 
+#### expand
 
+Use `putchar(' ')` to output a character.(more effeicient)
 
 
 
