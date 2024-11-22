@@ -1,8 +1,8 @@
-# to1.6
+# （23~26）==23==
 
 
 
-<progress value="22" max="239" style="width: 100%;">7.1%</progress>
+<progress value="23" max="239" style="width: 100%;">7.1%</progress>
 
 
 
@@ -545,3 +545,40 @@ Use `putchar(' ')` to output a character.(more effeicient)
 
 
 ### Word Counting
+
+```c
+#include <stdio.h>
+
+#define IN 1  /* inside a word */
+#define OUT 0 /* outside a word */
+
+/* count lines, words, and characters in input */
+int main() {
+    int c, state, nc, nw, nl;
+
+    state = OUT;
+    nl = nw = nc = 0;
+
+    while ((c = getchar()) != EOF) {
+        ++nc;
+
+        if (c == '\n') {
+            ++nl;
+        }
+
+        if (c == ' ' || c == '\n' || c == '\t') {
+            state = OUT;
+        } else if (state == OUT) {
+            state = IN;
+            ++nw;
+        }
+    }
+
+    printf("nc: %d\n", nc);  
+    printf("nw: %d\n", nw);  
+    printf("nl: %d\n", nl); 
+
+    return 0;
+}
+```
+
