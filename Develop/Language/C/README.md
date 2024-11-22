@@ -676,4 +676,6 @@ int main() {
 int ndigit[10]
 ```
 
-- To be an array of 10 integers
+- Declares an array of 10 integers
+
+   
