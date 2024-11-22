@@ -1,8 +1,8 @@
-# （23~26）==23==
+# （23~26）==24==
 
 
 
-<progress value="23" max="239" style="width: 100%;">7.1%</progress>
+<progress value="24" max="239" style="width: 100%;">7.1%</progress>
 
 
 

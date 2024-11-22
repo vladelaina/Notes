@@ -1,167 +1,167 @@
 {
-	"Administrator": false,
+	"Administrator": true,
 	"AltDrag": true,
 	"AutoClip": false,
 	"CapsLockLed": false,
-	"CapsUnlock": false,
+	"CapsUnlock": true,
 	"ClipboardManager": {
 		"Menu": [{
+			"Actions": [
+				["Execute", "https://www.google.com/search?q=%clipboard%sca_esv=332c1457e26e21ac&sxsrf=ADLYWIL6ToMS3Mprf4EdQiKjYkrXQ3VhbA%3A1732267087766&ei=T0xAZ9XTKtelvr0PlLv64Ac&ved=0ahUKEwiVt6zjze-JAxXXkq8BHZSdHnwQ4dUDCA8&uact=5&oq=啦啦啦&gs_lp=Egxnd3Mtd2l6LXNlcnAiCeWVpuWVpuWVpjIKEC4YgAQYsQMYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEC4YgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIHEAAYgAQYDTIlEC4YgAQYsQMYDRiXBRjcBBjeBBjgBBj0AxjxAxj1Axj2A9gBAUi3B1AAWPQFcAB4AZABAJgByQGgAfoFqgEFMC4zLjG4AQPIAQD4AQGYAgSgAqUGwgIEECMYJ8ICChAjGIAEGCcYigXCAhEQLhiABBixAxjRAxiDARjHAcICDhAAGIAEGLEDGIMBGIoFwgILEC4YgAQYsQMYgwHCAgsQABiABBixAxiDAcICCxAuGIAEGNEDGMcBwgIIEC4YgAQYsQPCAggQABiABBixA8ICBxAjGLECGCfCAhMQLhiABBixAxjRAxiDARjHARgKwgIQEAAYgAQYsQMYgwEYigUYCsICDRAuGIAEGLEDGIMBGArCAg0QABiABBixAxiDARgKwgINEC4YgAQY0QMYxwEYCsICChAuGIAEGLEDGArCAgoQABiABBixAxgKwgIHEAAYgAQYCsICBBAAGB7CAgoQLhjRAxjHARgewgIMEC4Y0QMYxwEYChgewgIlEC4YgAQYsQMYDRiXBRjcBBjeBBjgBBj0AxjxAxj1Axj2A9gBAZgDALoGBggBEAEYFJIHBTAuMi4yoAfoPA&sclient=gws-wiz-serp"]
+			],
+			"Name": "google",
+			"Valid": true
+		}, {
+			"Actions": [
+				["Execute", "https://search.bilibili.com/all?vt=66970120&keyword=%clipboard%&from_source=webtop_search&spm_id_from=333.999&search_source=5"]
+			],
+			"Name": "bilibili",
+			"Valid": true
+		}, {
 			"Actions": [
 				["Execute", "https://www.baidu.com/s?ie=UTF-8&wd=%clipboard%"]
 			],
 			"Name": "百度搜索(&B)",
-			"Valid": true
-		}, {
-			"Actions": [
-				["Execute", "https://www.google.com/search?q=%clipboard%"]
-			],
-			"Name": "谷歌搜索",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "http://fanyi.youdao.com/translate?i=%clipboard%&keyfrom=plugin&smartresult=dict&smartresult=rule"]
 			],
 			"Name": "有道翻译(&Y)",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "https://translate.google.com/?source=osdd#auto|auto|%clipboard%"]
 			],
 			"Name": "谷歌翻译",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "搜索翻译",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "b64decode", "%clipboard%"]
 			],
 			"Name": "base64解码",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "b64encode", "%clipboard%"]
 			],
 			"Name": "base64编码",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "urlencode", "%clipboard%"]
 			],
 			"Name": "urlencode",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "urldecode", "%clipboard%"]
 			],
 			"Name": "urldecode",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "cyberchef", "%clipboard%"]
 			],
 			"Name": "CyberChef(&C)",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "md5", "%clipboard%"]
 			],
 			"Name": "md5",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "sha1", "%clipboard%"]
 			],
 			"Name": "sha1",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "sha256", "%clipboard%"]
 			],
 			"Name": "sha256",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Algorithm", "qrcode", "%clipboard%"]
 			],
 			"Name": "二维码",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "编码解码",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "https://search.jd.com/Search?keyword=%clipboard%&enc=utf-8"]
 			],
 			"Name": "京东搜索",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "http://s.taobao.com/search?q=%clipboard%"]
 			],
 			"Name": "淘宝搜索",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "https://search.smzdm.com/?c=home&s=%clipboard%"]
 			],
 			"Name": "什么值得买",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "购物",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "https://ditu.amap.com/search?query=%clipboard%"]
 			],
 			"Name": "高德地图",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "https://m.kuaidi100.com/result.jsp?nu=%clipboard%"]
 			],
 			"Name": "快递查询",
-			"Valid": true
-		}, {
-			"Actions": [
-				["Execute", "http://www.bilibili.tv/search?keyword=%clipboard%"]
-			],
-			"Name": "哔哩哔哩",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "其他",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [],
 			"Name": "",
-			"Valid": true
+			"Valid": false
 		}, {
 			"Actions": [
 				["Execute", "Everything.exe -s %clipboard%"]
 			],
 			"Name": "Everything",
-			"Valid": true
+			"Valid": false
 		}],
 		"Open": true
 	},
 	"Excludes": ["Photoshop.exe"],
-	"FastPaste": false,
+	"FastPaste": true,
 	"Gestures": [{
 		"Data": [0, 100, 0, 0],
 		"Sign": "UP"
@@ -270,11 +270,14 @@
 	}, {
 		"Data": [0, 0, 50, 20, 0, 40, 50, 60, -5, 80],
 		"Sign": "3"
+	}, {
+		"Data": [222, 0, 222, 10, 222, 28, 219, 44, 213, 61, 204, 80, 183, 111, 157, 148, 132, 177, 103, 206, 86, 225, 64, 243, 51, 253, 42, 261, 32, 266, 47, 265, 60, 262, 72, 261, 89, 258, 101, 257, 112, 257, 124, 256, 134, 256, 144, 256, 142, 268, 135, 276, 125, 288, 114, 295, 102, 302, 88, 310, 72, 317, 57, 324, 43, 330, 32, 336, 48, 334, 62, 333, 85, 331, 113, 330, 147, 330, 175, 330, 201, 334, 216, 337, 226, 342, 227, 352, 218, 360, 202, 373, 189, 383, 169, 393, 142, 408, 113, 421, 78, 436, 49, 449, 24, 460, 10, 463, 0, 465],
+		"Sign": "vs"
 	}],
 	"HotCorner": {
 		"BottomLeft": {
 			"Actions": [
-				["SendKeys", "Win"]
+				["SendKeys", "Alt+S"]
 			],
 			"Name": "开始菜单",
 			"Valid": true
@@ -286,7 +289,7 @@
 			"Name": "显示桌面",
 			"Valid": true
 		},
-		"Open": false,
+		"Open": true,
 		"TopLeft": {
 			"Actions": [
 				["SendKeys", "Win+Tab"]
@@ -329,7 +332,7 @@
 		],
 		"Keys": "Ctrl+Alt+Z",
 		"Name": "隐藏窗口到托盘",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["SetBrightness", "UP"]
@@ -376,7 +379,7 @@
 		"Actions": [
 			["Snapshot", "OCR"]
 		],
-		"Keys": "Ctrl+Alt+O",
+		"Keys": "Ctrl+Alt+D",
 		"Name": "框选OCR",
 		"Valid": true
 	}, {
@@ -387,9 +390,9 @@
 		"Name": "剪贴板贴图",
 		"Valid": true
 	}],
-	"IgnoreFullScreen": true,
+	"IgnoreFullScreen": false,
 	"KeySound": false,
-	"KeySoundIndex": 0,
+	"KeySoundIndex": 3,
 	"Keycast": {
 		"BackgroundColor": "#353535",
 		"Fade": 5,
@@ -638,11 +641,11 @@
 		"Valid": true
 	}, {
 		"Actions": [
-			["Window", "CloseSimilar"]
+			["Window", "OCR"]
 		],
 		"Name": "关闭相似窗口",
 		"Sign": "DOWN-LEFT",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Window", "Maximize"]
@@ -673,27 +676,27 @@
 		"Valid": true
 	}, {
 		"Actions": [
-			["Internal", "tempstr"],
-			["Execute", "https://www.baidu.com/s?ie=UTF-8&wd=%tempstr%"]
+			["SendKeys", "Ctrl+C"],
+			["Execute", "https://www.baidu.com/s?ie=UTF-8&wd=%clipboard%"]
 		],
 		"Name": "搜索选中文字",
 		"Sign": "S",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
-			["Internal", "tempstr"],
-			["Execute", "cmd /k ping %tempstr%"]
+			["SendKeys", "Ctrl+C"],
+			["Execute", "cmd /k ping %clipboard%"]
 		],
 		"Name": "ping选中地址",
 		"Sign": "P",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Execute", "notepad.exe %systemroot%\\system32\\drivers\\etc\\hosts", "admin"]
 		],
 		"Name": "编辑hosts",
 		"Sign": "h",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Execute", "Calc"]
@@ -707,21 +710,21 @@
 		],
 		"Name": "贴图",
 		"Sign": "SQUARE",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Screenshot", "OCR"]
 		],
 		"Name": "OCR",
 		"Sign": "SQUARE 2",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Internal", "Exit"]
 		],
 		"Name": "退出MouseInc",
 		"Sign": "W",
-		"Valid": true
+		"Valid": false
 	}, {
 		"Actions": [
 			["Internal", "Exclude"]
@@ -758,14 +761,56 @@
 		"Name": "滚轮切换-下",
 		"Sign": "WheelSwitchDown",
 		"Valid": true
+	}, {
+		"Actions": [
+			["Screenshot", "OCR"]
+		],
+		"Name": "OCR",
+		"Sign": "SQUARE",
+		"Valid": false
+	}, {
+		"Actions": [
+			["Internal", "Settings"]
+		],
+		"Name": "Settings",
+		"Sign": "W",
+		"Valid": false
+	}, {
+		"Actions": [
+			["SendKeys", "Ctrl+Alt+Q"]
+		],
+		"Name": "Chrome",
+		"Sign": "LEFT-RIGHT",
+		"Valid": false
+	}, {
+		"Actions": [
+			["SendKeys", "Ctrl+Alt+O"]
+		],
+		"Name": "OCR",
+		"Sign": "O",
+		"Valid": true
+	}, {
+		"Actions": [
+			["SendKeys", "Ctrl+Alt+W"]
+		],
+		"Name": "Wait to be done",
+		"Sign": "W",
+		"Valid": true
+	}, {
+		"Actions": [
+			["SendKeys", "Ctrl+Alt+0"]
+		],
+		"Name": "VS",
+		"Sign": "DOWN-UP",
+		"Valid": true
 	}],
 	"MouseGesture": {
 		"AddMode": false,
-		"DrawColor": "#E47542",
-		"DrawResult": true,
-		"DrawTrace": true,
+		"DrawColor": "#FFC0CB",
+		"DrawResult": false,
+		"DrawTrace": false,
 		"FailColor": "#CAD0D3",
-		"FontSize": 26,
+		"FontSize": 24,
 		"Offset": 150,
 		"Open": true,
 		"RandColor": false,
@@ -777,12 +822,12 @@
 		"TraceWidth": 3,
 		"WheelSwitch": true
 	},
-	"OcrService": 0,
-	"QuickJump": false,
+	"OcrService": 1,
+	"QuickJump": null,
 	"ShowIme": false,
 	"ShowTrayIcon": true,
-	"VolumeControlSound": true,
-	"VolumeSoundIndex": 0,
+	"VolumeControlSound": false,
+	"VolumeSoundIndex": 1,
 	"WheelAltControl": true,
 	"WheelEdge": {
 		"Bottom": {
@@ -823,7 +868,7 @@
 			"UpActions": [
 				["SetBrightness", "Up"]
 			],
-			"Valid": false
+			"Valid": true
 		},
 		"Top": {
 			"DownActions": [
