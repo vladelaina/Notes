@@ -582,3 +582,31 @@ int main() {
 }
 ```
 
+- `IN` `OUT` (Symbolic constants)
+
+  ```c
+  #define IN 1  
+  #define OUT 0 
+  ```
+  
+  - It improves code **readability**, especially in complex programs, making **modifications easier**.
+
+
+
+- Every time the program encounters the first character of a word, it counts one more word(`++nw`)
+
+  ```c
+  if (c == ' ' || c == '\n' || c == '\t') {
+      state = OUT;
+  } else if (state == OUT) {
+      state = IN;
+      ++nw;
+  }
+  ```
+
+
+
+
+
+
+
