@@ -582,18 +582,44 @@ int main() {
 }
 ```
 
-- `IN` `OUT` (Symbolic constants)
+ ##### `IN` `OUT` (Symbolic constants)
 
   ```c
   #define IN 1  
   #define OUT 0 
   ```
-  
+
   - It improves code **readability**, especially in complex programs, making **modifications easier**.
 
 
 
-- Every time the program encounters the first character of a word, it counts one more word(`++nw`)
+##### `if-else`
+
+> One and only one of the two statements associated with an `if-else` is performed
+
+```c
+if (expression)
+	statement1
+else
+	statement2
+```
+
+
+
+
+##### `||` - OR
+
+###### precedence
+
+> `&&` > `||` 
+
+- `&&` - AND
+
+
+
+##### conut word
+
+ Every time the program encounters the first character of a word, it counts one more word(`++nw`)
 
   ```c
   if (c == ' ' || c == '\n' || c == '\t') {
@@ -603,10 +629,6 @@ int main() {
       ++nw;
   }
   ```
-
-
-
-
 
 
 
