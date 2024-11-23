@@ -700,3 +700,9 @@ if (c >= '0' && c <= '9') {
 ```
 
 - `++ndigit[c - '0']`  
+
+  - 
+
+  - <img src="./images/ASCLL.png" alt="ASCLL" align = "left" style="zoom:10%;" />
+    - '0' - 48
+    - '1' - 49
