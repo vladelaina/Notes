@@ -701,8 +701,14 @@ if (c >= '0' && c <= '9') {
 
 - `++ndigit[c - '0']`  
 
-  - 
+  - `c` & `'0'` are characters, and subtracting(-) give the number represented by `c`
 
   - <img src="./images/ASCLL.png" alt="ASCLL" align = "left" style="zoom:10%;" />
+
     - '0' - 48
     - '1' - 49
+
+  - Chars are essentially **small integers**
+
+    > Therefore, they can be treated as integers in **<u>arithmetic operations</u>**
+
