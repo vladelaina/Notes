@@ -713,7 +713,7 @@ if (c >= '0' && c <= '9') {
 
     > Therefore, they can be treated as integers in **<u>arithmetic operations</u>**
 
-
+ 
 
 ##### if - else if - else
 
