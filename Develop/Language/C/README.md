@@ -668,6 +668,7 @@ int main() {
 }
 ```
 
+- Output is similat to: `digits = 9 3 0 0 0 0 0 0 0 1, white space = 123, other = 345`
 
 
 ##### Declares array
@@ -678,4 +679,24 @@ int ndigit[10]
 
 - Declares an array of 10 integers
 
-   
+- **Subscripts** always start at **zero**(ndigt[==0==]) 
+
+  - Ranging 
+
+    from ndigit[**0**] ~ ndigit[**9**]
+
+  - Subscript
+
+    Can be an integer expression, including variables(like `i`) and constants
+
+
+
+###### ++ndigit
+
+```c
+if (c >= '0' && c <= '9') {
+    ++ndigit[c - '0'];
+}
+```
+
+- `++ndigit[c - '0']`  
