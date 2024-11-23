@@ -707,8 +707,24 @@ if (c >= '0' && c <= '9') {
 
     - '0' - 48
     - '1' - 49
+    - '10' - 49 48(So recommended `<= 9`)
 
   - Chars are essentially **small integers**
 
     > Therefore, they can be treated as integers in **<u>arithmetic operations</u>**
 
+
+
+##### if - else if - else
+
+```c
+if (condition1)
+    statement1
+else if (condition2)
+    statement2
+...
+else
+    statementn
+```
+
+- To express a multi-way decision
