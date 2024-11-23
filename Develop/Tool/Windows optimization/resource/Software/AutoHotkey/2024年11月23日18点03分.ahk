@@ -4,13 +4,23 @@
 ;Windows	->	#
 ;==================================================================
 
-F1::
-    SetWorkingDir, Z:\root
-    Run, C:\Program Files\PowerShell\7\pwsh.exe -NoProfile -Command "wsl -d Ubuntu"
-    Sleep, 500 ; 等待 PowerShell 启动
-    Send, ^l  ; 发送 CTRL+L 命令
+^F1::
+    Run, "D:\Date\Software\Ifrequently used\WezTerm\wezterm-gui.exe"
+    WinWaitActive, wezterm-gui
+    WinMove, wezterm-gui
 return
 
+
+;==================================================================
+
+^!d::
+    SetTimer, do, -1
+
+return
+
+do:
+    Run, "E:\MD\MD\Develop\Language\C\README.md"
+return
 
 ;==================================================================
 
@@ -30,7 +40,7 @@ return
 return
 
 geek:
-    Run, "D:\Data\Tool\geek.exe"
+    Run, "D:\Date\Tool\geek.exe"
 return
 
 ;==================================================================
@@ -79,13 +89,13 @@ return
 ;==================================================================
 
 
-^!f::
-    SetTimer, feishu, -1
-return
+;^!f::
+ ;   SetTimer, feishu, -1
+;return
 
-feishu:
-    Run, chrome.exe --app="https://k021q39fc0u.feishu.cn/minutes/home/"
-return
+;feishu:
+ ;   Run, chrome.exe --app="https://k021q39fc0u.feishu.cn/minutes/home/"
+;return
 
 ;==================================================================
 
@@ -94,7 +104,7 @@ return
 return
 
 github:   
-    Run, chrome.exe "https://github.com/ywyjcloud"   
+    Run, chrome.exe "https://github.com/vladelaina?tab=repositories"   
 return
 
 ;==================================================================
@@ -150,7 +160,7 @@ return
 return
 
 Startup:
-	Run, "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+	Run, "C:\Users\vladelaina\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 return
 
 ;==================================================================
@@ -166,7 +176,7 @@ return
 ;==================================================================
 
 ^+!t::
-    Run, "D:\Data\Tool\Easy Cat Timer\Easy Cat Timer.exe"
+    Run, "D:\Date\Tool\Easy Cat Timer\Easy Cat Timer.exe"
 return
 
 
@@ -178,7 +188,7 @@ return
 return
 
 livelyWallpaper:
-	Run, "D:\Data\Software\Lively Wallpaper\Lively.exe"
+	Run, "C:\Users\vladelaina\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Lively.exe.lnk"
     ; 等待 Lively Wallpaper 启动并出现窗口
     WinWait, Lively Wallpaper
     ; 将窗口移动并调整大小到指定的坐标
@@ -219,7 +229,7 @@ return
 return
 
 s:
-	Run, "D:\Data"
+	Run, "D:\Date"
 return
 
 ;==================================================================
@@ -229,7 +239,7 @@ Delete::
 return
 
 autosave:
-	Run, "C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Autosave.bat.lnk"
+	Run, "C:\Users\vladelaina\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Autosave.bat.lnk"
 return
 
 ;==================================================================
@@ -278,7 +288,7 @@ return
 return
 
 OpenTyporaFullScreen:
-    Run, "D:\Data\Software\Typora\Typora.lnk"
+    Run, "D:\Date\Software\Ifrequently used\Typora\Typora.exe"
     WinWaitActive, Typora
     WinMaximize, Typora
 return

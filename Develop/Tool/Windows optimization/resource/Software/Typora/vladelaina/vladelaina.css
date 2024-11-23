@@ -495,11 +495,11 @@ li.md-list-item {
 
 #write li:before {
   content: ""; /* 生成一个空内容 */
-  height: calc(100% - 50px); /* 高度为父元素高度减去 50px */
-  top: 35px; /* 上边距 35px */
+  height: calc(100% - 40px); /* 高度为父元素高度减去 50px */
+  top: 37px; /* 上边距 35px */
   position: absolute; /* 绝对定位 */
   border-left: 0.5px solid #d6d6d6; /* 左边框为 0.5px 实线，颜色 #d6d6d6 */
-  left: -17.5px; /* 左边距 -16.5px */
+  left: -13.5px; /* 左边距 -16.5px */
 }
 
 
@@ -718,7 +718,7 @@ li.md-list-item {
 #write mark {
   font-weight: bolder; /* 设置高亮文本的字体加粗 */
   color: #FFAAB0; /* 设置高亮文本的颜色为深色文本颜色 */
-  background: #090C10; /* 设置高亮文本的背景色为浅色元素颜色 */
+  background: #181A21; /* 设置高亮文本的背景色为浅色元素颜色 */
 }
 
 
@@ -955,7 +955,7 @@ li.md-list-item {
 /* 变量 */
 
 .cm-s-inner span.cm-variable {
-	color: #f1f3f6; /* 变量颜色 */
+	color: #82AAFF; /* 变量颜色 */
 }
 
 
@@ -964,7 +964,7 @@ li.md-list-item {
 }
 
 .cm-s-inner span.cm-variable-3 {
-	color: #f9826c; /* 变量颜色 */
+	color: #589ED7; /* 变量颜色 */
 }
 
 /* ------------------------------------------------------------------------------------------*/
@@ -973,7 +973,7 @@ li.md-list-item {
 /* 定义 */
 
 .cm-s-inner span.cm-def {
-	color: #f1f3f6; /* 定义的颜色 */
+	color: #82AAFF; /* 定义的颜色 */
 }
 
 
@@ -993,7 +993,7 @@ li.md-list-item {
 /* 关键字 */
 
 .cm-s-inner span.cm-keyword {
-	color: #f9826c; /* 关键字颜色 */
+	color: #FCA7EA; /* 关键字颜色 */
 }
 
 
@@ -1014,7 +1014,7 @@ li.md-list-item {
 /* 元数据*/
 
 .cm-s-inner span.cm-meta {
-	color: #8b949e; /* 元数据颜色 */
+	color: #86E1FC; /* 元数据颜色 */
 }
 
 
@@ -1467,7 +1467,7 @@ span.file-node-title {
 mark {
    font-weight: bolder;
    color: #FFAAB0;
-   background: #090C10;
+   background: #181A21;
 }
 
 

@@ -3,13 +3,13 @@
 
 :root {
   /* 页面背景色 */
-  --bg-color: #090C10;
+  --bg-color: #181A21;
 
   /* 主要文本颜色 */
   --text-color: #F1F3F6;
 
   /* 深色背景 */
-  --dark-background-color: #090C10;
+  --dark-background-color: #181A21;
 
   /* 更深的背景色 */
   --dark-background-color-deep: #272B33;
