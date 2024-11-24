@@ -737,3 +737,5 @@ for (int i = 0; i < /* ending condition */; ++i) {
   > Restrict variables scope to the minimum required
 
 - `++i` - Recommended style
+
+每天看三小结的cs5
