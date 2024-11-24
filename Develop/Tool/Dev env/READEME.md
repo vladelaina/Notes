@@ -146,7 +146,7 @@ sudo pacman -S zsh && chsh -s /bin/zsh
 
 
 ```zsh
-sudo pacman -Syu && sudo pacman -S neovim git base-devel && sudo pacman -S zsh-syntax-highlighting zsh-autosuggestions && git config --global user.name "vladelaina" && git config --global user.email "vladelaina@gmail.com" && echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc && echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc && curl -sS https://starship.rs/install.sh | sh && echo 'eval "$(starship init zsh)"' >> ~/.zshrc && echo 'alias i="nvim"' && echo 'alias c="cc"' >> ~/.zshrc && source ~/.zshrc
+sudo pacman -Syu && sudo pacman -S neovim git base-devel && sudo pacman -S zsh-syntax-highlighting zsh-autosuggestions && git config --global user.name "vladelaina" && git config --global user.email "vladelaina@gmail.com" && echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc && echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc && curl -sS https://starship.rs/install.sh | sh && echo 'eval "$(starship init zsh)"' >> ~/.zshrc && echo 'alias i="nvim"' >> ~/.zshrc && echo 'alias c="cc"' >> ~/.zshrc &&  echo 'alias e="explorer.exe"' >> ~/.zshrc  && source ~/.zshrc
 ```
 
 - `neovim` `git` `Zsh plug-in`(zsh-autosuggestions , zsh-syntax-highlighting ) `Starship`
