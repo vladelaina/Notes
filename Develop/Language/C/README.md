@@ -738,4 +738,4 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
 - `++i` - Recommended style
 
-每天看三小结的cs5
+每天看三小结的cs50
