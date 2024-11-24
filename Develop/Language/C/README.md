@@ -688,6 +688,10 @@ if (c >= '0' && c <= '9') {
 }
 ```
 
+- `c >= '0' && c <= '9'`
+
+  > Should use a range check based on **<u>char</u>**acters(`'0'` `'9'`)
+
 - `++ndigit[c - '0']`  
 
   - `c` & `'0'` are characters, and subtracting(-) give the number represented by `c`
@@ -732,5 +736,4 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
   > Restrict variables scope to the minimum required
 
-
-
+- `++i` - Recommended style
