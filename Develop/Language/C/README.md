@@ -640,13 +640,10 @@ else
 #include <stdio.h>
 
 int main() {
-    int c, i, nwhite, nother;
-    int ndigit[10];
+    int c, nwhite, nother;
+    int ndigit[10] = {0}; 
 
     nwhite = nother = 0;
-    for (i = 0; i < 10; ++i) {
-        ndigit[i] = 0;
-    }
 
     while ((c = getchar()) != EOF) {
         if (c >= '0' && c <= '9') {
@@ -659,7 +656,7 @@ int main() {
     }
 
     printf("digits =");
-    for (i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i) {
         printf(" %d", ndigit[i]);
     }
     printf(", white space = %d, other = %d\n", nwhite, nother);
@@ -674,24 +671,16 @@ int main() {
 ##### Declares array
 
 ```c
-int ndigit[10]
+int ndigit[10] = {0};
 ```
 
-- Declares an array of 10 integers
+- Declares an array of 10 integers, with `ndigit[0]` initialized to **0**, and the **other elements** automatically initialized to **0**
 
-- **Subscripts** always start at **zero**(ndigt[==0==]) 
-
-  - Ranging 
-
-    from ndigit[**0**] ~ ndigit[**9**]
-
-  - Subscript
-
-    Can be an integer expression, including variables(like `i`) and constants
+- Subscripts[**?**] can be integers, including variables(e.g.,`i`) and constants
 
 
 
-###### ++ndigit
+###### Count digits
 
 ```c
 if (c >= '0' && c <= '9') {
@@ -728,3 +717,20 @@ else
 ```
 
 - To express a multi-way decision
+
+
+
+##### Local Variable
+
+```c
+for (int i = 0; i < /* ending condition */; ++i) {
+    
+ }
+```
+
+- `int i = 0`
+
+  > Restrict variables scope to the minimum required
+
+
+
