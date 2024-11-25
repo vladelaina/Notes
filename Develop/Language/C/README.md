@@ -692,6 +692,14 @@ if (c >= '0' && c <= '9') {
 
   > Should use a range check based on **<u>char</u>**acters(`'0'` `'9'`)
 
+  - Precedence
+
+    - `&&` > `||`
+
+      > ```c
+      > a || b && c   ==  a || (b && c)
+      > ```
+
 - `++ndigit[c - '0']`  
 
   - `c` & `'0'` are characters, and subtracting(-) give the number represented by `c`
