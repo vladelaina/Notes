@@ -695,15 +695,16 @@ if (c >= '0' && c <= '9') {
 - `++ndigit[c - '0']`  
 
   - `c` & `'0'` are characters, and subtracting(-) give the number represented by `c`
-
   - <img src="./images/ASCLL.png" alt="ASCLL" align = "left" style="zoom:10%;" />
-
+  
     - '0' - 48
     - '1' - 49
     - '10' - 49 48(So recommended `<= 9`)
-
+      - 'a' - 97     'z' - 122
+      - 'A' - 65     'Z' - 90
+  
   - Chars are essentially **small integers**
-
+  
     > Therefore, they can be treated as integers in **<u>arithmetic operations</u>**
 
  
@@ -738,4 +739,3 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
 - `++i` - Recommended style
 
-每天看三小结的cs50
