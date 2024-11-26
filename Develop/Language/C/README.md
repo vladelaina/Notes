@@ -747,3 +747,8 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
 - `++i` - Recommended style
 
+
+
+
+
+处理剪切板的内容，然后将内容给chatgpt(包括要提起多少，然后自动复制到朗读网页，包括自动清空里面的内容)
