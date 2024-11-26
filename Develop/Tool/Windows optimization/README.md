@@ -155,6 +155,12 @@ slmgr -ato
 
 # [Beautify](.\resource\Beautify)
 
+卸载小组件
+
+```
+winget uninstall MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy
+```
+
 [Mouse pointer](.\resource\Beautify\Mouse pointer)
 
 
