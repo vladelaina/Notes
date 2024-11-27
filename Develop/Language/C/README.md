@@ -710,6 +710,7 @@ if (c >= '0' && c <= '9') {
     - '10' - 49 48(So recommended `<= 9`)
       - 'a' - 97     'z' - 122
       - 'A' - 65     'Z' - 90
+    - All character ranges: `32` - `126`
   
   - Chars are essentially **small integers**
   
