@@ -766,3 +766,16 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 ```
 
 - Recommended - `(char)i`
+
+
+
+
+
+## Functions<img src="./images/function.png" alt="function" style="zoom:20%;" />
+
+> Encapsulate computation, making code easier to understand and more efficient without needing to worry about implementation details.
+
+```
+
+```
+
