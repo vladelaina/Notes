@@ -710,7 +710,7 @@ if (c >= '0' && c <= '9') {
     - '10' - 49 48(So recommended `<= 9`)
       - 'a' - 97     'z' - 122
       - 'A' - 65     'Z' - 90
-    - All character ranges: `32` - `126`
+    - All character ranges: `32` - `126` (' ' - '~')
   
   - Chars are essentially **small integers**
   
@@ -752,4 +752,14 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
 
 
-处理剪切板的内容，然后将内容给chatgpt(包括要提起多少，然后自动复制到朗读网页，包括自动清空里面的内容)
+##### Expansion
+
+
+
+###### explicit type casting
+
+```c
+printf("%c \n", i);  => printf("%c \n", (char)i);
+```
+
+- Recommended - `(char)i`
