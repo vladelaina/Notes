@@ -825,6 +825,6 @@ return-type function-name(parameter declarations, if any)
 printf("%d %d %d\n", i, power(2,i), power(-3,i));
 ```
 
-- `power(2, i)`
+- `power(-3, i)`
   - Two arguments are provided
   - Treated as an **int**eger
