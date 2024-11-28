@@ -807,7 +807,7 @@ int power(int base, int n)
 
 
 
-##### Definition form
+##### Definition 
 
 ```c
 return-type function-name(parameter declarations, if any)
@@ -817,3 +817,14 @@ return-type function-name(parameter declarations, if any)
 }
 ```
 
+
+
+##### Call
+
+```c
+printf("%d %d %d\n", i, power(2,i), power(-3,i));
+```
+
+- `power(2, i)`
+  - Two arguments are provided
+  - Treated as an **int**eger
