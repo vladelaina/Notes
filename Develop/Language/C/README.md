@@ -639,15 +639,17 @@ else
 ```c
 #include <stdio.h>
 
+/* count and output digits, whitespace, and other charactes */
 int main() {
     int c, nwhite, nother;
-    int ndigit[10] = {0}; 
+    int ndigit[10] = {0}; // Array to count digits(0-9)
 
-    nwhite = nother = 0;
+    nwhite = nother = 0; // Initialize counters
 
+    // Read each character until EOF
     while ((c = getchar()) != EOF) {
         if (c >= '0' && c <= '9') {
-            ++ndigit[c - '0'];
+            ++ndigit[c - '0']; // Increment the count for the corresponding digit
         } else if (c == ' ' || c == '\n' || c == '\t') {
             ++nwhite;
         } else {
@@ -655,6 +657,7 @@ int main() {
         }
     }
 
+    // Output the results
     printf("digits =");
     for (int i = 0; i < 10; ++i) {
         printf(" %d", ndigit[i]);
