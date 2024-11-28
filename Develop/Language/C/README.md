@@ -753,8 +753,6 @@ for (int i = 0; i < /* ending condition */; ++i) {
 
 
 
-
-
 ##### Expansion
 
 
@@ -773,9 +771,9 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 
 ## Functions<img src="./images/function.png" alt="function" style="zoom:20%;" />
 
-
-
 > Encapsulate computation, making code easier to understand and more efficient without needing to worry about implementation details.
+
+
 
 ```
 
