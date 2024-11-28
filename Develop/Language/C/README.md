@@ -775,5 +775,45 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 
 
 
+```c
+#include <stdio.h>
+/* Exponentiation */
 
+// Function declatation
+int power(int m, int n);
+
+// Test the power Function
+int main()
+{
+  // Loop from 0 to 9, calculate 2^i and (-3)^i for each i
+  for (int i = 0; i < 10; ++i) {
+    printf("%d %d %d\n", i, power(2, i),power(-3, i));
+  }
+  return 0;
+}
+
+/* power: raises base to the power of n, where n >= 0 */
+int power(int base, int n)
+{
+  int p = 1;
+
+  for (int i = 1; i <= n; ++i) {
+    p = p * base;
+  }
+
+  return p;
+}
+```
+
+
+
+##### Definition form
+
+```c
+return-type function-name(parameter declarations, if any)
+{
+	declarations
+	statements
+}
+```
 
