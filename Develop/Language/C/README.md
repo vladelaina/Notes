@@ -817,6 +817,36 @@ return-type function-name(parameter declarations, if any)
 }
 ```
 
+- All varibles within a function are **local variables**
+
+  - whether they aree <u>parammeters</u> or <u>locally declared variables</u>
+
+- The **variables** in a function's parentheses are usually called **==parameters==**
+
+
+
+###### Argument
+
+- Formal Arguments
+
+  > ```c
+  > void add(int x, int y){ .. }
+  > ```
+  >
+  > - `x` & `y` 
+  >   - They are **placeholders** for the values the function will receive	
+
+- Actual Arguments
+
+  >```c
+  >add(a, b);
+  >```
+  >
+  >- `a` & `b`
+  >  - **Values** or **variables** passed to the function
+  >  - Assigned to the <u>**formal parameters**</u>
+
+
 
 
 ##### Call
