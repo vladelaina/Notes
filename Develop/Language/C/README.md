@@ -781,7 +781,6 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 // Function declatation
 int power(int base, int n);
 
-// Test the power Function
 int main()
 {
   // Loop from 0 to 9, calculate 2^i and (-3)^i for each i
@@ -806,21 +805,21 @@ int power(int base, int n)
 
 
 
-##### Definition 
+##### Funcion prototype
+
+> Defines a function's name, return type, and parameters, enabling early calls and type checking
 
 ```c
-return-type function-name(parameter declarations, if any)
-{
-	declarations
-	statements
+return_type function_name(parameter_type1, parameter_type2, ...); // prototype
+
+int add(int a, int b){ //Definition
+	return a + b;
 }
 ```
 
-- All varibles within a function are **local variables**
+- Pay attention to this `return_type`
 
-  - whether they aree <u>parammeters</u> or <u>locally declared variables</u>
 
-- The **variables** in a function's parentheses are usually called **==parameters==**
 
 
 
@@ -860,7 +859,7 @@ printf("%d %d %d\n", i, power(2,i), power(-3,i));
 
 
 
-##### return
+##### return<img src="./images/return.png" alt="return" style="zoom:5%;" />
 
 - Purpose
   - Sends a value back to the caller
@@ -872,26 +871,7 @@ printf("%d %d %d\n", i, power(2,i), power(-3,i));
 
 
 
-
-
-##### Funcion prototype
-
-> Defines a function's name, return type, and parameters, enabling early calls and type checking
-
-```c
-return_type function_name(parameter_type1, parameter_type2, ...); // prototype
-
-int add(int a, int b){ //Definition
-	return a + b;
-}
-```
-
-- Pay attention to this `return_type`
-
-
-
-
-##### Expansion - `scanf`
+##### Expansion - `scanf`(scan formatted)
 
 ```c
 scanf("format_string", &variable1, &variable2,..)
