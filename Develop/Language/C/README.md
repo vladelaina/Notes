@@ -110,6 +110,10 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
+***
+
+
+
 ## Function
 
 > Is called by naming it, followed by a parenthesized list of **arguments**
@@ -280,6 +284,10 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
+***
+
+
+
 ## Arithmetic Expressions
 
 > If an arithmetic operator has one **<u>floating-point</u>** and one integer operand, the **<u>integer</u>** is converted to  a **<u>floating-point</u>** before the operation.
@@ -292,6 +300,8 @@ vim.api.nvim_set_keymap('i', '<F5>', '<Esc>:!gcc % -o %< && ./%< <CR>', { norema
 
 
 
+***
+
 
 
 ## for
@@ -301,6 +311,12 @@ for (initialization; condition; icrement){
 	// loop body
 }
 ```
+
+
+
+
+
+***
 
 
 
@@ -327,6 +343,12 @@ for (initialization; condition; icrement){
 - Notice 
 
    There is no semicolon(==;==) at the end of a `#define` line
+
+
+
+
+
+***
 
 
 
@@ -632,6 +654,8 @@ else
 
 
 
+***
+
 
 
 ## Arrays
@@ -767,6 +791,8 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 
 
 
+***
+
 
 
 ## Functions<img src="./images/function.png" alt="function" style="zoom:20%;" />
@@ -883,3 +909,11 @@ scanf("format_string", &variable1, &variable2,..)
   - The <img src="./images/address.png" alt="address" style="zoom:10%;" />**<u>address of</u>**(&) the variable where the input will be stored
 
 ​	
+
+****
+
+
+
+
+
+## Arguments - Call by Value
