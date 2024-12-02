@@ -892,8 +892,6 @@ int add(int a, int b){ //Definition
 
 ##### Expansion - `scanf`
 
-
-
 ```c
 scanf("format_string", &variable1, &variable2,..)
 ```
