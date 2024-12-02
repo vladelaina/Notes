@@ -880,6 +880,6 @@ scanf("format_string", &variable1, &variable2,..)
 - `"format_string"` (e.g., `"%d"`)
   - Specifies the expected input type and format
 - `&variable`
-  - The **address of**(&) the variable where the input will be stored
+  - The <img src="./images/address.png" alt="address" style="zoom:10%;" />**<u>address of</u>**(&) the variable where the input will be stored
 
 ​	
