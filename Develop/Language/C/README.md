@@ -886,3 +886,19 @@ int add(int a, int b){ //Definition
 }
 ```
 
+
+
+
+
+##### Expansion
+
+###### `scanf`
+
+```c
+scanf("format_string", &variable1, &variable2,..)
+```
+
+- `"format_string"` (e.g., `"%d"`)
+  - Specifies the expected input type and format
+- `&variable`
+  - The address of(&) the variable where the input will be stored
