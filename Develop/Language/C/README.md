@@ -777,10 +777,9 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 
 ```c
 #include <stdio.h>
-/* Exponentiation */
 
 // Function declatation
-int power(int m, int n);
+int power(int base, int n);
 
 // Test the power Function
 int main()
@@ -797,7 +796,7 @@ int power(int base, int n)
 {
   int p = 1;
 
-  for (int i = 1; i <= n; ++i) {
+  for (int i = 1; i <= n; ++i) { // i = 1, ignore the effect of 0
     p = p * base;
   }
 
@@ -858,3 +857,32 @@ printf("%d %d %d\n", i, power(2,i), power(-3,i));
 - `power(-3, i)`
   - Two arguments are provided
   - Treated as an **int**eger
+
+
+
+##### return
+
+- Purpose
+  - Sends a value back to the caller
+- In `main` - typically sent to the operating system
+  - Reurn value 0
+    - Indicates normal grogram termination
+  - Non-zero return value
+    - Signals an error or abnormal termination
+
+
+
+
+
+##### Funcion prototype
+
+> Defines a function's name, return type, and parameters, enabling early calls and type checking
+
+```c
+return_type function_name(parameter_type1, parameter_type2, ...); // prototype
+
+int add(int a, int b){ //Definition
+	return a + b;
+}
+```
+
