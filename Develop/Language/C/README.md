@@ -919,3 +919,5 @@ scanf("format_string", &variable1, &variable2,..)
 ## Arguments - Call by Value
 
 > The value passed to the function is just a **temporary** ==copy== of the original value, and they do not affect each other.
+
+- Parameters as local variables
