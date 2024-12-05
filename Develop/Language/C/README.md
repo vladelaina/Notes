@@ -807,6 +807,7 @@ printf("%c \n", i);  => printf("%c \n", (char)i);
 // Function declatation
 int power(int base, int n);
 
+// Test the power Function
 int main()
 {
   // Loop from 0 to 9, calculate 2^i and (-3)^i for each i
@@ -821,11 +822,11 @@ int power(int base, int n)
 {
   int p = 1;
 
-  for (int i = 1; i <= n; ++i) { // i = 1, ignore the effect of 0
+  for (int i = 1; i <= n; ++i) { // n = 0 -> 9
     p = p * base;
   }
 
-  return p;
+  return p; // When the incoming i = 0, p = 1 is returned directly
 }
 ```
 
@@ -921,3 +922,6 @@ scanf("format_string", &variable1, &variable2,..)
 > The value passed to the function is just a **temporary** ==copy== of the original value, and they do not affect each other.
 
 - Parameters as local variables
+
+​	
+
