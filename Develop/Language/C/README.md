@@ -925,3 +925,29 @@ scanf("format_string", &variable1, &variable2,..)
 
 ​	
 
+```c
+int power(int base, int n)
+{
+  int p;
+  for (p = 1; n > 0; --n) {// i initialized to 1 here
+    p *= base;
+  }
+  return p;
+}
+```
+
+- ` for (p = 1; n > 0; --n){}` 
+  - `n` 
+    - Counted down until it becomes 0
+    - Temporary variables(not affect the original)
+
+
+
+
+
+***
+
+
+
+## Character Arrays
+
