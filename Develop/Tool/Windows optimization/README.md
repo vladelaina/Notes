@@ -153,6 +153,12 @@ slmgr -ato
 
 
 
+<img src="./images/AB Download Manager.png" alt="AB Download Manager" align = "left" style="zoom: 47%;" />[AB Download Manager](https://github.com/amir1376/ab-download-manager/releases/tag/v1.4.4)
+
+
+
+
+
 # [Beautify](.\resource\Beautify)
 
 卸载小组件
