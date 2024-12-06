@@ -951,3 +951,8 @@ int power(int base, int n)
 
 ## Character Arrays
 
+
+
+
+
+even a line containing only a newline has length 1
