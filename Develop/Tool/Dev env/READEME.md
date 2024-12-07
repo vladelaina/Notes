@@ -601,17 +601,12 @@ return config
 
 
 ##### <img src="./images/cut.png" alt="cut" style="zoom:8%;" />cut
-- <img src="./images/level.png" alt="level" style="zoom:5%;" /> `sp`
+- <img src="./images/level.png" alt="level" style="zoom:5%;" /> `sp (name)` 
+  - shortcut - <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:10%;" /> ==s==
   - size -  `:resize ±num`
-
-- <img src="./images/vertical.png" alt="vertical" style="zoom:5%;" /> `vsp`
+- <img src="./images/vertical.png" alt="vertical" style="zoom:5%;" /> `vsp (name)`
+  - shortcut - <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:10%;" /> ==v==
   - size - `:vertical resize ±num`
-
-
-
-
-
-- ``(Ctrl-w s) 然后用`:e (+name)`可以打开想要的，默认的话就是打开当前的同一份`
 
 
 
