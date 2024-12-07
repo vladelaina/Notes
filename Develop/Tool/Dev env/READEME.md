@@ -592,20 +592,30 @@ return config
 
 ### <img src="./images/window.png" alt="window" align = "left" style="zoom:13%;" />Window
 
+- `:e name` -  Open file in current window
+- switch
+  -  <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:15%;" /> `w`
+  - <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:15%;" /> `h/j/k/l`
+- <img src="./images/exchange.png" alt="exchange" style="zoom:5%;" />e**x**change  - <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:15%;" /> `x`
+
 
 
 ##### <img src="./images/cut.png" alt="cut" style="zoom:8%;" />cut
+- <img src="./images/level.png" alt="level" style="zoom:5%;" /> `sp`
+  - size -  `:resize ±num`
 
-- vertical - `:sp`
-- level - `:vsp`
-
-
-
-
+- <img src="./images/vertical.png" alt="vertical" style="zoom:5%;" /> `vsp`
+  - size - `:vertical resize ±num`
 
 
 
 
+
+- ``(Ctrl-w s) 然后用`:e (+name)`可以打开想要的，默认的话就是打开当前的同一份`
+
+
+
+旋转 `Ctrl-w r`
 
 
 
