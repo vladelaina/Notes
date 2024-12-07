@@ -9,7 +9,7 @@
 
 [练习](https://www.vimgolf.com/)
 
-[1](./images)
+
 
 ***
 

@@ -580,9 +580,32 @@ return config
 
 
 
+***
+
+
+
 
 
 # <img src="./images/nvim-icon.png" alt="nvim-icon" style="zoom:20%;" />Nvim
+
+
+
+### <img src="./images/window.png" alt="window" align = "left" style="zoom:13%;" />Window
+
+
+
+##### <img src="./images/cut.png" alt="cut" style="zoom:8%;" />cut
+
+- vertical - `:sp`
+- level - `:vsp`
+
+
+
+
+
+
+
+
 
 
 
