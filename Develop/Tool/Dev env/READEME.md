@@ -612,7 +612,7 @@ return config
 
 旋转 `Ctrl-w r`
 
-
+ 
 
 
 
