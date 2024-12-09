@@ -588,6 +588,92 @@ return config
 
 # <img src="./images/nvim-icon.png" alt="nvim-icon" style="zoom:20%;" />Nvim
 
+##### edit
+
+i - I
+
+a - A
+
+r - R -  replace
+
+
+
+o - O
+
+
+
+cw  dw改变(置换)/删除光标所在处的单词的命令 (c=change,d=delete)
+
+
+
+x - X
+
+
+
+
+
+##### 移动
+
+zz zt zb
+
+ctrl + d , ctrl + u
+
+crtl +f , ctrl + b
+
+
+
+num + h/j/k/l
+
+num + G 使得光标跳动到指定行
+
+
+
+w - b
+
+
+
+##### 标记
+
+m+word
+
+###### 跳转 
+
+’word
+
+###### 删除(delmarks)
+
+- :delm + word
+- 全部 
+  - delm!
+
+
+
+
+
+(){}
+
+
+
+b/B - w/W   首
+
+b/B+e/E -  e/E 尾
+
+- e 当前单词词尾
+
+
+
+##### 删除：nnormal
+
+x -X
+
+###### insert
+
+**`Ctrl-H`** 
+
+ **`Ctrl-W`** 删除一个单词（删除光标前的单词）。
+
+
+
 
 
 ### <img src="./images/window.png" alt="window" align = "left" style="zoom:13%;" />Window
