@@ -608,13 +608,44 @@ return config
   - shortcut - <img src="./images/ctrl-w.png" alt="ctrl-w" style="zoom:10%;" /> ==v==
   - size - `:vertical resize ±num`
 
-
-
-旋转 `Ctrl-w r`
-
  
 
-  
+
+
+### <img src="./images/tab.png" alt="tab" style="zoom:20%;" />Tab
+
+
+
+##### open
+
+- `tabe (+neme)`
+  - tabedit
+
+
+
+
+
+
+
+
+
+切换 `:tabnext`（或 `:tabn`）和 `:tabprevious`（或 `:tabp`）来切换到下一个或上一个标签页。
+
+
+
+gt下一个
+
+gT上一个
+
+
+
+(num)gt
+
+
+
+
+
+ls 列出打开的文件
 
 ****
 
