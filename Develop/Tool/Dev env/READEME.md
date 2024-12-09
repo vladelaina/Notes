@@ -588,89 +588,126 @@ return config
 
 # <img src="./images/nvim-icon.png" alt="nvim-icon" style="zoom:20%;" />Nvim
 
-##### edit
-
-i - I
-
-a - A
-
-r - R -  replace
+### Edit
 
 
 
-o - O
+#### Move
+
+>  ​	 k							
+>
+> h		l                         
+>
+> ​	 j
 
 
 
-cw  dw改变(置换)/删除光标所在处的单词的命令 (c=change,d=delete)
+#####  Row
+
+- Current
+
+  > ==zz== 
+  >
+  > ==zt==op
+  >
+  > ==zb==ottom
+
+- Spicify
+
+  `num + gg` / `num +G`
 
 
 
-x - X
+##### Page
 
-
-
-
-
-##### 移动
-
-zz zt zb
-
-ctrl + d , ctrl + u
-
-crtl +f , ctrl + b
-
-
-
-num + h/j/k/l
-
-num + G 使得光标跳动到指定行
-
-
-
-w - b
-
-
-
-##### 标记
-
-m+word
-
-###### 跳转 
-
-’word
-
-###### 删除(delmarks)
-
-- :delm + word
-- 全部 
-  - delm!
+- Half
+  - ==Ctrl== + ==d==own 
+  - ==Ctrl== + ==u==p
+- One
+  - ==Ctrl== + ==f==orward 
+  - ==Ctrl== + ==b==ack 
 
 
 
 
 
-(){}
+
+##### Insert
+
+> i - I
+>
+> a - A
+>
 
 
 
-b/B - w/W   首
+##### Jump
 
-b/B+e/E -  e/E 尾
+- **Word**
+  - Prefix
+    -  ==w==/==W==ord - ==b==/==B==ack 
+  - End
+    - ==e==/==E==
 
-- e 当前单词词尾
+- (){} - (){}
+- **Line**
+  - 0 ^ $
+    - `0` : Start of the line
+    - `^` : Fist non-blank character of the line
+    - `$` : End of the line  
 
 
 
-##### 删除：nnormal
 
-x -X
 
-###### insert
 
-**`Ctrl-H`** 
+#### Delete
 
- **`Ctrl-W`** 删除一个单词（删除光标前的单词）。
+> `(num)dd` - Specified lines
+>
+> `d0` - To **<u>start</u>** of line
+>
+> `d$`  - To **<u>end</u>** of line 
+
+###### Model
+
+- **Normal**
+  - x - X
+    - `x` - **<u>Current</u>** character
+    - `X` -  **<u>Before</u>** the cursor
+- **Insert**
+  - `Ctrl - h` -  **<u>Character</u>** before the cursor
+  - `Ctrl - w` -  **<u>Before</u>** the cursor
+
+
+
+
+
+#### Replace & Change
+
+- Replace
+  - `r`
+  - `R`  -  Replace multiple characters
+- Change
+  - `cw` -  Current word
+  - `C`  -  End of the line
+
+
+
+
+
+#### Mark 
+
+`m word`
+
+- Jump 
+  - =='==word
+- Delmarks
+  - `:delm word`
+  - All 
+    - `:delm!`
+
+
 
 
 
