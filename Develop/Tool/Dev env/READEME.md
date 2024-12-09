@@ -616,36 +616,34 @@ return config
 
 
 
-##### open
+##### open<img src="./images/open.png" alt="open" style="zoom:15%;" />
 
 - `tabe (+neme)`
   - tabedit
 
 
 
+##### switch
+
+-  next - `tabn` - `gt`
+
+
+- previous - `tabp` - `gT`
+
+
+- Specify - `num + gt`
+  - `1 gt`
 
 
 
+##### Move
+
+- `tabm num` 
+  - `tabm 0` - front
 
 
 
-切换 `:tabnext`（或 `:tabn`）和 `:tabprevious`（或 `:tabp`）来切换到下一个或上一个标签页。
-
-
-
-gt下一个
-
-gT上一个
-
-
-
-(num)gt
-
-
-
-
-
-ls 列出打开的文件
+##### bdelete- `bd`
 
 ****
 
