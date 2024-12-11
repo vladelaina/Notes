@@ -686,8 +686,13 @@ return config
 #### Replace & Change
 
 - Replace
-  - `r`
-  - `R`  -  Replace multiple characters
+  
+  - Character
+    - `r`
+    - `R`  -  Replace multiple characters
+  
+  
+  
 - Change
   - `cw` -  Current word
   - `C`  -  End of the line
@@ -709,15 +714,21 @@ return config
 
 
 
-### TO DO
+### Find
 
-### 查找
+- /
+  - Next - `n`
+  - Previous - `N`
 
-- `/abc`：从光标开始处向文件尾搜索 `abc`。
-- `?abc`：从光标开始处向文件首搜索 `abc`。
+
+
+
+
+
+
+
+
 - `/\/abc`：从光标开始处向文件尾搜索 `/abc`，其中 `/` 是转义字符。
-- `n`：在同一方向重复上一次搜索命令。
-- `N`：在反方向上重复上一次搜索命令。
 
 ### 替换
 
