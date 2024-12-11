@@ -1,12 +1,10 @@
-# （23~26）==24==
+# 
 
 
 
-<progress value="24" max="239" style="width: 100%;">7.1%</progress>
+<progress value="30" max="239" style="width: 100%;">7.1%</progress>
 
-
-
-> Interesting projects
+> 9Interesting projects
 >
 > - [cmus](https://github.com/cmus/cmus?tab=readme-ov-file)
 
@@ -956,3 +954,5 @@ int power(int base, int n)
 
 
 even a line containing only a newline has length 1
+
+ 
