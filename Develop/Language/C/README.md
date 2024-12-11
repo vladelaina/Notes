@@ -949,7 +949,82 @@ int power(int base, int n)
 
 ## Character Arrays
 
+```c
+#include <stdio.h>
 
+#define MAX_LINE_LENGTH 1000 /* maximum iput line length */
+
+/*Function prototypes */
+/* read_line reads each line, and if it's the longest, copy_string saves it. */
+int read_line(char line[], int max_length);
+void copy_string(char destination[], const char source[]);
+
+/* Print the longest input lien */
+int main()
+{
+  int current_length;
+  int max_length = 0; /* maximum length seen so far */
+  char current_line[MAX_LINE_LENGTH];
+  char longest_line[MAX_LINE_LENGTH];
+  
+  /* Read lines and find the longest one */
+  while ((current_length = read_line(current_line, MAX_LINE_LENGTH)) > 0) {
+    if (current_length > max_length) {
+      max_length = current_length;
+      copy_string(longest_line, current_line);
+    }
+  }
+
+  /* Print the longest line if there was one */
+  if (max_length > 0) {
+    printf("\n%s", longest_line);
+  }
+
+  return 0;
+} 
+
+/* read_line: Read aline into s, return the length */
+int read_line(char s[], int max_length)
+{
+  int c, i;
+  
+  for (i = 0; i < max_length -1 && (c = getchar()) != EOF && c != '\n'; ++i)
+  {
+    s[i] = c;
+  }
+
+  if (c == '\n') {
+    s[i] = c;
+    ++i;
+  }
+  s[i] = '\0';
+
+  return i;
+}
+
+/* copy_string: Copy 'source' into 'destination'; assume destination is big enouht */
+void copy_string(char destination[], const char source[])
+{
+  int i = 0;
+
+  /* Copy each character from 'source' to 'destination' */
+  while ((destination[i] = source[i]) != '\0') {
+    ++i;
+  }
+}
+```
+
+- `void copy_string(char destination[], const char source[]);`
+
+  - `char destination`
+    - The box doesn't know its size; you can only know it by looking at the **<u>card</u>** next to it.
+      - **<u>card</u>** - The passed value
+
+  - `const`
+
+    The passed paranmeter is ==read-only==, preventing modification.
+
+- 
 
 
 
