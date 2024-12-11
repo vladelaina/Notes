@@ -714,7 +714,9 @@ return config
 
 
 
-### Find
+### Find & Replace
+
+##### Find
 
 - /
   - Next - `n`
@@ -722,57 +724,51 @@ return config
 
 
 
+##### Replace
+
+**Current line:** `:s/old_text/new_text/`
+
+**All in current line:** `:s/old_text/new_text/g`
+
+**Entire file:** `:%s/old_text/new_text/g`
+
+**Confirm each:** `:%s/old_text/new_text/gc`
+
+**Specified line range(Can beselected via a):** `:10,20s/old_text/new_text/g`
+
+> `g`: replace all matches in the line, `c`: confirm each replacement, `10,20`: specify line range.
 
 
 
 
 
+### Copy, Cut, Paste, Indentation
 
-- `/\/abc`：从光标开始处向文件尾搜索 `/abc`，其中 `/` 是转义字符。
+- `yy`: Copy the current line.
+- `nyy`: Copy `n` lines.
+- `v` + arrow keys + `y`: Copy the selected area.
+- `dd`: Cut the current line.
+- `p`: Paste below the cursor.
+- `P`: Paste above the cursor.
+- `num1,num2 co n3`: Copy lines `num1` to `num2` below line `num3`.
+- `num1,num2 m n3`: Move lines `num1` to `num2` below line `num3`.
 
-### 替换
+##### Indentation
 
-- `s/vivian/sky/`：替换当前行第一个 `vivian` 为 `sky`。
-- `s/vivian/sky/g`：替换当前行所有的 `vivian` 为 `sky`。
-- `n,$s/vivian/sky/`：替换第 `n` 行开始到最后一行中每一行的第一个 `vivian` 为 `sky`。
-- `n,$s/vivian/sky/g`：替换第 `n` 行开始到最后一行中每一行所有 `vivian` 为 `sky`。
-- `%s/vivian/sky/g`：（等同于 `g/vivian/s//sky/`）替换每一行的每一个 `vivian` 为 `sky`。
-- `s#vivian/#sky/#`：替换当前行第一个 `vivian/` 为 `sky/`（可以使用 `#` 或 `+` 作为分隔符，此时中间出现的 `/` 不会作为分隔符）。
-- `s/p1/p2/g`：将当前行中所有 `p1` 替换为 `p2`。
-- `n1,n2s/p1/p2/g`：将第 `n1` 行至第 `n2` 行中所有的 `p1` 替换为 `p2`。
-- `g/p1/s//p2/g`：将文件中所有的 `p1` 替换为 `p2`。
+- After selecting with `v`, use `<` or `>` to adjust indentation.
+  - `:m±num`
 
-### 复制粘贴
 
-- `yy`：复制当前行。
-- `nyy`：复制从当前行开始的 `n` 行。
-- 先按 `v` 然后用方向键选择区域，再按 `y` 复制选中内容。
-- `dd`：剪切当前行。
-- `p`（小写）：在当前光标处下方粘贴内容。
-- `P`（大写）：在当前光标处上方粘贴内容。
-- `n1,n2 co n3`：将第 `n1` 行到第 `n2` 行之间的内容拷贝到第 `n3` 行下。
-- `n1,n2 m n3`：将第 `n1` 行到第 `n2` 行之间的内容移到第 `n3` 行下。
 
-### 常用选项
 
-#### 编辑器选项
 
-- `set number`：显示行号。
-- `set number!`：不显示行号，其他选项通过加 `!` 来切换。
-- `set all`：列出所有选项的设置情况。
-- `set ignorecase`：在搜索中忽略大小写。
-- `set list`：显示制表符（Ctrl+I）和行尾标志（$）。
-- `set warn`：在切换文件时，如果未保存当前文件，则显示 "No write" 信息。
-- `set nowrapscan`：禁止在搜索到达文件两端时从另一端开始继续搜索。
-- `set mesg`：允许显示其他用户通过 `write` 命令发送的信息。
+### Common Options
 
-#### 编辑器保存
+#### Editor Options
 
-- `:wq`：保存并退出。
-- `:q!`：不保存退出。
-- `:w`：保存更改。
-- `U`：撤销更改。
-- `Ctrl+r`：重做，恢复撤销的更改。
+- `set number`: Display line numbers.
+- `set number!`: Toggle line numbers display.
+
 
 
 
