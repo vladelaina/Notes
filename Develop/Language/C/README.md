@@ -1017,7 +1017,7 @@ void copy_string(char destination[], const char source[])
 - `void copy_string(char destination[], const char source[]);`
 
   - `char destination`
-    - The box doesn't know its size; you can only know it by looking at the **<u>card</u>** next to it.
+    - The 'box' doesn't know its size; you can only know it by looking at the **<u>card</u>** next to it.
       - **<u>card</u>** - The passed value
 
   - `const`
