@@ -1014,6 +1014,8 @@ void copy_string(char destination[], const char source[])
 }
 ```
 
+###### main
+
 - `void copy_string(char destination[], const char source[]);`
 
   - `char destination`
@@ -1024,11 +1026,61 @@ void copy_string(char destination[], const char source[])
 
     The passed paranmeter is ==read-only==, preventing modification.
 
-- 
+- `while ((current_length = read_line(current_line, MAX_LINE_LENGTH)) > 0)`
+
+  - `readline` assigns the line length to `current_length` and check if it's greater(>) than 0
+    - `\n` has length 1
+    - `current_line` 
+      - Used to store the input content read by `readline`
 
 
 
-even a line containing only a newline has length 1
+###### read_line
+
+```c
+/* Read line into s, return the length */
+int read_line(char s[], int max_length)
+{
+  int c, i;
+  
+  for (i = 0; i < max_length -1 && (c = getchar()) != EOF && c != '\n'; ++i)
+  {
+    s[i] = c; // Store the character
+  }
+
+  if (c == '\n') {
+    s[i] = c;
+    ++i;
+  }
+  s[i] = '\0';
+
+  return i;
+}
+```
+
+
+
+- `int read_line(char s[], int max_length)`
+
+  - `s` & `max_length` 
+
+    Represents the passed value, increasing the function's **versatility**
+
+- `for (i = 0; i < max_length -1 && (c = getchar()) != EOF && c != '\n'; ++i)`
+
+  - If ==any== condition is not met, the loop exits
+
+  - `i < max_length - 1`
+
+    - `<`
+
+      - `i` starts from **0**
+
+    - `max_length - 1`
+
+      Ensure there is space at the end of the array to store `\0`
+
+
 
  
 
