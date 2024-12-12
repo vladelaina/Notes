@@ -1,4 +1,4 @@
-# 
+# 37
 
 
 
@@ -949,6 +949,10 @@ int power(int base, int n)
 
 ## Character Arrays
 
+
+
+### Code
+
 ```c
 #include <stdio.h>
 
@@ -983,23 +987,25 @@ int main()
   return 0;
 } 
 
-/* read_line: Read aline into s, return the length */
+/* Read one line into s, return the length */
+/* To read multiple lines, call it multiple times */
 int read_line(char s[], int max_length)
 {
   int c, i;
   
   for (i = 0; i < max_length -1 && (c = getchar()) != EOF && c != '\n'; ++i)
   {
-    s[i] = c;
+    s[i] = c; // Store the character
   }
 
   if (c == '\n') {
     s[i] = c;
     ++i;
   }
-  s[i] = '\0';
-
-  return i;
+  s[i] = '\0'; // Add the null terminator
+    
+// Number of characters read (excluding \0, Arrays start at 0, counting start at 1)
+  return i; 
 }
 
 /* copy_string: Copy 'source' into 'destination'; assume destination is big enouht */
@@ -1038,7 +1044,8 @@ void copy_string(char destination[], const char source[])
 ###### read_line
 
 ```c
-/* Read line into s, return the length */
+/* Read one line into s, return the length */
+/* To read multiple lines, call it multiple times */
 int read_line(char s[], int max_length)
 {
   int c, i;
@@ -1052,9 +1059,10 @@ int read_line(char s[], int max_length)
     s[i] = c;
     ++i;
   }
-  s[i] = '\0';
-
-  return i;
+  s[i] = '\0'; // Add the null terminator
+    
+// Number of characters read (excluding \0, Arrays start at 0, counting start at 1)
+  return i; 
 }
 ```
 
@@ -1082,6 +1090,10 @@ int read_line(char s[], int max_length)
 
 
 
- 
 
-  
+
+######   copy_string
+
+<img src="./images/copy_string.png" align = "left" alt="copy_string" style="zoom: 50%;" />
+
+Note: elegant
