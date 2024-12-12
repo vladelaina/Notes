@@ -1070,6 +1070,10 @@ int read_line(char s[], int max_length)
 
 - `int read_line(char s[], int max_length)`
 
+  - `int` 
+
+    It the default returen type, it could be **omitted**
+
   - `s` & `max_length` 
 
     Represents the passed value, increasing the function's **versatility**
@@ -1094,6 +1098,17 @@ int read_line(char s[], int max_length)
 
 ######   copy_string
 
-<img src="./images/copy_string.png" align = "left" alt="copy_string" style="zoom: 50%;" />
+```c
+void copy_string(char destination[], const char source[])
+{
+  int i = 0;
 
-Note: elegant
+  /* Copy each character from 'source' to 'destination' */
+  while ((destination[i] = source[i]) != '\0') { 
+    ++i;
+  }
+}
+```
+
+- `while ((destination[i] = source[i]) != '\0')`
+  - Copy the characters first, then ensure `\0` is copied correctly
