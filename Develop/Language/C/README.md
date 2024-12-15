@@ -1112,3 +1112,11 @@ void copy_string(char destination[], const char source[])
 
 - `while ((destination[i] = source[i]) != '\0')`
   - Copy the characters first, then ensure `\0` is copied correctly
+
+
+
+
+
+
+
+当你将数组(只能是常量）传递给函数时，数组会自动转换成指向数组首元素的指针。这意味着，函数内部接收到的并不是整个数组，而是指向它的一个地址。
