@@ -1031,6 +1031,10 @@ void copy_string(char destination[], const char source[])
   - `const`
 
     The passed paranmeter is ==read-only==, preventing modification.
+    
+  - array
+
+    - When an array (only constant arrays) is passed to a function, it is automatically converted into a pointer to its first element. Therefore, what the function receives is actually the address of the array, not the entire array.
 
 - `while ((current_length = read_line(current_line, MAX_LINE_LENGTH)) > 0)`
 
@@ -1117,6 +1121,12 @@ void copy_string(char destination[], const char source[])
 
 
 
+### Expand
 
 
-当你将数组(只能是常量）传递给函数时，数组会自动转换成指向数组首元素的指针。这意味着，函数内部接收到的并不是整个数组，而是指向它的一个地址。
+
+##### malloc
+
+
+
+##### realloc
