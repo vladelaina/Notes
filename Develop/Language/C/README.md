@@ -1125,7 +1125,65 @@ void copy_string(char destination[], const char source[])
 
 
 
-##### malloc
+##### `malloc` 
+
+> Memory Allocation
+
+- `(int*) malloc(size * sizeof(int));`  -    `void* malloc(size_type size);`
+
+  > - `(int*)`
+  >
+  >   - `malloc` only cares about how much memory you need, and it doesn't know the date type. It is responsible for allocating a memory block. You can cast the returned `void*` to an appropriate type point (e.g., `int*`) and then use it
+  >
+  >     - Pointer
+  >
+  >       Is a variable that stores the **address** of another variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
