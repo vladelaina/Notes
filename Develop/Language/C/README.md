@@ -1132,15 +1132,15 @@ void copy_string(char destination[], const char source[])
 - `pointer_type* ptr = (pointer_typer*) malloc(num_elements * sizeof(element_type))`
 
   > ```c
-  > int *ptr = (int*) malloc(10 * sizeof(int));
+  > int *ptr = (int *) malloc(10 * sizeof(int));
   > ```
   
   - `int *ptr`
     - It declares a pointer variable `ptr` that will store a memory address pointing to an `int` type variable
   
-  - `(int*)`
+  - `(int *)`
   
-    - `malloc` only cares about how much memory you need, and it doesn't know the date type. It is responsible for allocating a memory block. You can cast the returned `void*` to an appropriate type point (e.g., `int*`) and then use it
+    - `malloc` only cares about how much memory you need, and it doesn't know the date type. It is responsible for allocating a memory block. You can cast the returned `void *` to an appropriate type point (e.g., `int *`) and then use it
   
       - Pointer
   
