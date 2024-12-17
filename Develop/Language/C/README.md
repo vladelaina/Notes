@@ -1129,15 +1129,24 @@ void copy_string(char destination[], const char source[])
 
 > Memory Allocation
 
-- `(int*) malloc(size * sizeof(int));`  -    `void* malloc(size_type size);`
+- `pointer_type* ptr = (pointer_typer*) malloc(num_elements * sizeof(element_type))`
 
-  > - `(int*)`
-  >
-  >   - `malloc` only cares about how much memory you need, and it doesn't know the date type. It is responsible for allocating a memory block. You can cast the returned `void*` to an appropriate type point (e.g., `int*`) and then use it
-  >
-  >     - Pointer
-  >
-  >       Is a variable that stores the **address** of another variable
+  > ```c
+  > int* ptr = (int*) malloc(10 * sizeof(int));
+  > ```
+  
+  - `(int*)`
+  
+    - `malloc` only cares about how much memory you need, and it doesn't know the date type. It is responsible for allocating a memory block. You can cast the returned `void*` to an appropriate type point (e.g., `int*`) and then use it
+  
+      - Pointer
+  
+        Is a variable that stores the **address** of another variable
+  
+  - `sizeof(int)`
+  
+    - Calculate the memory size of an `int`(Usually 4 bytes)
+      - Allow the program to automatically adapt to the size of the `int` type on the current platform
 
 
 
