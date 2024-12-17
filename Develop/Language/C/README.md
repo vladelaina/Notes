@@ -1132,8 +1132,11 @@ void copy_string(char destination[], const char source[])
 - `pointer_type* ptr = (pointer_typer*) malloc(num_elements * sizeof(element_type))`
 
   > ```c
-  > int* ptr = (int*) malloc(10 * sizeof(int));
+  > int *ptr = (int*) malloc(10 * sizeof(int));
   > ```
+  
+  - `int *ptr`
+    - It declares a pointer variable `ptr` that will store a memory address pointing to an `int` type variable
   
   - `(int*)`
   
