@@ -1210,3 +1210,12 @@ int main()
 
 ##### `realloc`
 
+> Reallocation
+
+- pointer_type *ptr (pointer_typer *) ==realloc==(==void *ptr==, num_elements * sizeof(element_type))
+
+  > ```c
+  > int *ptr1 = (int *) realloc(ptr, 10 * sizeof(int));
+  > ```
+  >
+  > - realloc(==ptr==, 10 * sizeof(int))
