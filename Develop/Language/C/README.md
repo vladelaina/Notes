@@ -947,7 +947,19 @@ int power(int base, int n)
 
 ## Character Arrays
 
-
+> Exercise 1−16. Revise the main routine of the longest−line program so it will correctly print the length of arbitrary long input lines, and as much as possible of the text.
+>
+> 
+>
+>  Exercise 1−17. Write a program to print all input lines that are longer than 80 characters. The C programming Language 1.8 Arguments − Call by Value 32 
+>
+> 
+>
+> Exercise 1−18. Write a program to remove trailing blanks and tabs from each line of input, and to delete entirely blank lines. 
+>
+> 
+>
+> Exercise 1−19. Write a function reverse(s) that reverses the character string s. Use it to write a program that reverses its input a line at a time.
 
 ### Code
 
@@ -1149,53 +1161,49 @@ void copy_string(char destination[], const char source[])
   
     - Calculate the memory size of an `int`(Usually 4 bytes)
       - Allow the program to automatically adapt to the size of the `int` type on the current platform
+  
+- `free(ptr);`
+
+  - `free`
+
+    To release dynamically allocated memory and prevent menory **<u>leak</u>**s.
+
+    - **leak**
+
+      Like water leaking out of a <u>broken pipe</u><img src="./images/broken pipe.png" alt="broken pipe" style="zoom:15%;" />, this is a mismanagement of resources, not simply a shortage of resources.
+
+###### e.g.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+  int num = 10;
+  // Dynamically allocate memory for 10 integers
+  int *ptr = (int *)malloc(num * sizeof(int));
+
+  // Check if malloc succeeded 
+  if (ptr == NULL) {
+    printf("Memory allocation failed!\n");
+    return 1;
+  }
+
+  for (int i = 0; i < num; ++i) {
+    ptr[i] = i;
+  }
+
+  //Print the ptr content
+  for (int i = 0; i < num; ++i) {
+    printf("%d", ptr[i]);
+  }
+
+  // Free the allocated memory once done 
+  free(ptr);
+
+  return 0;
+}
+```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##### realloc
