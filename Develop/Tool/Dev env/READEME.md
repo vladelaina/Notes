@@ -827,6 +827,14 @@ return config
 
 ##### bdelete- `bd`
 
+
+
+### Shortcut
+
+`Ctrl + /` -- Open terminal
+
+
+
 ****
 
 
