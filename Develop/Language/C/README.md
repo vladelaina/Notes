@@ -1219,3 +1219,27 @@ int main()
   > ```
   >
   > - realloc(==ptr==, 10 * sizeof(int))
+
+
+
+
+
+
+
+：当 `realloc` 失败时，**原来的内容不会消失**，但是为了防止内存泄漏，必须释放原内存。
+
+
+
+##### Dangling pointer
+
+> Like holding an expired key that points to a room that no longer exists<img src="./images/Forbidden access.png" alt="Forbidden access" style="zoom:5%;" />. 
+>
+> - Continuing to use it may lead to errors or problems
+
+
+
+
+
+##### **leak**
+
+> Like water leaking out of a <u>broken pipe</u><img src="./images/broken pipe.png" alt="broken pipe" style="zoom:15%;" />, this is a mismanagement of resources, not simply a shortage of resources.
