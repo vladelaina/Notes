@@ -1215,10 +1215,17 @@ int main()
 - pointer_type *ptr (pointer_typer *) ==realloc==(==void *ptr==, num_elements * sizeof(element_type))
 
   > ```c
-  > int *ptr1 = (int *) realloc(ptr, 10 * sizeof(int));
+  > int num = 10;
+  > int *temp = (int *)realloc(ptr, num * sizeof(int));
+  > if (temp == NULL) {
+  >     printf("Memory reallocation failed!\n");
+  >     free(arr);
+  >     return 1;
+  > }
+  > arr = temp;
   > ```
   >
-  > - realloc(==ptr==, 10 * sizeof(int))
+  > - realloc(==ptr,== num * sizeof(int))
 
 
 
@@ -1228,15 +1235,13 @@ int main()
 
 ：当 `realloc` 失败时，**原来的内容不会消失**，但是为了防止内存泄漏，必须释放原内存。
 
-
+，在 `realloc` 失败时，必须使用 `free(arr)` 来释放原内存，防止内存泄漏。
 
 ##### Dangling pointer
 
 > Like holding an expired key that points to a room that no longer exists<img src="./images/Forbidden access.png" alt="Forbidden access" style="zoom:5%;" />. 
 >
 > - Continuing to use it may lead to errors or problems
-
-
 
 
 
