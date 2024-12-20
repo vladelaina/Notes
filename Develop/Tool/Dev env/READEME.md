@@ -178,6 +178,135 @@ rm -rf ~/.config/nvim/.git
 
 
 
+
+
+## Network
+
+### WSL HTTP 代理配置
+
+在程序员的日常工作中，常常需要访问外网资源，如 GitHub 来执行 `git clone`、`git pull`、`git push` 等操作。然而，由于 GitHub 被墙，直接访问会导致连接失败，因此需要通过 VPN 或代理来确保连接稳定。
+
+默认情况下，WSL（Windows Subsystem for Linux）的 `nameserver` 配置是宿主机的 IP 地址，连接到实际的 DNS 服务器。然而，如果使用 V2Ray、Clash 等代理软件，WSL2 不能将 VPN 视为 `nameserver`，因此需要进行一些配置来使代理生效。
+
+以下是解决方案的步骤：
+
+### 1. 配置 Windows V2Ray 客户端
+
+- **开启来自局域网的连接**：在 V2Ray 客户端中启用允许局域网连接选项。此时，状态栏会显示两个端口，标注为局域网端口。
+
+### 2. 配置 WSL 关闭 DNS 自动更新
+
+- **编辑 `/etc/wsl.conf` 文件**，关闭自动更新 `dns nameserver`：
+
+  ```toml
+  [network]
+  generateResolvConf = false
+  ```
+
+- **设置固定的 DNS 服务器**：修改 `/etc/resolv.conf`，将 `nameserver` 改为可用的 DNS 服务器（例如 `223.5.5.5`）：
+
+  ```bash
+  sudo chattr +i /etc/resolv.conf
+  ```
+
+  这样可以防止 WSL 在重启后删除该文件。
+
+### 3. 配置代理环境变量
+
+- **修改 `~/.bashrc` 或 `~/.zshrc` 文件**，添加以下内容：
+
+  ```bash
+  # network proxy
+  export winip=$(ip route | grep default | awk '{print $3}')
+  port=10811  # v2ray
+  export proxy_http="http://${winip}:${port}"
+  
+  # 设置代理命令
+  alias proxy="\
+    export HTTP_PROXY='${proxy_http}'; \
+    export HTTPS_PROXY='${proxy_http}'; \
+    export ALL_PROXY='${proxy_http}'; \
+    git config --global http.proxy '${proxy_http}'; \
+    git config --global https.proxy '${proxy_http}'"
+  alias unproxy="\
+    unset HTTP_PROXY; \
+    unset HTTPS_PROXY; \
+    unset ALL_PROXY; \
+    git config --global --unset http.proxy; \
+    git config --global --unset https.proxy"
+  ```
+
+  - `winip` 获取宿主机的 IP 地址，`port` 是 V2Ray 客户端的局域网代理端口。
+  - `proxy` 设置代理环境变量，`unproxy` 用于取消代理。
+  - 配置 `git` 的全局代理设置。
+
+### 4. 启用新环境
+
+- 输入以下命令，使环境变量生效：
+
+  ```bash
+  source ~/.bashrc  # 对于 zsh 用户是 source ~/.zshrc
+  ```
+
+### 5. 验证代理是否生效
+
+- 使用 `curl` 命令验证代理是否正常工作：
+
+  ```bash
+  curl https://google.com.hk
+  ```
+
+- 如果能快速响应，并且 V2Ray 客户端显示有 172 开头的 IP 访问记录，则说明代理配置成功。
+
+### 6. 排查问题
+
+如果无法正常连接，检查以下内容：
+
+- **DNS 解析**：通过 `ping google.com.hk` 测试是否能解析 IP。
+- **V2Ray 状态**：使用 PowerShell 命令 `curl https://google.com.hk` 来验证 V2Ray 客户端是否正常工作。
+- **环境变量**：通过 `echo $HTTP_PROXY` 等命令检查代理环境变量是否已正确导出。
+- **端口配置**：确认 V2Ray 客户端的端口号是否为 10811，并修改步骤 3 中的 `port` 配置。
+
+------
+
+### WSL SSH 代理配置
+
+配置完成 HTTP 代理后，SSH 连接（如 GitHub 的 SSH 连接）仍然不可用。为此需要做进一步配置：
+
+#### 1. 配置 SSH 代理
+
+- 在 `~/.ssh/config` 中添加以下内容：
+
+  ```bash
+  Host github.com
+    User git
+    ProxyCommand nc -X 5 -x $winip:10810 %h %p
+  ```
+
+  - `10810` 是局域网代理的 SOCKS 端口。如果需要使用 HTTP 代理端口，请修改配置。
+
+- **新版配置**（适用于 Fedora WSL 或新版 `nc`）：
+
+  ```bash
+  Host github.com
+    User git
+    ProxyCommand nc --proxy-type socks5 --proxy $winip:10810 %h %p
+  ```
+
+#### 2. 测试 SSH 代理
+
+- 使用以下命令测试 SSH 是否成功代理：
+
+  ```bash
+  ssh -T git@github.com
+  ```
+
+  - 如果返回 “Hi,xx! You’re successfully authenticated, but GitHub does not provide shell access.”，或者需要密钥认证，则表示代理已成功配置。
+
+------
+
+按照这些步骤，你就可以在 WSL 中通过 V2Ray 或类似的代理工具访问外网资源，并且成功配置 Git 和 SSH 代理。
+
 ***
 
 ## Ubuntu<img src="./images/ubuntu.png" alt="ubuntu" style="zoom:25%;" />
