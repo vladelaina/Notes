@@ -14,3 +14,19 @@
 #### 2. 新实例发送重置请求：
 
 当新实例检测到旧实例正在运行时，通过 `SendMessage` 发送一个 `WM_COPYDATA` 消息，告诉旧实例将倒计时重置为 25 分钟。
+
+sudo pacman -S gcc g++ make
+
+
+
+sudo pacman -S sdl2 sdl2_image
+
+动态连接库
+
+x86_64-w64-mingw32-gcc -o main.exe main.c \
+  -I/home/vladelaina/.libs/SDL2-2.30.10/x86_64-w64-mingw32/include \
+  -L/home/vladelaina/.libs/SDL2-2.30.10/x86_64-w64-mingw32/lib \
+  -lSDL2 -mwindows
+
+
+
