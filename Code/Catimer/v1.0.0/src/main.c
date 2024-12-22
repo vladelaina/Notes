@@ -288,7 +288,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     nid.cbSize = sizeof(nid);
     nid.uID = ID_TRAY_APP_ICON;
     nid.uFlags = NIF_ICON | NIF_TIP | NIF_MESSAGE;
-    nid.hIcon = (HICON)LoadImage(NULL, "catime.ico", IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
+    nid.hIcon = (HICON)LoadImage(NULL, "asset/images/catime.ico", IMAGE_ICON, 0, 0, LR_LOADFROMFILE);
     nid.hWnd = hwnd;
     nid.uCallbackMessage = WM_TRAYICON;  // 使用自定义消息
     strcpy(nid.szTip, "Catime");
