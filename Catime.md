@@ -30,3 +30,6 @@ x86_64-w64-mingw32-gcc -o main.exe main.c \
 
 
 
+sudo pacman -S sdl2_image
+
+-lSDL2_image
