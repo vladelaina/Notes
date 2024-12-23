@@ -49,3 +49,31 @@ cp /home/vladelaina/code/catime/src/test/libs/SDL2/include/SDL2 /home/vladelaina
 对于初次接触WezTerm的新手来说，掌握一些基本操作的代码示例是快速上手的关键。下面，我们将通过几个简单的例子来展示如何使用WezTerm进行日常的命令行操作。首先，让我们来看看如何打开一个新的终端会话。在WezTerm中，只需按下`Ctrl + Shift + T`组合键，即可轻松开启一个新的会话窗口。如果你想要在现有的窗口中添加一个新标签页，那么`Ctrl + T`就是你的得力助手。此外，通过`Ctrl + Tab`和`Ctrl + Shift + Tab`，用户还可以方便地在不同的会话之间来回切换，极大地提升了多任务处理的效率。当然，除了这些基本的快捷键外，WezTerm还提供了丰富的自定义选项，允许用户根据个人喜好调整快捷键设置，从而达到更高的操作流畅度。
 
 ls
+
+sudo pacman -S ffmpeg
+
+你可以使用 `ffmpeg` 将 MP4 视频逐帧提取并保存为 PNG 格式的图片。具体命令如下：
+
+```bash
+ffmpeg -i input.mp4 -vf "fps=10" output_%04d.png
+```
+
+这个命令的解释如下：
+
+- `-i input.mp4`：指定输入的 MP4 文件。
+- `-vf "fps=1"`：使用视频滤镜 (`-vf`)，`fps=1` 表示每秒提取 1 帧。如果你希望提取更多帧，可以调整 `fps` 的值。例如，`fps=30` 会每秒提取 30 帧。
+- `output_%04d.png`：输出的文件名格式，`%04d` 是一个占位符，它会根据提取的帧编号自动编号，例如 `output_0001.png`、`output_0002.png` 等。
+
+如果你想提取所有帧，只需要去掉 `fps=1`，如下所示：
+
+```bash
+ffmpeg -i input.mp4 output_%04d.png
+```
+
+这样会提取视频中的每一帧并保存为 PNG 图片。
+
+
+
+一帧 = 15ms
+
+fps = 10
