@@ -55,7 +55,7 @@ sudo pacman -S ffmpeg
 你可以使用 `ffmpeg` 将 MP4 视频逐帧提取并保存为 PNG 格式的图片。具体命令如下：
 
 ```bash
-ffmpeg -i 1.mp4 -vf "fps=10" %d.png
+ffmpeg -i 1.mp4 -vf "fps=60" %d.png
 python "D:\Date\Tool\rmbg\try.py" .
 ```
 
