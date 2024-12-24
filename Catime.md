@@ -55,7 +55,8 @@ sudo pacman -S ffmpeg
 你可以使用 `ffmpeg` 将 MP4 视频逐帧提取并保存为 PNG 格式的图片。具体命令如下：
 
 ```bash
-ffmpeg -i input.mp4 -vf "fps=10" output_%04d.png
+ffmpeg -i 1.mp4 -vf "fps=10" %d.png
+python "D:\Date\Tool\rmbg\try.py" .
 ```
 
 这个命令的解释如下：
@@ -72,7 +73,14 @@ ffmpeg -i input.mp4 output_%04d.png
 
 这样会提取视频中的每一帧并保存为 PNG 图片。
 
+- 执行以下命令：
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 
+choco install ffmpeg
+
+ffmpeg -version
 
 一帧 = 15ms
 
