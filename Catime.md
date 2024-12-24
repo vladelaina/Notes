@@ -65,10 +65,10 @@ python "D:\Date\Tool\rmbg\try.py" .
 - `-vf "fps=1"`：使用视频滤镜 (`-vf`)，`fps=1` 表示每秒提取 1 帧。如果你希望提取更多帧，可以调整 `fps` 的值。例如，`fps=30` 会每秒提取 30 帧。
 - `output_%04d.png`：输出的文件名格式，`%04d` 是一个占位符，它会根据提取的帧编号自动编号，例如 `output_0001.png`、`output_0002.png` 等。
 
-如果你想提取所有帧，只需要去掉 `fps=1`，如下所示：
+如果你想提取1帧，只需要去掉 `fps=1`，如下所示：
 
 ```bash
-ffmpeg -i input.mp4 output_%04d.png
+ffmpeg -i 1.mp4 %d.png
 ```
 
 这样会提取视频中的每一帧并保存为 PNG 图片。
