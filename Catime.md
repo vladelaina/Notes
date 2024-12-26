@@ -57,7 +57,50 @@ sudo pacman -S ffmpeg
 ```bash
 ffmpeg -i 1.mp4 -vf "fps=60" %d.png
 python "D:\Date\Tool\rmbg\try.py" .
+ffmpeg -framerate 50 -i %d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 -threads 8 output.webm
 ```
+
+
+
+批量添加绿幕
+
+> @echo off
+> setlocal enabledelayedexpansion
+>
+> rem 创建输出目录
+> mkdir green
+>
+> rem 获取总文件数
+> set count=0
+> for %%f in (*.png) do (
+>     set /a count+=1
+> )
+>
+> rem 记录开始时间
+> set start_time=%time%
+>
+> rem 处理每张图片并显示进度
+> set processed=0
+> for %%f in (*.png) do (
+>     rem 使用 ImageMagick 添加绿色背景
+>     "C:\Program Files\ImageMagick-7.1.1-Q16-HDRI\magick.exe" %%f -background green -flatten green\%%~nf.png
+>
+>     rem 更新处理计数
+>     set /a processed+=1
+>     
+>     rem 计算进度和预计时间
+>     set /a percent=processed*100/count
+>     echo !percent!%% (!processed! / !count!)
+> )
+>
+> rem 记录结束时间
+> set end_time=%time%
+>
+> echo 所有图片添加绿色背景完成！
+> echo 开始时间: %start_time%
+> echo 结束时间: %end_time%
+
+- ffmpeg -framerate 50 -i .\%d.png -vf "chromakey=green:0.3:0.1" -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 -threads 8 output.webm	
 
 这个命令的解释如下：
 
