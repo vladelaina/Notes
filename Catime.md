@@ -350,3 +350,63 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
     
     return 0;
 }
+
+OpencV安装与配置
+1.下载连接：https://opencv.org/releases/
+2.添加Path环境变量的路径：D:1OpenCVopencv\build\x64\vc15\bin
+3.配置包含目录：D:OpenCVopencv\build\include
+4.配置库目录：D:\OpenCVopencv\build\x64\vc15\lib
+**5.附加依赖项**：
+·对于debug模式：opencv_world455d.lib
+·对于release模式：opencv_world455.lib
+.测试代码
+
+​	
+
+```
+# 定义变量
+CC = x86_64-w64-mingw32-g++  # 使用C++编译器
+
+# OpenCV路径
+OPENCV_FLAGS = $(shell pkg-config --cflags --libs opencv4)
+
+# 编译选项
+CFLAGS = $(OPENCV_FLAGS) \
+         -I/home/vladelaina/code/catime/src/test/libs/SDL2/include \
+         -I/home/vladelaina/code/catime/src/test/libs/SDL2_image/include
+
+# 输出文件
+OUT = /mnt/c/Users/vladelaina/Desktop/main.exe
+
+# 源文件
+SRC = main.cpp
+
+# 默认目标
+all: $(OUT)
+
+# 编译目标
+$(OUT): $(SRC)
+	$(CC) -o $(OUT) $(SRC) $(CFLAGS) -mwindows
+
+# 清理目标
+clean:
+	rm -f $(OUT)
+```
+
+   sudo pacman -S cmake 
+
+   cmake .. -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++
+   make
+
+包
+
+/home/vladelaina/code/catime/src/test/libs/OpenCV/build/include
+
+库
+
+/home/vladelaina/code/catime/src/test/libs/OpenCV/build/x64/vc16/lib
+
+   mkdir build
+   cd build
+
+   cmake .. -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++
