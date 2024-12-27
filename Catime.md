@@ -410,3 +410,114 @@ clean:
    cd build
 
    cmake .. -DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc -DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++
+
+你可以直接调用官方的 `ffplay.exe`，这样可以避免自己编译 `FFmpeg` 库。通过这种方式，你可以将 `ffplay.exe` 当做一个外部程序来调用，利用它的功能来进行视频播放等任务。
+
+具体操作方法可以通过以下几种方式：
+
+### 1. 使用 `system()` 函数调用 `ffplay.exe`
+
+你可以使用 C++ 中的 `system()` 函数来调用 `ffplay.exe`，将命令行参数传递给它：
+
+```cpp
+#include <cstdlib>  // for system()
+
+int main() {
+    // 假设视频文件路径为 "video.mp4"
+    std::string command = "ffplay video.mp4 -autoexit";
+    system(command.c_str());
+    return 0;
+}
+```
+
+这段代码会启动 `ffplay.exe` 播放视频，`-autoexit` 选项会让 `ffplay` 在播放完毕后自动退出。
+
+### 2. 使用 `CreateProcess()`（Windows API）
+
+如果你需要更多控制，比如获取 `ffplay.exe` 的输出，或者处理进程的生命周期，可以使用 Windows API 来创建一个新的进程：
+
+```cpp
+#include <windows.h>
+#include <string>
+
+int main() {
+    // 假设视频文件路径为 "video.mp4"
+    std::string command = "ffplay video.mp4 -autoexit";
+
+    // 初始化进程信息结构体
+    STARTUPINFO si = { sizeof(si) };
+    PROCESS_INFORMATION pi;
+
+    // 启动ffplay.exe
+    if (CreateProcess(
+            NULL,                      // 应用程序名称
+            const_cast<LPSTR>(command.c_str()),  // 命令行
+            NULL,                      // 进程安全属性
+            NULL,                      // 线程安全属性
+            FALSE,                     // 是否继承句柄
+            0,                         // 创建标志
+            NULL,                      // 环境变量
+            NULL,                      // 当前目录
+            &si,                       // 启动信息
+            &pi)                       // 进程信息
+    ) {
+        // 等待进程完成
+        WaitForSingleObject(pi.hProcess, INFINITE);
+        CloseHandle(pi.hProcess);
+        CloseHandle(pi.hThread);
+    } else {
+        // 错误处理
+        DWORD dwError = GetLastError();
+        // 处理错误
+    }
+
+    return 0;
+}
+```
+
+这种方法可以让你更加灵活地控制进程，捕获输出或获取错误信息。
+
+### 3. 使用 `popen()`（跨平台）
+
+如果你想从 `ffplay.exe` 获取输出（比如调试信息），可以使用 `popen()` 来启动进程并读取它的标准输出：
+
+```cpp
+#include <cstdio>
+
+int main() {
+    FILE* pipe = popen("ffplay video.mp4 -autoexit", "r");
+    if (!pipe) {
+        std::cerr << "Failed to open pipe." << std::endl;
+        return 1;
+    }
+
+    // 可以读取进程输出
+    char buffer[128];
+    while (fgets(buffer, sizeof(buffer), pipe) != nullptr) {
+        std::cout << buffer;
+    }
+
+    fclose(pipe);
+    return 0;
+}
+```
+
+### 总结
+
+通过调用 `ffplay.exe`，你不需要自己集成 FFmpeg 库到你的项目中，只需要确保 `ffplay.exe` 在你的系统路径中或使用绝对路径。调用时，你可以通过 `system()`、`CreateProcess()` 或 `popen()` 等方式来执行外部程序并传递参数。
+
+ffmpeg -i 1.webm -c:v libvpx-vp9 -pix_fmt yuva420p -auto-alt-ref 0 -an output.webm
+
+yuva420p 就足够了
+
+ffmpeg -i 1.mp4 -vf "chromakey=0x00FF00:0.3:0.1" -vsync 0 %d.png
+
+
+
+图片去除绿幕
+
+for %f in (*.png) do ffmpeg -i "%f" -vf "chromakey=0x00FF00:0.3:0.1" -c:v png "output\%~nf_no_bg.png"
+
+安装
+
+winget install ffmpeg
