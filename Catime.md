@@ -62,6 +62,8 @@ ffmpeg -framerate 50 -i %d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 
 
 
 
+去除绿幕：pip install opencv-python numpy
+
 批量添加绿幕
 
 > @echo off
