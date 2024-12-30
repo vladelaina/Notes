@@ -62,7 +62,13 @@ ffmpeg -framerate 50 -i %d.png -c:v libvpx-vp9 -pix_fmt yuva420p -b:v 0 -crf 30 
 
 
 
-去除绿幕：pip install opencv-python numpy
+去除绿幕
+
+- 效果一般
+
+  ffmpeg -i 1.mp4 -vf "fps=60, chromakey=0x00FF00:0.3:0.0, format=rgba" %d.png
+
+- 
 
 批量添加绿幕
 
