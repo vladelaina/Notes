@@ -1,0 +1,1 @@
+ .\certutil.exe -hashfile C:\Users\vladelaina\Downloads\archlinux-2025.01.01-x86_64.iso SHA256
