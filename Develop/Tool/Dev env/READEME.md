@@ -146,7 +146,7 @@ sudo pacman -S zsh && chsh -s /bin/zsh
 
 
 ```zsh
-sudo pacman -Syu && sudo pacman -S neovim git base-devel zsh-syntax-highlighting zsh-autosuggestions mingw-w64-gcc tree && \
+sudo pacman -Syu && sudo pacman -S neovim git base-devel zsh-syntax-highlighting zsh-autosuggestions mingw-w64-gcc tree htop neofetch && \
 git config --global user.name "vladelaina" && git config --global user.email "vladelaina@gmail.com" && \
 echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc && \
 echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc && \
