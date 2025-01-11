@@ -677,7 +677,7 @@ local config = {
     background = {
         {
             source = {
-                File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\1.jpg",
+                File = "C:\\Users\\" .. os.getenv("USERNAME") .. "\\.config\\wezterm\\1.png",
             },
             hsb = {
                 hue = 1.0,
@@ -694,15 +694,27 @@ local config = {
             opacity = 0.55,
         },
     },
-    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code/ch_1/5_characterInputAndOutput" },
+    default_prog = { "wsl.exe", "--cd", "/home/vladelaina/code/ch_1/9_characterArrays" },
     initial_rows = 30,  -- 设置初始行数
     initial_cols = 80,  -- 设置初始列数
 
-
+    -- -------------------- 键盘绑定 --------------------
+    keys = {
+        { key = 'q',          mods = 'LEADER',         action = wezterm.action.QuitApplication },
+        { key = 'h',          mods = 'ALT|SHIFT',     action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+        { key = 'v',          mods = 'ALT|SHIFT',     action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' } },
+        { key = 'q',          mods = 'CTRL',           action = wezterm.action.CloseCurrentPane { confirm = false } },
+        { key = 'LeftArrow',  mods = 'SHIFT|CTRL',     action = wezterm.action.ActivatePaneDirection 'Left' },
+        { key = 'RightArrow', mods = 'SHIFT|CTRL',     action = wezterm.action.ActivatePaneDirection 'Right' },
+        { key = 'UpArrow',    mods = 'SHIFT|CTRL',     action = wezterm.action.ActivatePaneDirection 'Up' },
+        { key = 'DownArrow',  mods = 'SHIFT|CTRL',     action = wezterm.action.ActivatePaneDirection 'Down' },
+        { key = 't', mods = 'CTRL', action = wezterm.action.SpawnTab 'DefaultDomain' },
+        { key = 'w', mods = 'CTRL', action = wezterm.action.CloseCurrentTab { confirm = false } },
+        { key = 'n', mods = 'CTRL', action = wezterm.action.SpawnWindow },        -- 新建窗口
+    }
 }
 
 return config
-
 ```
 
 
