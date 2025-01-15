@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Image Saver",
+  "version": "1.0",
+  "description": "自动保存包含 chat1.oaichat.cc 的网页上的PNG和JPG图片到桌面上的 catimelogo 文件夹。",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://chat1.oaichat.cc/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon.png"
+  }
+}

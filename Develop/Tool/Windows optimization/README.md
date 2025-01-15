@@ -6,17 +6,14 @@
 
 [1](./images)
 
-```bash
-slmgr -ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+[rufus系统制作](https://rufus.ie/zh/)
 
-slmgr -skms kms.0t.net.cn
+##### 激活
 
-slmgr -ato
-```
+WindowsPowerShell(管理员)
 
->CMD(administrator rights)
-
-
+- irm https://get.activated.win | iex
+  - 选1
 
 
 
@@ -29,22 +26,25 @@ slmgr -ato
 <img src=".\images\chrome.webp" align="left" alt="chrome" style="zoom: 67%;" />[Chrome](.\resource\Software\Chrome)
 
 - <img src=".\images\Edge Blocker.png" alt="Edge Blocker" style="zoom:15%;" />[Edge Blocker](https://www.sordum.org/9312/)
-
 - <img src=".\images\uBlock Origin.png" align="left" alt="uBlock Origin" style="zoom:2%;" /> [uBlock Origin](.\resource\Software\Chrome\uBlock Origin)
-
-- `chrome://flags`
-
-  Parallel downloading
+- [书签](.\resource\Software\Chrome\bookmarks)
+- [插件](.\resource\Software\Chrome\plugIn)
 
 
 
+​	
 
+驱动
+
+> 只要安装独立显卡(NVIDIA GeForce RTX 4060 Laptop GPU)
+>
+> - 具体查看<u>directx</u>(cmd)
 
 <img src=".\images\Snappy.png" align="left" alt="Snappy" style="zoom:53%;" />[Snappy](https://sdi-tool.org/download/)
 
+<img src="./images/nvid.jpg" alt="nvid" style="zoom:25%;" />[nvidia](https://www.nvidia.cn/drivers/lookup/)
 
-
-
+[AMD](https://www.amd.com/zh-cn/support/download/drivers.html)
 
 <img src=".\images\ahp.png" alt="ahp" style="zoom:30%;" />[AutoHotkey](https://www.autohotkey.com/)
 
@@ -54,11 +54,17 @@ slmgr -ato
 
 
 
+###### 美化
+
 <img src=".\images\TranslucentTB.png" alt="TranslucentTB" align="left" style="zoom: 80%;" />[TranslucentTB](https://apps.microsoft.com/detail/9pf4kz2vn4w9?ocid=badge&rtc=1&hl=zh-cn&gl=HK)
 
 
 
 <img src="./images/Lively Wallpaper.jpg" align="left" alt="Lively Wallpaper" style="zoom: 20%;" /> [Lively Wallpaper](https://apps.microsoft.com/detail/9ntm2qc6qws7?hl=en-US&gl=US)
+
+- [壁纸](.\resource\Beautify\Wallpaper)
+
+
 
 
 
@@ -94,6 +100,7 @@ slmgr -ato
 <img src=".\images\potplayer.png" alt="potplayer" style="zoom:35%;" />[Potplayer](https://potplayer.io/?lang=zh_CN&utm_source=xinquji)
 
 - [skin](.\resource\Software\Potplayer)
+- configuration
 
 ```bash
 .
@@ -124,6 +131,8 @@ slmgr -ato
 
 <img src=".\images\PowerToys.jpg" align="left" alt="PowerToys" style="zoom:40%;" />[PowerToys](https://github.com/microsoft/PowerToys/releases/)
 
+<img src="./images/image-20250115220017201.png" align="left" alt="image-20250115220017201"  />
+
 
 
 <img src=".\images\geek.png" align="left" alt="geek" style="zoom:73%;" />[Geek](https://geekuninstaller.com/)
@@ -136,6 +145,8 @@ slmgr -ato
 - [Theme](https://github.com/vladelaina/Typora-Theme)
 
 > "高亮":"Ctrl+Shift+H"N
+
+
 
 
 
@@ -168,6 +179,8 @@ slmgr -ato
 ```
 winget uninstall MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy
 ```
+
+
 
 [Mouse pointer](.\resource\Beautify\Mouse pointer)
 
@@ -208,7 +221,19 @@ Time display
 
 # Sundries
 
-[clouddrive2](https://www.clouddrive2.com/download.html)网盘挂载工具
+重命名
+
+- <img src="./images/renamer-logo.png" alt="renamer-logo" align="left" style="zoom:25%;" />[renamer](https://www.den4b.com/products/renamer)
+
+
+
+网盘挂载工具
+
+- <img src="./images/clouddrive2.png" alt="clouddrive2" style="zoom: 50%;" />[clouddrive2](https://www.clouddrive2.com/download.html)
+
+
+
+
 
 [GMSRAMTemp](https://gimespace.com/GMSRAMTemp.exe)
 
@@ -218,7 +243,19 @@ Time display
 
 [Twinkle](https://github.com/xanderfrangos/twinkle-tray)
 
-[WinMemory](https://github.com/IgorMundstein/WinMemoryCleaner)
+
+
+清理内存 
+
+-  <img src="./images/WinMemory.png" alt="WinMemory" style="zoom:25%;" />[WinMemory](https://github.com/IgorMundstein/WinMemoryCleaner)
+
+
+
+按键显示
+
+- <img src="./images/Keyviz.png" alt="Keyviz" style="zoom: 25%;" />[Keyviz](https://github.com/mulaRahul/keyviz)
+
+
 
 [localsend](https://localsend.org/zh-CN/download)
 
@@ -231,3 +268,4 @@ Time display
 
 
 计算机\HKEYCURRENTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
+

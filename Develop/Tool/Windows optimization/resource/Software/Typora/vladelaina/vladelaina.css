@@ -794,8 +794,8 @@ li.md-list-item {
 
 #write p code {
   padding: 0px 3px 0px 7px; /* 设置代码的内边距，上右下左分别为0px 3px 0px 7px */
-  color: var(--element-color-linecode); /* 设置代码文字的颜色 */
-  background: var(--element-color-linecode-background); /* 设置代码块的背景颜色 */
+  color:  var(--element-color-linecode); /* 设置代码文字的颜色 */
+  background: #5482c4; /* 设置代码块的背景颜色 */
   border-radius: 3px; /* 设置代码块的圆角半径为3px */
   font-family: Operator Mono, Consolas, Monaco, Menlo, monospace; /* 设置代码的字体为等宽字体 */
   letter-spacing: 0.5px; /* 设置代码文字的字间距为0.5px */
@@ -883,7 +883,7 @@ li.md-list-item {
 
 .cm-s-inner.CodeMirror,
 .cm-s-inner .CodeMirror-gutters {
-	background-color: #272b33 !important; /* 背景 */
+	background-color: #2c3144 !important; /* 背景 */
 	border: 1px solid #272b33; /* 边框 */
 }
 
@@ -927,7 +927,7 @@ li.md-list-item {
 /* 注释颜色 */
 
 .cm-s-inner span.cm-comment {
-	color: #bdc4cc; /* 注释颜色 */
+	color: #626CA4; /* 注释颜色 */
 }
 
 
@@ -955,7 +955,7 @@ li.md-list-item {
 /* 变量 */
 
 .cm-s-inner span.cm-variable {
-	color: #82AAFF; /* 变量颜色 */
+	color: #C8D3F5; /* 变量颜色 */
 }
 
 
