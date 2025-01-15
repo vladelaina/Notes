@@ -1,8 +1,8 @@
+# Windows
 
 
 
-
-# Activation
+## Activation
 
 [1](./images)
 
@@ -21,7 +21,7 @@ WindowsPowerShell(管理员)
 
 
 
-# [Software](.\resource\Software)
+## [Software](.\resource\Software)
 
 <img src=".\images\chrome.webp" align="left" alt="chrome" style="zoom: 67%;" />[Chrome](.\resource\Software\Chrome)
 
@@ -172,7 +172,33 @@ WindowsPowerShell(管理员)
 
 
 
-# [Beautify](.\resource\Beautify)
+清理内存 
+
+-  <img src="./images/WinMemory.png" alt="WinMemory" style="zoom:25%;" />[WinMemory](https://github.com/IgorMundstein/WinMemoryCleaner)
+
+
+
+按键显示
+
+- <img src="./images/Keyviz.png" alt="Keyviz" style="zoom: 25%;" />[Keyviz](https://github.com/mulaRahul/keyviz)
+
+
+
+重命名
+
+- <img src="./images/renamer-logo.png" alt="renamer-logo" align="left" style="zoom:25%;" />[renamer](https://www.den4b.com/products/renamer)
+
+
+
+网盘挂载工具
+
+- <img src="./images/clouddrive2.png" alt="clouddrive2" style="zoom: 50%;" />[clouddrive2](https://www.clouddrive2.com/download.html)
+
+
+
+
+
+## [Beautify](.\resource\Beautify)
 
 卸载小组件
 
@@ -211,7 +237,7 @@ Time display
 
 
 
-# Virtual memory
+## Virtual memory
 
 系统 > 系统信息 > 高级系统设置
 
@@ -219,19 +245,7 @@ Time display
 
 
 
-# Sundries
-
-重命名
-
-- <img src="./images/renamer-logo.png" alt="renamer-logo" align="left" style="zoom:25%;" />[renamer](https://www.den4b.com/products/renamer)
-
-
-
-网盘挂载工具
-
-- <img src="./images/clouddrive2.png" alt="clouddrive2" style="zoom: 50%;" />[clouddrive2](https://www.clouddrive2.com/download.html)
-
-
+## Sundries
 
 
 
@@ -243,20 +257,6 @@ Time display
 
 [Twinkle](https://github.com/xanderfrangos/twinkle-tray)
 
-
-
-清理内存 
-
--  <img src="./images/WinMemory.png" alt="WinMemory" style="zoom:25%;" />[WinMemory](https://github.com/IgorMundstein/WinMemoryCleaner)
-
-
-
-按键显示
-
-- <img src="./images/Keyviz.png" alt="Keyviz" style="zoom: 25%;" />[Keyviz](https://github.com/mulaRahul/keyviz)
-
-
-
 [localsend](https://localsend.org/zh-CN/download)
 
 [Xmind](https://www.123pan.com/?homeFilePath=5997681,6449044,6449050,10265386)
@@ -265,7 +265,43 @@ Time display
 
 
 
-
-
 计算机\HKEYCURRENTUSER\Software\Microsoft\Windows\CurrentVersion\Explorer\StuckRects3
+
+
+
+自动备份到github
+
+- [Autosave.bat](.\resource)
+
+
+
+
+
+WSL
+
+[1](./images)
+
+# <img src="./images/WSL.png" alt="WSL" style="zoom: 25%;" />WSL
+
+[1](./images)
+
+### <img src="./images/启用或关闭windows功能.png" alt="启用或关闭windows功能" style="zoom:25%;" />启用或关闭windows功能
+
+<img src="./images/image-20241021224830326.png" align="left" alt="image-20241021224830326" />
+
+
+
+### Network
+
+Add the following to the `C:\Users\<Username>\.wslconfig`
+
+```shell
+[wsl2]
+networkingMode=mirrored
+autoProxy=true
+```
+
+
+
+## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" /><img src="./images/1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview.png" alt="1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview" style="zoom:25%;" />
 

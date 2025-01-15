@@ -4,27 +4,6 @@
 
 
 
-# <img src="./images/WSL.png" alt="WSL" style="zoom: 25%;" />WSL
-
-### <img src="./images/启用或关闭windows功能.png" alt="启用或关闭windows功能" style="zoom:25%;" />启用或关闭windows功能
-
-<img src="./images/image-20241021224830326.png" align="left" alt="image-20241021224830326" />
-
-
-
-### Network
-
-Add the following to the `C:\Users\<Username>\.wslconfig`
-
-```shell
-[wsl2]
-networkingMode=mirrored
-autoProxy=true
-```
-
-
-
-## Arch<img src="./images/arch.png" alt="arch" style="zoom:15%;" /><img src="./images/1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview.png" alt="1_wNjWxp_F36fm3YRNa8Dmqw-removebg-preview" style="zoom:25%;" />
 
 
 
