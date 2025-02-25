@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>This script will add iogonek, ibar, itildebelow, idotbelow, and jbar, as well as the .dotless glyphs, so they combined are used within the OpenType layout features as generated through anchor based positioning within the OpenType Designer.</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>$0131, $0237, $0268, $1ECB, $1ECB, $1E2D, $012F, $0249</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphInsertGlyphs>
+      <GlyphNames>iogonek.dotless, ibar.dotless, itildebelow.dotless, idotbelow.dotless, jbar.dotless</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>1</Mechanism>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

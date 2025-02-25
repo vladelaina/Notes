@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Maths Symbols
+The script sets the glyphs to a fixed width and centres them. Change the width to the advance width of the figures in your font. Maths and some Currency symbols are often all the same width as figures. Vertical arrows can also fit well on the figure width. Remove any glyphs that you do not want to resize from the script.</Content>
+    </OtherComments>
+    <GlyphOverrideRangeGN>
+      <GlyphNames>dollar plus zero one two three four five six seven eight nine less equal greater cent sterling currency yen logicalnot plusminus mu paragraph multiply divide figurespace figuredash referencemark overline reversedpilcrowsign swungdash dottedcross colonsign cruzeirosign frenchfrancsign lirasign nairasign dongsign euro kipsign tugriksign germanpennysign pesosign hryvniasign cedisign livretournoissign spesmilosign tengesign indianrupeesign turkishlirasign nordicmarksign rublesign larisign bitcoinsign upwardsarrow downwardsarrow updownarrow upwardstwoheadedarrow downwardstwoheadedarrow upwardsarrowfrombar downwardsarrowfrombar updownarrowwithbase upwardsarrowwithtipleftwards upwardsarrowwithtiprightwards downwardsarrowwithtipleftwards downwardsarrowwithtiprightwards rightwardsarrowwithcornerdownwards upwardsharpoonwithbarbrightwards upwardsharpoonwithbarbleftwards downwardsharpoonwithbarbrightwards downwardsharpoonwithbarbleftwards upwardsarrowleftwardsofdownwardsarrow upwardspairedarrows downwardspairedarrows upwardsdoublearrow downwardsdoublearrow updowndoublearrow upwardsarrowwithdoublestroke downwardsarrowwithdoublestroke upwardsdashedarrow downwardsdashedarrow upwardswhitearrow downwardswhitearrow upwardswhitearrowfrombar upwardswhitearrowonpedestal upwardswhitearrowonpedestalwithhorizontalbar upwardswhitearrowonpedestalwithverticalbar upwardswhitedoublearrow upwardswhitedoublearrowonpedestal updownwhitearrow downwardsarrowleftwardsofupwardsarrow complement elementof notanelementof containsasmember doesnotcontainasmember endofproof minus minusorplus dotplus setminus squareroot cuberoot fourthroot proportionalto infinity logicaland logicalor intersection union therefore because proportion tildeoperator minustilde asymptoticallyequalto approximatelyequalto almostequalto tripletilde notequalto identicalto lessthanorequalto greaterthanorequalto subsetof supersetof</GlyphNames>
+    </GlyphOverrideRangeGN>
+    <MetricsWidth>
+      <WidthType>0</WidthType>
+      <Width>1303.00</Width>
+      <Adjust>0</Adjust>
+    </MetricsWidth>
+    <MetricsCenterGlyph>
+    </MetricsCenterGlyph>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

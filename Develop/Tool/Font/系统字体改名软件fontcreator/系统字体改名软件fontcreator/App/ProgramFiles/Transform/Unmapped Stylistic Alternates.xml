@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Stylistic Alternates
+his script adds 26 glyphs for Decorative Drop Capitals for use as Stylistic Alternates. Import images or create your own designs in FontCreator to suit the current typeface design.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>A.salt, B.salt, C.salt, D.salt, E.salt, F.salt, G.salt, H.salt, I.salt, J.salt, K.salt, L.salt, M.salt, N.salt, O.salt, P.salt, Q.salt, R.salt, S.salt, T.salt, U.salt, V.salt, W.salt, X.salt, Y.salt, Z.salt</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

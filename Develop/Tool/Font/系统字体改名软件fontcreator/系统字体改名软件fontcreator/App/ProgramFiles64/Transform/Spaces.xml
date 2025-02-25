@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Spaces
+This script inserts the fixed width spaces that are supported by LibreOffice and professional typesetting applications. </Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>8192-8203, 8287</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+  </TransformScript>
+</DATA>

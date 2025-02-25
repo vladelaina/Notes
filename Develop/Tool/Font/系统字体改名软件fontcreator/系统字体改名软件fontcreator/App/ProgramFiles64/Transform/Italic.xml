@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Italic
+Before running this script, select only the glyphs that you want to transform, as some symbols are best left vertical. If your font is a handwritten script, set the Family Kind in Font Properties, Classification, to Hand-written Script. </Content>
+    </OtherComments>
+    <OtherComments>
+      <Content>This script slants all selected glyphs by the italic angle, while preserving the advance width. It then sets several italic related font properties (e.g. font subfamily, italic angle and Panose Classification). If you do not wish to change the font subfamily from regular to italic, clear the checkbox in the Italic Transformation: &quot;Set font subfamily and font design to italic.&quot;</Content>
+    </OtherComments>
+    <EffectsItalic>
+      <Angle>11.00</Angle>
+      <UpdateMetrics>TRUE</UpdateMetrics>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </EffectsItalic>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+    <OutlineOptimize>
+    </OutlineOptimize>
+    <OtherComments>
+      <Content>After running this transformation, some glyphs may have validation errors. Select the validation errors category in the Glyph Overview side panel and fix each glyph in the glyph edit window.</Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

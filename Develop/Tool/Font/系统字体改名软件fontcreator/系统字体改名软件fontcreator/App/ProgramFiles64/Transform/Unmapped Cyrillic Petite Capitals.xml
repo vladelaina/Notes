@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Cyrillic Petite Capitals
+This script will insert unmapped Cyrillic glyphs for Petite Capitals, and scale them to the x-Height. Edit the Insert Glyphs command to add or remove glyphs. Edit the scale, bold, and move commands to adjust the size, weight, and baseline of the added glyphs. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"a-cyrl.pcap" "be-cyrl.pcap" "ve-cyrl.pcap" "ghe-cyrl.pcap" "de-cyrl.pcap" "ie-cyrl.pcap" "zhe-cyrl.pcap" "ze-cyrl.pcap" "i-cyrl.pcap" "ka-cyrl.pcap" "el-cyrl.pcap" "em-cyrl.pcap" "en-cyrl.pcap" "o-cyrl.pcap" "pe-cyrl.pcap" "er-cyrl.pcap" "es-cyrl.pcap" "te-cyrl.pcap" "u-cyrl.pcap" "ef-cyrl.pcap" "ha-cyrl.pcap" "tse-cyrl.pcap" "che-cyrl.pcap" "sha-cyrl.pcap" "shcha-cyrl.pcap" "hardsign-cyrl.pcap" "yeru-cyrl.pcap" "softsign-cyrl.pcap" "e-cyrl.pcap" "yu-cyrl.pcap" "ya-cyrl.pcap" "dje-cyrl.pcap" "ghe-cyrl.pcap" "ukrainian-ie-cyrl.pcap" "dze-cyrl.pcap" "ukrainian-i-cyrl.pcap" "je-cyrl.pcap" "lje-cyrl.pcap" "nje-cyrl.pcap" "tshe-cyrl.pcap" "dzhe-cyrl.pcap" "omega-cyrl.pcap" "yat-cyrl.pcap" "iotified-e-cyrl.pcap" "little-yus-cyrl.pcap" "iotified-little-yus-cyrl.pcap" "big-yus-cyrl.pcap" "ksi-cyrl.pcap" "psi-cyrl.pcap" "iotified-big-yus-cyrl.pcap" "fita-cyrl.pcap" "izhitsa-cyrl.pcap" "uk-cyrl.pcap" "round-omega-cyrl.pcap" "titlo-cyrl.pcap" "ot-cyrl.pcap" "ghe-upturn-cyrl.pcap" "ghe-stroke-cyrl.pcap" "zhe-descender-cyrl.pcap" "ze-descender-cyrl.pcap" "ka-descender-cyrl.pcap" "ka-vertical-stroke-cyrl.pcap" "bashkir-ka-cyrl.pcap" "en-descender-cyrl.pcap" "es-descender-cyrl.pcap" "straight-u-cyrl.pcap" "u-stroke-cyrl.pcap" "ha-descender-cyrl.pcap" "che-descender-cyrl.pcap" "che-vertical-stroke-cyrl.pcap" "shha-cyrl.pcap"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The Bold command will increase the weight of strokes by the number of funits specified horizontally and vertically. The move command will compensate for the increase in the weight of horizontal strokes by moving the glyphs up by the same amount. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>76.00</Horizontal>
+      <Vertical>73.40</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>16</Horizontal>
+      <Vertical>12</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>12</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"shorti-cyrl.pcap" "egrave-cyrl.pcap" "io-cyrl.pcap" "ge-cyrl.pcap" "yi-cyrl.pcap" "kje-cyrl.pcap" "igrave-cyrl.pcap" "shortu-cyrl.pcap"  "izhitsadoublegrave-cyrl.pcap" </GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

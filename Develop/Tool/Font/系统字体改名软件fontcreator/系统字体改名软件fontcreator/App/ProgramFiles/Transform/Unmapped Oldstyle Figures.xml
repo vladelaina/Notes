@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped OldStyle Figures
+This script will insert ten unmapped glyphs for OldStyle, Non-lining Figures (onum) compose them from the default figures, and align them to the x-height where appropriate. Zero, One, and Two will be scaled 75% vertically.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>zero.onum-two.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>Move the following glyphs down by the difference between CapHeight and x-height.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>three.onum-five.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>-393</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>six.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <OtherComments>
+      <Content>If you wish, cut and insert glyphs to reorder the glyphs in 0-9 order.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>seven.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>-393</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>eight.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphInsertGlyphs>
+      <GlyphNames>nine.onum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>-393</Vertical>
+    </OutlineMove>
+  </TransformScript>
+</DATA>

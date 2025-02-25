@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Greek Petite Capitals
+This script will insert unmapped Greek glyphs for Petite Capitals, and scale them to about 75% of CapHeight. Edit the Insert Glyphs command to add or remove glyphs. Edit the scale, bold, and move commands to adjust the size, weight, and baseline of the added glyphs. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"alpha-grek.pcap" "beta-grek.pcap" "gamma-grek.pcap" "delta-grek.pcap" "epsilon-grek.pcap" "zeta-grek.pcap" "eta-grek.pcap" "theta-grek.pcap" "iota-grek.pcap" "kappa-grek.pcap" "lamda-grek.pcap" "mu-grek.pcap" "nu-grek.pcap" "xi-grek.pcap" "omicron-grek.pcap" "pi-grek.pcap" "rho-grek.pcap" "sigma-grek.pcap" "tau-grek.pcap" "upsilon-grek.pcap" "phi-grek.pcap" "chi-grek.pcap" "psi-grek.pcap" "omega-grek.pcap"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The Bold command will increase the weight of strokes by the number of funits specified horizontally and vertically. The move command will compensate for the increase in the weight of horizontal strokes by moving the glyphs up by the same amount. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>83.00</Horizontal>
+      <Vertical>73.00</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>18</Horizontal>
+      <Vertical>15</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>15</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"iotadialytikatonos-grek.pcap" "alphatonos-grek.pcap" "epsilontonos-grek.pcap" "etatonos-grek.pcap" "iotatonos-grek.pcap" "upsilondialytikatonos-grek.pcap" "iotadialytika-grek.pcap" "upsilondialytika-grek.pcap" "omicrontonos-grek.pcap" "upsilontonos-grek.pcap" "omegatonos-grek.pcap"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

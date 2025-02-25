@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Greek Extended
+This script inserts the Greek Extended character set. It assumes that the glyphs in the Greek and Coptic character set are already present. 
+Edit the accents first, then complete the other composites again to update them.</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>890, 8190, 8125-8129, 8175, 8189, 8141-8143, 8157-8159, 8173-8174</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <GlyphInsertCharacters>
+      <Characters>7936-7957, 7960-7965, 7968-8005, 8008-8013, 8016-8023, 8025, 8027, 8029, 8031-8061, 8064-8116, 8118-8124, 8130-8132, 8134-8140, 8144-8147, 8150-8155, 8160-8172, 8178-8180, 8182-8186</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

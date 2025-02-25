@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Alternative Fractions
+This script creates nominators/denominators for 0-9, and a divisor to be used as members for composite glyphs. These glyphs will probably need editing to remove intersecting co-ordinates. Do this first before working on others derived from these.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>divisor.afrc onenumerator.afrc twodenominator.afrc threenumerator.afrc fourdenominator.afrc fivenumerator.afrc sixdenominator.afrc sevennumerator.afrc eightdenominator.afrc ninenumerator.afrc</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <EffectsBold>
+      <Horizontal>7</Horizontal>
+      <Vertical>5</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>5</Vertical>
+    </OutlineMove>
+    <MetricsCenterGlyph>
+    </MetricsCenterGlyph>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+    <OtherComments>
+      <Content>The next part of the script composes the remaining numerators/denominators for fractions from 1/16 to 63/64. 
+
+The vertical alignment and spacing of numerators 11-63 may need some adjustments. Complete composites again if you made changes to glyphs 1-9.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>sixteendenominator.afrc thirtytwodenominator.afrc sixtyfourdenominator.afrc elevennumerator.afrc thirteennumerator.afrc fifteennumerator.afrc seventeennumerator.afrc nineteennumerator.afrc twentyonenumerator.afrc twentythreenumerator.afrc twentyfivenumerator.afrc twentysevennumerator.afrc twentyninenumerator.afrc thirtyonenumerator.afrc thirtythreenumerator.afrc thirtyfivenumerator.afrc thirtysevennumerator.afrc thirtyninenumerator.afrc fortyonenumerator.afrc fortythreenumerator.afrc fortyfivenumerator.afrc fortysevennumerator.afrc fortyninenumerator.afrc fiftyonenumerator.afrc fiftythreenumerator.afrc fiftyfivenumerator.afrc fiftysevennumerator.afrc fiftyninenumerator.afrc sixtyonenumerator.afrc sixtythreenumerator.afrc</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The last part of the script composes the composite stacking fractions from the already created composite glyph members. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>onequarter.afrc onehalf.afrc threequarters.afrc onethird.afrc twothirds.afrc onefifth.afrc twofifths.afrc-fourfifths.afrc onesixth.afrc fivesixths.afrc oneseventh.afrc twosevenths.afrc-sixsevenths.afrc oneeighth.afrc threeeighths.afrc fiveeighths.afrc seveneighths.afrc oneninth.afrc twoninths.afrc fourninths.afrc fiveninths.afrc sevenninths.afrc eightninths.afrc tendenominator.afrc onetenth.afrc threetenths.afrc seventenths.afrc ninetenths.afrc onesixteenth.afrc threesixteenths.afrc fivesixteenths.afrc sevensixteenths.afrc ninesixteenths.afrc elevensixteenths.afrc thirteensixteenths.afrc fifteensixteenths.afrc onethirtysecond.afrc threethirtyseconds.afrc fivethirtyseconds.afrc seventhirtyseconds.afrc ninethirtyseconds.afrc eleventhirtyseconds.afrc thirteenthirtyseconds.afrc fifteenthirtyseconds.afrc seventeenthirtyseconds.afrc nineteenthirtyseconds.afrc twentyonethirtyseconds.afrc twentythreethirtyseconds.afrc twentyfivethirtyseconds.afrc twentyseventhirtyseconds.afrc twentyninethirtyseconds.afrc thirtyonethirtyseconds.afrc onesixtyfourth.afrc threesixtyfourths.afrc fivesixtyfourths.afrc sevensixtyfourths.afrc ninesixtyfourths.afrc elevensixtyfourths.afrc thirteensixtyfourths.afrc fifteensixtyfourths.afrc seventeensixtyfourths.afrc nineteensixtyfourths.afrc twentyonesixtyfourths.afrc twentythreesixtyfourths.afrc twentyfivesixtyfourths.afrc twentysevensixtyfourths.afrc twentyninesixtyfourths.afrc thirtyonesixtyfourths.afrc thirtythreesixtyfourths.afrc thirtyfivesixtyfourths.afrc thirtysevensixtyfourths.afrc thirtyninesixtyfourths.afrc fortyonesixtyfourths.afrc fortythreesixtyfourths.afrc fortyfivesixtyfourths.afrc fortysevensixtyfourths.afrc fortyninesixtyfourths.afrc fiftyonesixtyfourths.afrc fiftythreesixtyfourths.afrc fiftyfivesixtyfourths.afrc fiftysevensixtyfourths.afrc fiftyninesixtyfourths.afrc sixtyonesixtyfourths.afrc sixtythreesixtyfourths.afrc</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

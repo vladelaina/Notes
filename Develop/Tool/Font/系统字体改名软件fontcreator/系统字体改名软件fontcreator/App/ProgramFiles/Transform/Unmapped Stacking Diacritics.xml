@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Stacking Diacritics
+This script inserts stacking diacritics for use with uppercase composites for Vietnamese. They should be designed to fit the space above Capials and below the WinAscent. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>dieresiscomb_macroncomb.case macroncomb_dieresiscomb.case dotaccentcomb_macroncomb.case dieresiscomb_acutecomb.case dieresiscomb_gravecomb.case macroncomb_acutecomb.case ringcomb_acutecomb.case ringcomb_acutecomb macroncomb_gravecomb.case tildecomb_macroncomb.case dieresiscomb_caroncomb.case tildecomb_dieresiscomb.case caroncomb_dotaccentcomb.case tildecomb_acutecomb.case circumflexcomb_acutecomb.case circumflexcomb_gravecomb.case circumflexcomb_tildecomb.case brevecomb_tildecomb.case brevecomb_acutecomb.case brevecomb_gravecomb.case brevecomb_hookcomb.case circumflexcomb_hookcomb.case</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <MetricsBearings>
+      <LeftSideValue>-1000</LeftSideValue>
+      <LeftSideType>0</LeftSideType>
+      <RightSideValue>0</RightSideValue>
+      <RightSideType>3</RightSideType>
+    </MetricsBearings>
+    <MetricsWidth>
+      <WidthType>0</WidthType>
+      <Width>0.00</Width>
+      <Adjust>2</Adjust>
+    </MetricsWidth>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+    <OtherComments>
+      <Content>The Advance Width is set to zero as these are combining accents. Display the capital A in the comparison toolbar and design the diacritics to align over that. </Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

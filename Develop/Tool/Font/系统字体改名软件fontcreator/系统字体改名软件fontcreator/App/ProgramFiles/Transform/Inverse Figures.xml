@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Inverse Figures
+This script demonstrates the Inverse command by applying it only to the figures. 
+
+Modify the range of glyphs to be selected by override range to apply it to more or to different glyphs.</Content>
+    </OtherComments>
+    <GlyphOverrideRangeGN>
+      <GlyphNames>zero-nine</GlyphNames>
+    </GlyphOverrideRangeGN>
+    <EffectsInverse>
+    </EffectsInverse>
+  </TransformScript>
+</DATA>

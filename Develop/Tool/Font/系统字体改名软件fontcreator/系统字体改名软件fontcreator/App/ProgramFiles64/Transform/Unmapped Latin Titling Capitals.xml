@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Latin Titling Capitals
+This script will insert unmapped Latin glyphs for Titling Capitals, and scale them to about 95% of the width. Edit the scale, thin, and move commands to adjust the size, weight, and baseline of the added glyphs.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>A.titl, B.titl, C.titl, D.titl, E.titl, F.titl, G.titl, H.titl, I.titl, J.titl, K.titl, L.titl, M.titl, N.titl, O.titl, P.titl, Q.titl, R.titl, S.titl, T.titl, U.titl, V.titl, W.titl, X.titl, Y.titl, Z.titl</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The Thin command will reduce the weight of strokes by the number of funits specified horizontally and vertically. The move command will compensate for the decrease in the weight of horizontal strokes by moving the glyphs down by the same amount. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>95.00</Horizontal>
+      <Vertical>101.00</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </OutlineScale>
+    <EffectsThin>
+      <Horizontal>7</Horizontal>
+      <Vertical>8</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </EffectsThin>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>-8</Vertical>
+    </OutlineMove>
+  </TransformScript>
+</DATA>

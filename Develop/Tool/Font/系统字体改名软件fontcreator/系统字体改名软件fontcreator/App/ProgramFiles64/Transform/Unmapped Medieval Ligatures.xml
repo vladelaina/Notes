@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Medieval Ligatures
+This script will insert unmapped ligatures from the Medieval Unicode Font Initiative
+
+https://folk.uib.no/hnooh/mufi/</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>longs_adieresis longs_h longs_i longs_l longs_odieresis longs_p longs_s longs_s_i longs_s_l longs_t_i longs_t_r longs_udieresis longs_insularv longs_b longs_k a_f a_g a_l a_n a_p a_r b_b b_g c_h c_t e_y f_adieresis f_j f_odieresis f_r f_t f_udieresis f_y f_f_t f_f_y f_t_y g_g g_d g_o g_p g_r l_l o_c P_P p_p t_t t_t_y t_y t_z U_E u_e U_U u_u</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

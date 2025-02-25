@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Join Contours
+This script demonstrates how to join contours after decomposing composite glyphs</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>squareimageof squareoriginalof squareimageoforequalto squareoriginaloforequalto squarecap squarecup righttack lefttack downtack assertion models true forces tripleverticalbarrightturnstile doubleverticalbardoublerightturnstile notsquareimageoforequalto notsquareoriginaloforequalto squareimageofornotequalto squareoriginalofornotequalto elementofwithlonghorizontalstroke elementofwithverticalbaratendofhorizontalstroke smallelementofwithverticalbaratendofhorizontalstroke elementofwithdotaccent elementofwithoverbar smallelementofwithoverbar elementofwithunderbar elementofwithtwohorizontalstrokes containswithlonghorizontalstroke containswithverticalbaratendofhorizontalstroke smallcontainswithverticalbaratendofhorizontalstroke containswithoverbar smallcontainswithoverbar znotationbagmembership</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineJoinContours>
+    </OutlineJoinContours>
+  </TransformScript>
+</DATA>

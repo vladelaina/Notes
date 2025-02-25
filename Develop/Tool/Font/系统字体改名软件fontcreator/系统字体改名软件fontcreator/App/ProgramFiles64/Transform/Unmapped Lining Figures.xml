@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Lining Figures
+This script will insert ten unmapped glyphs for Lining Figures (lnum) and compose them from the default figures. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>zero.lnum, one.lnum, two.lnum, three.lnum, four.lnum, five.lnum, six.lnum, seven.lnum, eight.lnum, nine.lnum</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

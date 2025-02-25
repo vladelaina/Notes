@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Medium to DemiBold
+This script changes a Medium font to DemiBold stroke weight. 
+After running it you may need to reduce the weight of serifs and correct intersecting contours. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>97.00</Horizontal>
+      <Vertical>96.12</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>40</Horizontal>
+      <Vertical>29</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+      <UpdateMetrics>TRUE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>29</Vertical>
+    </OutlineMove>
+    <OutlineOptimize>
+    </OutlineOptimize>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

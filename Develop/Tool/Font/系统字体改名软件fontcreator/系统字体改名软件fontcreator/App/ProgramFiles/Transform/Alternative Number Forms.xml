@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Alternative Number Forms
+This script inserts Enclosed Alphanumerics from 1-20</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>9312-9331</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <OtherComments>
+      <Content>The script uses complete composites to compose Enclosed Alphanumerics from Large circle and Superscript. Only numbers 1-20 are included since not many fonts will have a full set of superscripts for A-Z and a-z. Some glyphs may intersect and need moving or centering. </Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

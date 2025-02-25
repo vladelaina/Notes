@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Letter-Like Symbols
+This script insert several characters in the Letter-like symbols character set. It then inserts the double-struck capitals, and converts them to outline glyphs. The glyphs will need to be edited. This script is just an aid to their design.</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>8448, 8449, 8451-8454, 8457, 8462, 8468, 8470, 8471, 8478, 8479, 8480, 8481, 8482, 8483, 8486, 8487, 8489, 8490, 8491, 8498, 8501-8504, 8506, 8507, 8513-8516, 8522, 8523, 8525, 8526, 8527,</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <GlyphInsertCharacters>
+      <Characters>8450, 8461, 8469, 8473, 8474, 8477, 8484, 8508-8512, 8517-8521,</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineScale>
+      <AroundType>0</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>97.00</Horizontal>
+      <Vertical>98.00</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </OutlineScale>
+    <EffectsHollow>
+      <Horizontal>30</Horizontal>
+      <Vertical>30</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </EffectsHollow>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>15</Vertical>
+    </OutlineMove>
+    <GlyphOverrideRange>
+      <Characters>8517-8521,</Characters>
+    </GlyphOverrideRange>
+    <OtherComments>
+      <Content>For italic fonts, remove the next line. For Regular or Bold fonts, set the angle to whatever you wish. </Content>
+    </OtherComments>
+    <EffectsItalic>
+      <Angle>11.00</Angle>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </EffectsItalic>
+    <OutlineOptimize>
+    </OutlineOptimize>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

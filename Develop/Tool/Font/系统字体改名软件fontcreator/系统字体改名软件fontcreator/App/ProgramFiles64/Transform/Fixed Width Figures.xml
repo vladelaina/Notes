@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Fixed Width Figures
+This script selects a number of math symbols and tabular figures, then applies a fixed width to them all. Edit the width to suit your font, and delete any glyph names that you don&apos;t wish to be a fixed width or add any that you do want to be fixed width. </Content>
+    </OtherComments>
+    <GlyphOverrideRangeGN>
+      <GlyphNames>dollar plus less equal greater cent sterling currency yen section logicalnot plusminus multiply divide figuredash franc lira Euro minus proportional infinity equivalence lessequal greaterequal zero.tnum one.tnum two.tnum three.tnum four.tnum five.tnum six.tnum seven.tnum eight.tnum nine.tnum,</GlyphNames>
+    </GlyphOverrideRangeGN>
+    <MetricsWidth>
+      <WidthType>0</WidthType>
+      <Width>1024.00</Width>
+      <Adjust>0</Adjust>
+    </MetricsWidth>
+    <MetricsCenterGlyph>
+    </MetricsCenterGlyph>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Align Horizontal Arrows
+This script selects all horizontal arrows and aligns them vertically to y = 500
+The middle of xHeight is a suitable target.</Content>
+    </OtherComments>
+    <GlyphOverrideRangeGN>
+      <GlyphNames>arrowleft, arrowright, arrowboth, leftwardsarrowstroke, rightwardsarrowstroke, leftwardswavearrow, rightwardswavearrow, leftwardstwoheadedarrow, rightwardstwoheadedarrow, leftwardsarrowtail, rightwardsarrowtail, leftwardsarrowfrombar, rightwardsarrowfrombar, leftrightwavearrow, leftrightarrowstroke, rightwardsarrowoverleftwardsarrow, leftwardsarrowoverrightwardsarrow, leftwardspairedarrows, rightwardspairedarrows, leftwardsharpoonoverrightwardsharpoon, rightwardsharpoonoverleftwardsharpoon, leftwardsdoublearrowstroke, leftrightdoublearrowstroke, rightwardsdoublearrowstroke, arrowdblleft, arrowdblright, arrowdblboth, leftwardstriplearrow, rightwardstriplearrow, leftwardssquigglearrow, rightwardssquigglearrow, leftwardsdashedarrow, rightwardsdashedarrow, leftwardsarrowtobar, rightwardsarrowtobar, leftwardswhitearrow, rightwardswhitearrow, rightwardswhitearrowfromwall, rightarrowcircle, leftwardsarrowverticalstroke, rightwardsarrowverticalstroke, leftrightarrowverticalstroke, leftwardsarrowdoubleverticalstroke, rightwardsarrowdoubleverticalstroke, leftrightarrowdoubleverticalstroke, leftwardsopenheadedarrow, rightwardsopenheadedarrow, leftrightopenheadedarrow, </GlyphNames>
+    </GlyphOverrideRangeGN>
+    <OutlinePosition>
+      <Coverage>2</Coverage>
+      <Horizontal>0</Horizontal>
+      <Vertical>500</Vertical>
+      <AroundCorner>4</AroundCorner>
+    </OutlinePosition>
+  </TransformScript>
+</DATA>

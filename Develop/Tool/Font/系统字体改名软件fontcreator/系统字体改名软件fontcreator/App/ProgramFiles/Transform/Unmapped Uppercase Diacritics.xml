@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Case-sensitive Diacritics for Uppercase
+If intended for use with Small or Petite Capitals, they should be edited to suit the smaller glyphs.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>gravecomb.case acutecomb.case circumflexcomb.case circumflexcomb.narrow caroncomb.case caroncomb.narrow tildecomb.case tildecomb.narrow doublegravecomb.case doubleacutecomb.case brevecomb.case brevecomb.narrow invertedbrevecomb.case invertedbrevecomb.narrow ringcomb.case hookcomb.case dieresiscomb.case dieresiscomb.narrow dotaccentcomb.case macroncomb.case macroncomb.narrow greekdialytikatonosmod.case tildebelowcomb.narrow dotbelowcomb.cap commaaccentcomb.cap</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <MetricsBearings>
+      <LeftSideValue>-700</LeftSideValue>
+      <LeftSideType>0</LeftSideType>
+      <RightSideValue>0</RightSideValue>
+      <RightSideType>3</RightSideType>
+    </MetricsBearings>
+    <MetricsWidth>
+      <WidthType>0</WidthType>
+      <Width>0.00</Width>
+      <Adjust>0</Adjust>
+    </MetricsWidth>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

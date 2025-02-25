@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Scientific Inferiors
+This script will insert ten unmapped glyphs for Scientific Inferiors (sinf) and compose them from the default subscripts.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>zero.sinf, one.sinf, two.sinf, three.sinf, four.sinf, five.sinf, six.sinf, seven.sinf, eight.sinf, nine.sinf,</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <MetricsCenterGlyph>
+    </MetricsCenterGlyph>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

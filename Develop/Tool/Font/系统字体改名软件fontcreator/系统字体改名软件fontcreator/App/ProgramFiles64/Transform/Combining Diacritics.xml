@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <MetricsBearings>
+      <LeftSideValue>-1000</LeftSideValue>
+      <LeftSideType>0</LeftSideType>
+      <RightSideValue>0</RightSideValue>
+      <RightSideType>3</RightSideType>
+    </MetricsBearings>
+    <MetricsWidth>
+      <WidthType>0</WidthType>
+      <Width>0.00</Width>
+      <Adjust>2</Adjust>
+    </MetricsWidth>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

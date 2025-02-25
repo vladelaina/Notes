@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Enclosed Alphanumerics
+This script inserts all 160 glyphs in the Enclosed Alphanumerics character set. </Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>9312-9450</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphInsertCharacters>
+      <Characters>9451-9460</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <GlyphInsertCharacters>
+      <Characters>9461-9469</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphInsertCharacters>
+      <Characters>9470, 9471</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <GlyphOverrideRange>
+      <Characters>9451-9460, 9471</Characters>
+    </GlyphOverrideRange>
+    <OtherComments>
+      <Content>The selected glyphs should be white on black.
+Edit them to remove the smaller circle</Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

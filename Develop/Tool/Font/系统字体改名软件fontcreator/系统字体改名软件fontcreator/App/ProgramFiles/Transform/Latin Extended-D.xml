@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Latin Extended-D
+This script inserts selected glyphs from the Latin Extended-D character set. 
+Most glyphs will need editing and joining of contours.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>AA aa AO ao AU au AV av AY ay OO oo VY vy</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+  </TransformScript>
+</DATA>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Alphabetic Presentation Forms
+This script inserts all of the ligatures in the Alphabetic Presentation Forms character set. $FB07-$F0D are not yet assigned in Unicode. The glyphs will need some editing. </Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>$FB00-$FB0D</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

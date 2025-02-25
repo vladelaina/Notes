@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Subscripts for Fractions
+This script inserts unmapped subscripted numerals as denominators and subscripted letters a-z for use with fractions. The vertical postion on the baseline is defined in CompositeData.xml and will need adjusting for different sized glyphs</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>zero.dnom-nine.dnom plus.subs minus.subs equal.subs multiply.subs divide.subs parenleft.subs parenright.subs A.subs-Z.subs a.subs-z.subs</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

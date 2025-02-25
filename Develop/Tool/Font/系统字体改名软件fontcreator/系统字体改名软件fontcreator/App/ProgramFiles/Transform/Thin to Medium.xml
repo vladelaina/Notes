@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Thin to Medium
+This script changes a Thin font to Medium stroke weight. 
+After running it you may need to reduce the weight of serifs, correct intersecting contours, and change the Panose classification.</Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>91.69</Horizontal>
+      <Vertical>91.69</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>62</Horizontal>
+      <Vertical>62</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>62</Vertical>
+    </OutlineMove>
+    <OutlineOptimize>
+    </OutlineOptimize>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

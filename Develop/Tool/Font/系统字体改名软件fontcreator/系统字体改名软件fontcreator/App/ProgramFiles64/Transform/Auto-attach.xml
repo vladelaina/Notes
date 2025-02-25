@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Auto-attach
+Select glyphs that may need to use auto-attach</Content>
+    </OtherComments>
+    <GlyphOverrideRangeGN>
+      <GlyphNames>egrave eacute ecircumflex edieresis hcircumflex acaron udieresismacron udieresisacute udieresisgrave adieresismacron adotaccentmacron AEmacron gcaron kcaron jcaron gacute aringacute AEacute Oslashacute oslashacute abreveinverted ebreveinverted Rdoublegrave Rbreveinverted hcaron odieresismacron otildemacron odotaccentmacron Ymacron ymacron Aringbelow aringbelow Bdotbelow bdotbelow Ddotaccent Ddotbelow ddotbelow fdotaccent gmacron Hdotbelow hdotbelow hdieresis Ldotbelowmacron ldotbelowmacron lcircumflexbelow Mdotbelow mdotbelow Ndotbelow ndotbelow Otildeacute otildedieresis omacrongrave omacronacute Rdotbelow rdotbelow Rdotbelowmacron rdotbelowmacron Sacutedotaccent sacutedotaccent scarondotaccent longsdotaccent acircumflexacute acircumflexgrave acircumflexhookabove ecircumflexacute ecircumflexgrave ecircumflexhookabove Ecircumflextilde Ecircumflexdotbelow ecircumflexdotbelow ocircumflexacute ocircumflexgrave ocircumflexhookabove ocircumflextilde Ohornacute ohornacute Ohorngrave ohorngrave Ohornhookabove ohornhookabove Ohorntilde ohorntilde Ohorndotbelow ohorndotbelow Udotbelow udotbelow Uhornacute uhornacute Uhorngrave uhorngrave Uhornhookabove uhornhookabove Uhorntilde uhorntilde Uhorndotbelow uhorndotbelow Ygrave ygrave Ydotbelow ydotbelow Yhookabove yhookabove Ytilde ytilde yacute.pcap ydieresis.pcap lcaron.pcap ycircumflex.pcap aeacute.pcap oslashacute.pcap ddotbelow.pcap ldotbelowmacron.pcap mdotaccent.pcap mdotbelow.pcap rdotbelow.pcap rdotbelowmacron.pcap ygrave.pcap ytilde.pcap yacute.smcp ydieresis.smcp ycircumflex.smcp aeacute.smcp oslashacute.smcp ddotbelow.smcp ldotbelowmacron.smcp mdotaccent.smcp mdotbelow.smcp rdotbelow.smcp rdotbelowmacron.smcp ygrave.smcp ytilde.smcp</GlyphNames>
+    </GlyphOverrideRangeGN>
+  </TransformScript>
+</DATA>

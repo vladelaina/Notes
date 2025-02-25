@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Condensed to Normal
+This script changes a Condensed font to a normal width. After running it you may need to increase the weight of serifs, correct intersecting contours, and change the Panose classification.</Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>110.00</Horizontal>
+      <Vertical>100.00</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </OutlineScale>
+    <EffectsThin>
+      <Horizontal>9</Horizontal>
+      <Vertical>0</Vertical>
+      <PreserveBearings>TRUE</PreserveBearings>
+    </EffectsThin>
+    <OutlineOptimize>
+    </OutlineOptimize>
+    <MetricsLeftSideBearing>
+    </MetricsLeftSideBearing>
+  </TransformScript>
+</DATA>

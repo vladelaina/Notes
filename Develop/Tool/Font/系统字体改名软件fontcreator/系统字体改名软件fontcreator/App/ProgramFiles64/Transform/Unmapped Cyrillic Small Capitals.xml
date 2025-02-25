@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Cyrillic Small Capitals
+This script will insert unmapped Cyrillic glyphs for Small Capitals, and scale them to 83.6% of CapsHeight. Edit the Insert Glyphs command to add or remove glyphs. Edit the scale, bold, and move commands to adjust the size, weight, and baseline of the added glyphs. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"a-cyrl.smcp" "be-cyrl.smcp" "ve-cyrl.smcp" "ghe-cyrl.smcp" "de-cyrl.smcp" "ie-cyrl.smcp" "zhe-cyrl.smcp" "ze-cyrl.smcp" "i-cyrl.smcp" "ka-cyrl.smcp" "el-cyrl.smcp" "em-cyrl.smcp" "en-cyrl.smcp" "o-cyrl.smcp" "pe-cyrl.smcp" "er-cyrl.smcp" "es-cyrl.smcp" "te-cyrl.smcp" "u-cyrl.smcp" "ef-cyrl.smcp" "ha-cyrl.smcp" "tse-cyrl.smcp" "che-cyrl.smcp" "sha-cyrl.smcp" "shcha-cyrl.smcp" "hardsign-cyrl.smcp" "yeru-cyrl.smcp" "softsign-cyrl.smcp" "e-cyrl.smcp" "yu-cyrl.smcp" "ya-cyrl.smcp" "dje-cyrl.smcp" "ghe-cyrl.smcp" "ukrainian-ie-cyrl.smcp" "dze-cyrl.smcp" "ukrainian-i-cyrl.smcp" "je-cyrl.smcp" "lje-cyrl.smcp" "nje-cyrl.smcp" "tshe-cyrl.smcp" "dzhe-cyrl.smcp" "omega-cyrl.smcp" "yat-cyrl.smcp" "iotified-e-cyrl.smcp" "little-yus-cyrl.smcp" "iotified-little-yus-cyrl.smcp" "big-yus-cyrl.smcp" "iotified-big-yus-cyrl.smcp" "ksi-cyrl.smcp" "psi-cyrl.smcp" "fita-cyrl.smcp" "izhitsa-cyrl.smcp" "uk-cyrl.smcp" "round-omega-cyrl.smcp" "titlo-cyrl.smcp" "ot-cyrl.smcp" "ghe-upturn-cyrl.smcp" "ghe-stroke-cyrl.smcp" "zhe-descender-cyrl.smcp" "ze-descender-cyrl.smcp" "ka-descender-cyrl.smcp" "ka-vertical-stroke-cyrl.smcp" "bashkir-ka-cyrl.smcp" "en-descender-cyrl.smcp" "es-descender-cyrl.smcp" "straight-u-cyrl.smcp" "u-stroke-cyrl.smcp" "ha-descender-cyrl.smcp" "che-descender-cyrl.smcp" "che-vertical-stroke-cyrl.smcp" "shha-cyrl.smcp"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The Bold command will increase the weight of strokes by the number of funits specified horizontally and vertically. The move command will compensate for the increase in the weight of horizontal strokes by moving the glyphs up by the same amount. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>84.00</Horizontal>
+      <Vertical>82.00</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>16</Horizontal>
+      <Vertical>12</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>12</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"shorti-cyrl.smcp" "egrave-cyrl.smcp" "io-cyrl.smcp" "ge-cyrl.smcp" "yi-cyrl.smcp" "kje-cyrl.smcp" "igrave-cyrl.smcp" "shortu-cyrl.smcp"  "izhitsadoublegrave-cyrl.smcp" </GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

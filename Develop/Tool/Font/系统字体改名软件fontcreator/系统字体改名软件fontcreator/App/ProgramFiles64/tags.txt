@@ -1,0 +1,14 @@
+;This file allows you to modify the names of the tag categories
+;Restart FontCreator after modifying this file in order see the changes
+
+[tags]
+;Red
+1=Important
+;Orange
+2=Incomplete
+;Green
+3=Completed
+;Fuchsia
+4=Review
+;Blue
+5=Workspace

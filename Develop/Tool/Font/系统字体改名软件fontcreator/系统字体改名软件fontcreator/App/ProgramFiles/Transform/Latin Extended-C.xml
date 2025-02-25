@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Latin Extended-C
+This script inserts the Latin Extended-C character set. Most glyphs will need editing and joining of contours.</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>11360-11391</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+  </TransformScript>
+</DATA>

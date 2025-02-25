@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Greek Small Capitals
+This script will insert unmapped Greek glyphs for Small Capitals, and scale them to about 80% of CapHeight. Edit the Insert Glyphs command to add or remove glyphs. Edit the scale, bold, and move commands to adjust the size, weight, and baseline of the added glyphs. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"alpha-grek.smcp" "beta-grek.smcp" "gamma-grek.smcp" "delta-grek.smcp" "epsilon-grek.smcp" "zeta-grek.smcp" "eta-grek.smcp" "theta-grek.smcp" "iota-grek.smcp" "kappa-grek.smcp" "lamda-grek.smcp" "mu-grek.smcp" "nu-grek.smcp" "xi-grek.smcp" "omicron-grek.smcp" "pi-grek.smcp" "rho-grek.smcp" "sigma-grek.smcp" "tau-grek.smcp" "upsilon-grek.smcp" "phi-grek.smcp" "chi-grek.smcp" "psi-grek.smcp" "omega-grek.smcp"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The Bold command will increase the weight of strokes by the number of funits specified horizontally and vertically. The move command will compensate for the increase in the weight of horizontal strokes by moving the glyphs up by the same amount. </Content>
+    </OtherComments>
+    <OutlineScale>
+      <AroundType>2</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Horizontal>78.00</Horizontal>
+      <Vertical>82.00</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+    </OutlineScale>
+    <EffectsBold>
+      <Horizontal>16</Horizontal>
+      <Vertical>12</Vertical>
+      <PreserveBearings>FALSE</PreserveBearings>
+      <UpdateMetrics>FALSE</UpdateMetrics>
+    </EffectsBold>
+    <OutlineMove>
+      <Horizontal>0</Horizontal>
+      <Vertical>12</Vertical>
+    </OutlineMove>
+    <GlyphInsertGlyphs>
+      <GlyphNames>"iotadialytikatonos-grek.smcp" "alphatonos-grek.smcp" "epsilontonos-grek.smcp" "etatonos-grek.smcp" "iotatonos-grek.smcp" "upsilondialytikatonos-grek.smcp" "iotadialytika-grek.smcp" "upsilondialytika-grek.smcp" "omicrontonos-grek.smcp" "upsilontonos-grek.smcp" "omegatonos-grek.smcp"</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

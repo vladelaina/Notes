@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Insert four Characters for Nordic
+Code-points in the Private Use Area as suggested by the Medieval Unicode Font Initiaitve: https://folk.uib.no/hnooh/mufi/</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>57497, 57868, 58521, 58892</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

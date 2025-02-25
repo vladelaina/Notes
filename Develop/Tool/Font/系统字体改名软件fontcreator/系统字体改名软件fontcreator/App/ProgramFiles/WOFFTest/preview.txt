@@ -1,0 +1,37 @@
+﻿; Part of FontCreator WOFFTest
+; You can edit these lines, which will be used within the WOFF test web page
+; If you want to provide a backslash, do add two
+; So if you want this text: 
+; a\b
+; Provide this:
+; a\\b
+; A couple of text samples in English 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ\r\nLigatures: f​f​i => ffi f​i => fi f​l => fl\r\nFractions :  1/2 1/4  132/142
+abcdefghijklmnopqrstuvwxyz\r\nABCDEFGHIJKLMNOPQRSTUVWXYZ\r\n1234567890
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed molestie augue vel quam dapibus sollicitudin. Sed vestibulum erat ac nibh varius vestibulum. Quisque a quam at est sodales pulvinar ac vel nisl. Cras sit amet consectetur dolor. Aliquam nisl lorem, iaculis eget aliquam pharetra, tincidunt id turpis. Ut sit amet nisl sed ipsum tempor luctus. Aenean vitae tristique sem. Pellentesque turpis dolor, lacinia id fermentum et, dapibus ac ipsum. Etiam nisi quam, feugiat vitae eleifend vel, luctus et mi.
+; Universal Declaration of Human Rights - Article 1
+; English 
+All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
+; French
+Tous les êtres humains naissent libres et égaux en dignité et en droits. Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité.
+; German, Standard (1996)
+Alle Menschen sind frei und gleich an Würde und Rechten geboren. Sie sind mit Vernunft und Gewissen begabt und sollen einander im Geist der Brüderlichkeit begegnen.
+; Spanish
+Todos los seres humanos nacen libres e iguales en dignidad y derechos y, dotados como están de razón y conciencia, deben comportarse fraternalmente los unos con los otros.
+; Indonesian
+Semua orang dilahirkan merdeka dan mempunyai martabat dan hak-hak yang sama. Mereka dikaruniai akal dan hati nurani dan hendaknya bergaul satu sama lain dalam semangat persaudaraan.
+; Korean
+모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다. 인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다.
+; Hebrew
+ כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם. כולם חוננו בתבונה ובמצפון, לפיכך חובה עליהם לנהוג איש ברעהו ברוח של אחוה.
+; Arabic, Standard
+يولد جميع الناس أحراراً متساوين في الكرامة والحقوق. وقد وهبوا عقلاً وضميراً وعليهم أن يعامل بعضهم بعضاً بروح الإخاء.
+; Russian
+Все люди рождаются свободными и равными в своем достоинстве и правах. Они наделены разумом и совестью и должны поступать в отношении друг друга в духе братства.
+; You can enable these to your liking:
+; Portuguese (Portugal)
+; Todos os seres humanos nascem livres e iguais em dignidade e em direitos. Dotados de razão e de consciência, devem agir uns para com os outros em espírito de fraternidade.
+; Turkish
+Bütün insanlar hür, haysiyet ve haklar bakımından eşit doğarlar. Akıl ve vicdana sahiptirler ve birbirlerine karşı kardeşlik zihniyeti ile hareket etmelidirler.
+; Vietnamese
+Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền. Mọi con người đều được tạo hoá ban cho lý trí và lương tâm và cần phải đối xử với nhau trong tình bằng hữu.

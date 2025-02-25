@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Subscript
+This script composes subscripts from superscripts. If they do not yet exist, run the Superscript transform script first. They are designed to bisect the baseline. For italic type styles, you may also need to adjust the horizontal position to align between figure zeros using the Comparison Toolbar.</Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>8320-8334</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

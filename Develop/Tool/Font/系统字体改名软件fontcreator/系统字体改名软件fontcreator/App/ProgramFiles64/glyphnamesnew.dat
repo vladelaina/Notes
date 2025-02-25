@@ -1,0 +1,17 @@
+﻿# Friendly Glyph Names for FontCreator
+# Copyright (C) 2019 High-Logic B.V. All Rights Reserved.
+#
+# 2019-03-07 - version 1.0
+#
+# FontCreator uses friendly glyph names within the user interface. Use this
+# file to override glyph names.
+#
+# Note: prior to FontCreator 12 another file (glyphnames.dat) was used, but
+# that one is now obsolete.
+#
+# Format: codepoint(hexadecimal);glyphname;comment(optional)
+# Lines starting with "#" are comments; blank lines are ignored
+#
+20AC;euro
+210A;gscript2;conflicts with 0261
+1180;jungseongoe2-hang;conflicts with 116C   

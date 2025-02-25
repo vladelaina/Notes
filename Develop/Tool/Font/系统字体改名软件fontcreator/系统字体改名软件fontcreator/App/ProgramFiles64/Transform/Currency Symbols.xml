@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Currency Symbols
+This script inserts all of the Currency Symbols Character Set. </Content>
+    </OtherComments>
+    <GlyphInsertCharacters>
+      <Characters>8352-8383</Characters>
+      <OverrideRange>TRUE</OverrideRange>
+    </GlyphInsertCharacters>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>The script creates correctly mapped glyphs that, where approrpiate, use the digit width. This may not be suitable for all fonts. The user should modify the glyphs to suit the font, cutting and joining contours wherever necessary, and adjusting advance width.  Existing glyphs will not be replaced. </Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

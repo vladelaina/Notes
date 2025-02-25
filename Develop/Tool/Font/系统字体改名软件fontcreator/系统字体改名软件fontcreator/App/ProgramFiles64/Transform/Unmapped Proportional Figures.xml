@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Proportional Figures
+This script will insert ten unmapped glyphs for Proportional Figures (pnum) and compose them from the default figures. The glyphs and side-bearings will need to be designed to suit the figure style. </Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>zero.pnum, one.pnum, two.pnum, three.pnum, four.pnum, five.pnum, six.pnum, seven.pnum, eight.pnum, nine.pnum,</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>

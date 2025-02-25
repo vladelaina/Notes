@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Miscellaneous Symbols and Arrows
+This script inserts some white arrows</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>northeastwhitearrow</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineRotate>
+      <AroundType>1</AroundType>
+      <AroundCorner>4</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Angle2>45.00</Angle2>
+    </OutlineRotate>
+    <GlyphInsertGlyphs>
+      <GlyphNames>northwestwhitearrow </GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineRotate>
+      <AroundType>0</AroundType>
+      <AroundCorner>0</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Angle2>-45.00</Angle2>
+    </OutlineRotate>
+    <GlyphInsertGlyphs>
+      <GlyphNames>southeastwhitearrow </GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineRotate>
+      <AroundType>1</AroundType>
+      <AroundCorner>4</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Angle2>-45.00</Angle2>
+    </OutlineRotate>
+    <GlyphInsertGlyphs>
+      <GlyphNames>southwestwhitearrow</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OutlineRotate>
+      <AroundType>1</AroundType>
+      <AroundCorner>4</AroundCorner>
+      <AroundXPos>0</AroundXPos>
+      <AroundYPos>0</AroundYPos>
+      <Angle2>45.00</Angle2>
+    </OutlineRotate>
+    <GlyphInsertGlyphs>
+      <GlyphNames>leftrightwhitearrow</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>1) Cut the outer contours to the clipboard
+2) Move the end nodes and get union of contours with the inner contours
+3) Move inner contour out of the way e.g. (Shift+Up cursor key several times)
+4) Paste back the outer contours
+5) Move the end nodes and get union of contours with the outer contours
+6) Move the inner contour back to where it was before. 
+There should now be one black and one white contour that do not overlap.</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>leftwardsblackarrow upwardsblackarrow downwardsblackarrow northeastblackarrow northwestblackarrow southeastblackarrow southwestblackarrow leftrightblackarrow updownblackarrow</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+      <Mechanism>3</Mechanism>
+    </GlyphCompleteComposites>
+    <GlyphDecompose>
+    </GlyphDecompose>
+    <OtherComments>
+      <Content>Recompose the Left Right Black Arrow after editing the Left Right White Arrow
+Delete the inner (white) contours to make the arrows black.</Content>
+    </OtherComments>
+  </TransformScript>
+</DATA>

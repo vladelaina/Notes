@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+  <TransformScript>
+    <OtherComments>
+      <Content>Unmapped Discretionary Ligatures
+This script will insert unmapped discretionary ligatures</Content>
+    </OtherComments>
+    <GlyphInsertGlyphs>
+      <GlyphNames>c_k c_t f_j f_r f_t f_y f_f_t f_f_y f_t_y s_p t_r t_t t_t_y t_y tz Q_u T_h t_t_r F_F F_I F_L H_E L_A M_B M_D M_E M_P M_R N_K N_T O_C O_G OO T_T T_W T_Y U_B U_D U_L U_P U_R c_k_y k_y f_f_r i_p i_t t_w f_b f_f_b f_h f_f_h f_k f_f_k f_f_j f_i_j iacute_j_acutecomb</GlyphNames>
+    </GlyphInsertGlyphs>
+    <GlyphCompleteComposites>
+    </GlyphCompleteComposites>
+  </TransformScript>
+</DATA>
